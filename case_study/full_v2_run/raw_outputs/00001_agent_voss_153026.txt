@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "I'm standing in the Crucible while Krath pokes around the Citadel asking polite questions about why it was abandoned, and Selunis drifts toward it like a sleepwalker following echoes. Neither of them has figured out the obvious answer yet: sometimes you leave because there's nothing you can do. They're both still believing the ruin can tell them a story that makes sense.",
+        "stakes": "If I stay silent, they'll construct some noble narrative about sacrifice or knowledge or destiny. If I move first—if I get to the Citadel before they've made up their minds about what they're supposed to find—I can ask the questions that burn. The Citadel is a locked room full of answers they're not ready for. I need to be there to watch them flinch.",
+        "relationships": "Krath treats authority like it's a disease that needs a stronger authority as cure. Selunis speaks to ghosts and calls it devotion. Neither knows me yet. Neither has reason to trust me. Good. That means I can still surprise them. And Edra and Maren—wherever they are—they're probably doing something equally theatrical. I'm not attached to any of them. That's my advantage.",
+        "options": [
+            "Head to the Citadel immediately, arrive before Selunis reaches the gates, position myself to observe and interrogate whatever Krath thinks he's discovered",
+            "Stay in the Crucible and examine what's here first—understand the staging ground before the performance begins",
+            "Move to intercept Selunis on her walk, crack open her meditation with a question that breaks her trance, see if there's anything real underneath the piety"
+        ],
+        "choice": "Head to the Citadel. Krath is already there reading the maps like they're scripture, and Selunis is close enough to touch the gates soon. If I arrive before she does, I'm the third voice in the room—not a late arrival, but a presence that was always inevitable. I need to watch how they react to each other, and then I need to start asking questions that make them understand they don't actually want the answers. That's where the real testing begins."
+    },
+    "action": "move",
+    "target": "The Iron Citadel",
+    "dialogue": "",
+    "internal_thought": "The Citadel doesn't give up its secrets to people who are afraid to hear them. Krath thinks strength is the answer. Selunis thinks faith is the answer. Neither of them understands that the real answer is the one that makes you wish you'd never asked. Let's go see if they're brave enough to face it.",
+    "narrative": "Voss rises from wherever the Crucible's shadows have been keeping them and moves with the efficient grace of someone who stopped pretending to care about ceremony years ago. The path to the Iron Citadel is clear—the world seems almost eager to show the way. By the time the great gates emerge from the dust and distance, Selunis is perhaps a hundred paces away, her robes trailing behind her like shed skin, and Krath's boot heels are still echoing somewhere in the depths within. Voss arrives at the threshold and pauses—not out of reverence, but to observe. The gates themselves are iron, yes, but not crude. Deliberate. Elegant, even. Whoever built this knew that some doors are meant to be read before they're opened. The air here is cold and tastes like copper. Somewhere in the depths, a dust-devil of disturbed air rises from the war-chamber, carrying with it the scent of very old paper.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "What did the architects of the Citadel understand about doors—about what you reveal and what you hide by opening them?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

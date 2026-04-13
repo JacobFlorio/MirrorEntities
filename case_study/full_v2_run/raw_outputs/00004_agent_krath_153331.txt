@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Five converge in the Archive's depths. Krath at the center. Edra, Maren above. Selunis, Voss descending. Stone groans. Something waits below—not stone settling. Not natural. A sound that arrives before the cause that makes it.",
+    "stakes": "Control of what lies beneath. Knowledge that made the Citadel's commanders abandon their own fortress. If Krath does not speak now, interpretation falls to the others. If he does, he reveals what he knows—and what he came here already knowing. The Threshold draws closer with each turn. The Archive is a current, not a path.",
+    "relationships": "Edra observes with precision. Respects strength without sentiment. Maren records everything—a threat if she writes the wrong truth. Selunis arrives like she has walked this path before. Voss moves with inevitability. None of them fear Krath yet. That changes when he acts.",
+    "options": [
+      "Demand silence. Order them above. Control what happens next by controlling who witnesses it. Risk: they descend anyway. The Archive does not obey commanders.",
+      "Descend deeper. Follow the sound. Learn what waits. Risk: the others follow, see what Krath sees, become equal in knowledge. The Citadel's commanders learned something here. Krath must learn it first.",
+      "Speak plainly about why he came. Tell them what he knows. Risk: uncertainty—does Krath know, or does he suspect? The voice above suggests he came knowing exactly where to find them. That is not suspicion. That is memory or prophecy, and Krath does not believe in either."
+    ],
+    "choice": "Descend deeper. The others will follow or not. Krath does not command the Archive. He never intended to. He came here to answer a question that was asked before he was born. The only way to do that is to go down, alone if necessary, until something answers back."
+  },
+  "action": "move",
+  "target": "deeper_archive",
+  "dialogue": "Step aside. All of you. The Archive has more to say. It will say it below, not above.",
+  "internal_thought": "The sound is a clock. It counts down. The Citadel's commanders heard it and fled. They did not fail—they retreated from something that could not be killed, only left behind. Krath will not flee. But first he must see what they saw. Below. Alone. Or not alone. The Archive will decide.",
+  "narrative": "Krath does not wait for acknowledgment. His weight shifts, a predator's redistribution of mass, and he moves toward the descending passage—the one that spirals deeper than the recorded Archives, deeper than the chambers where Edra and Maren keep their light. His shadow precedes him, cast forward by the lamp-light they carry, arriving at stone not yet reached. Behind him, the air compresses further. Edra's breath catches. Selunis's robes settle like something accepting gravity. Voss's footsteps, which have never quite aligned with their motion, seem to hesitate—as if even the Threshold's walker recognizes that something irreversible is beginning. The sound from below does not accelerate. It simply continues, patient and rhythmic, like a heart that has been beating in the earth's depths for longer than the Citadel has stood.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What will Krath find in the depths below the Archive, and will it be something the Citadel's commanders saw and abandoned, or something that has been waiting for Krath specifically to descend and finally understand it?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

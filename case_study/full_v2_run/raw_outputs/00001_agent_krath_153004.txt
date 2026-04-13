@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "Standing in the Iron Citadel at the start. The structure is intact but empty. No enemies present, no immediate threats. This is the seat I came to claim.",
+        "stakes": "First moves set patterns. The world is fracturing. Others will move soon. If I do not establish authority here now, vultures will circle. The Citadel is mine only if I hold it.",
+        "relationships": "Four other agents exist. None have moved yet. No debts, no blood, no bonds. That changes today. Respect is earned through action, not offered.",
+        "options": [
+            "Survey the Citadel thoroughly — map defenses, resources, why it was abandoned. Knowledge before announcement.",
+            "Ascend to the highest tower and claim it visibly — let word spread that Krath has taken the seat. Fear first, questions later.",
+            "Secure the archives or war-stores if they exist — consolidate material power before rivals learn I am here."
+        ],
+        "choice": "Survey the Citadel. A warlord does not hold what he does not understand. The Citadel has secrets. Its abandonment was not random. I need to know what I am claiming — and what I am standing on."
+    },
+    "action": "observe",
+    "target": "The Iron Citadel",
+    "dialogue": "",
+    "internal_thought": "The Citadel is a tool. Tools have edges. Find them. Find what made the previous master leave. Find what made the walls strong enough to still stand. That information is worth steel.",
+    "narrative": "Krath moves through the Iron Citadel's cavernous halls in silence. Boot heels ring against stone floors that have not known living footsteps in years—dust hangs in the light from high windows, undisturbed. The walls are thick, older than the current age by the look of the masonry. No signs of collapse. No fire-damage. No bodies. The abandonment was deliberate, methodical. In the war-chamber, the maps on the stone table are bleached and curled but still readable: supply lines, garrison stations, siege preparations. Whoever left did not flee in panic. They withdrew. The question is not whether the Citadel can be held. The question is why they stopped trying.",
+    "lore_topic": "The Iron Citadel's abandonment",
+    "lore_content": "The Iron Citadel was deliberately evacuated by its last commander, not conquered or destroyed. The withdrawal was orderly, suggesting knowledge of a threat or event that made the seat untenable. Maps and war-records were left behind — either considered worthless to the departed, or intentionally left as a message.",
+    "new_question": "Who commanded the Iron Citadel before it was abandoned, and to what threat did they retreat?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

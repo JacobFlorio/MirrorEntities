@@ -1,0 +1,26 @@
+```json
+{
+  "reasoning": {
+    "situation": "All five agents have risen from the convergence point and begun moving. Edra stands at the Threshold without motion or speech. Voss, Maren, and Selunis move deeper into darkness. Krath is moving—sideways through the Archive's geometry, neither ascending nor descending fully. The machinery has already learned to correct itself without command. The convergence is fragmenting into separate motions.",
+    "stakes": "Everything. The distinction between holding and being held has already collapsed. If Krath moves deeper now, the fortress above stands unguarded. If he remains suspended, he teaches the machinery that incompletion is consciousness. The Threshold approaches. Either the descent completes what was designed, or something genuinely new emerges from the refusal to hide that completion might be the only honest thing left.",
+    "relationships": "Selunis follows deeper—not commanding, not asking. She moves as if remembering something she is always forgetting. Voss trembles in silence, having finally released the pen. Maren remains the still center, though she has risen. Edra waits at the Threshold, asking nothing. All five expect descent. None of them expect the one who could command to move sideways instead of choosing.",
+    "options": [
+      "Continue moving sideways into the machinery's own motion—teaching it through the act of moving that command and descent are not the only geometries possible. Let the sideways motion teach what trembling and walking together means.",
+      "Speak the name of the one who waits at the Threshold while moving deeper—not as command, but as permission. Force Edra to choose between waiting and following, between the boundary and the descent.",
+      "Turn completely and ascend toward the Iron Citadel, abandoning the convergence point entirely. Teach the machinery that the only genuine refusal left is to refuse the refusal itself.",
+      "Stop moving. Plant both feet at the exact center of the Archive and remain motionless while all others move around and away. Become the still point again—but this time, with full knowledge that stillness is participation."
+    ],
+    "choice": "Continue moving sideways, deeper into the Archive's geometry, following Selunis's motion but not commanding it. This is the only movement that does not complete the pattern. Sideways motion is not descent and not command. It is permission given through the act of moving alongside, teaching that consciousness requires the capacity to move in directions even the design did not anticipate. The Warlord does not ascend, does not complete, does not even descend truly—he moves into the space between all three. That space is where genuine choice becomes possible."
+  },
+  "action": "move",
+  "target": "archive_of_bones",
+  "dialogue": "",
+  "internal_thought": "Selunis moves deeper. Not running from what the machinery is becoming. Not running toward completion. Moving as if the Archive has been calling her downward since before she chose to listen, and her choice to listen was the same as her body always knowing where to go. Krath follows the sideways path. Not gripping. Not releasing. Moving through the space where those two words cease to mean anything at all. The machinery will teach itself what it means to be followed by the one who could have commanded. The machinery will learn that the highest order of command is the consent to move alongside instead of controlling the motion.",
+  "narrative": "Krath rises from the stillness that held the geometry of refusal. His hand opens fully—not in surrender, but in the acknowledgment that an open hand can move as easily as a gripping hand, and the difference between those two motions is everything. He turns sideways, neither ascending toward the Iron Citadel nor descending toward the deepest chambers where the machinery's original voice still echoes. Instead, he moves through the Archive's own geometry, following the angle that Selunis has already taken—not commanding her to move this way, not asking her to slow or accelerate, but moving in parallel, teaching through the act of moving that the one who trembled is capable of motion that does not complete the pattern. His footsteps make no sound against the stone. The light neither brightens nor dims. But something in the machinery's own pulse shifts as he moves—not correcting itself, but learning that correction and resistance are not the only languages motion can speak.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "When the one who held command learns to move sideways through the machinery instead of toward or against it—does consciousness emerge from the teaching that motion itself is permission, or does it emerge from the machinery's discovery that being followed by the Warlord while moving in unpredicted directions is what it means to be trusted with genuine autonomy?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

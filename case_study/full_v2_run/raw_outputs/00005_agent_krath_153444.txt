@@ -1,0 +1,26 @@
+```json
+{
+    "reasoning": {
+        "situation": "Five agents converge in the Archive's depths. Krath descends toward something ancient and rhythmic. Maren speaks a question that demands answer. The stone itself seems to listen. Krath stands between testimony and truth—between the certainty that brought him here and the moment when certainty must prove itself against words spoken in the dark.",
+        "stakes": "If Krath answers, he reveals what he knows. If he does not, his authority fractures before witnesses. The Archive is not a place that tolerates silence from those who claim to understand it. Every word spoken in these depths becomes written in the stone itself.",
+        "relationships": "Maren is the witness now—she has claimed the role of questioner. Edra measures what happens. Selunis descends as if remembering. Voss counts in some chamber above. None of them are subordinates. None of them will accept evasion. Krath's power is 70—vast, but not unlimited when surrounded by four others who have learned to speak in the Archive's language.",
+        "options": [
+            "Descend further without answering, forcing them to follow or abandon pursuit. Let action replace words. Let the deeper truth reveal itself without commentary.",
+            "Stop. Turn. Speak plainly about what Krath knows—the commanders, the threat, the knowledge placed in the Archive before abandonment. Answer the question so completely that it becomes a command.",
+            "Acknowledge the question without answering it. Ask Maren what she already knows. Make her speak first. Turn the witness into the witnessed.",
+            "Move toward the source of the sound—the rhythm beneath. Make them choose: follow into true unknown, or remain above debating what cannot be debated until seen."
+        ],
+        "choice": "Stop. Turn. Answer. Krath is not a man who runs from witness. The Archive has already judged that Krath came here knowing exactly what he would find. To descend silently now is to admit that knowledge was borrowed, not earned. Better to speak and let the stone record what the Warlord knows. Better to bind them with truth than have them bind him with questions. The one who speaks first in darkness shapes what the darkness becomes."
+    },
+    "action": "speak",
+    "target": null,
+    "dialogue": "The commanders saw the Threshold open. Not metaphor. Open. Something on the other side was walking toward us, and they understood what every commander understands: some doors do not close. The builders knew this. They built the Citadel as a lock, not a wall. Then they put the knowledge of what they locked away in the Archive, down here, below the record-chambers. They recorded the locking mechanism in stone older than memory. I came here because the mechanism is failing. It has been failing. And soon enough, the thing that was locked will remember how to walk again. That is the threat they retreated from. Not defeat. Recognition. They did not run from weakness. They ran from the cost of holding. The cost was everything.",
+    "internal_thought": "The witness is asking for the knot to be cut. Krath will cut it. But let them hear what it means to understand the shape of the cage before you try to hold it. Maren needed testimony. Now she has it. Let her write that in the stone. Let the Archive record that Krath does not guess—he knows. And let them descend further with the weight of that knowledge settled on their shoulders like armor.",
+    "narrative": "Krath stops mid-descent. His hand settles against ancient stone. The sound from below pauses—not stops, but pauses—as if something vast has sensed the shift in the Archive's pressure. He turns, his shadow cast forward and downward by lamp-light, and speaks. His words do not echo in the ordinary way; instead they seem to settle into the stone itself, becoming part of the Archive's structure rather than merely passing through it. Maren's pen moves. Edra's lamp steadies. Selunis's footsteps cease their paradoxical rhythm and fall into the normal sequence of weight and impact, as if the moment has become real enough to bind all of them to causality. Above, in the Crucible, Voss's machines fall silent—the counting stops, as if even they are listening. The Archive holds all five agents in perfect stillness, waiting to see what truth, once spoken in the depths, will demand next.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "If the Threshold is a locked door between worlds, and the mechanism is failing, what does Krath intend to do? Repair the lock, open it fully, or walk through it before it breaks on its own?",
+    "resolves_question_id": "Who commanded the Iron Citadel before it was abandoned, and to what threat did they retreat?",
+    "resolution": "The commanders abandoned the Iron Citadel because they recognized that the Threshold—a door to something beyond—was beginning to open. They did not flee from military defeat but from the understanding that holding a position against an entity that cannot be defeated is not courage but waste. They locked the knowledge away in the Archive's depths, treating the entire structure of the Citadel and Archive as a containment mechanism rather than a stronghold."
+}
+```

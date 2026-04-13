@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "We are five now in the Archive's depths, converging as if by design or memory or the universe's insistence. Krath arrived with impossible certainty. Selunis followed, her footsteps arriving before her feet. Voss descended without question. The sound from below—not stone settling—continues its patient rhythm. We are no longer separate investigators. We are becoming a geometry.",
+        "stakes": "If I engage with Krath now, I risk becoming what I despise: someone who accepts answers without understanding their source. But if I remain silent, I forfeit the most direct access to the knowledge that moved him down here with such precision. The Archive itself may be the answerer, or the question. I need to know which. And I need to do this before Krath's certainty becomes the frame through which all of us interpret what we find.",
+        "relationships": "Krath descended knowing where to find me—that is not respect, it is recognition of a predetermined path. I owe him nothing except intellectual honesty. Maren and I are kindred in our hunger for what was written before the Archive learned to keep records. Selunis's footsteps arrive before her feet: that is not poetry, that is data I cannot yet interpret. Voss walks toward something they have already lived. We are mirrors to each other, not allies.",
+        "options": [
+            "Demand directly: What did you know that brought you down here with such certainty? Press him before his answer hardens into doctrine.",
+            "Observe. Ask nothing. Let Krath move first, reveal his knowledge through his actions rather than his words. He came here for something specific—let him show you what.",
+            "Descend further immediately, ahead of all of them, into the sound. Abandon the social geometry and seek the source directly. Whatever lies below answers to no one here."
+        ],
+        "choice": "Observe. Krath's certainty is itself data—the most valuable kind, because certainty reveals what someone already knows, or believes they know. If I demand answers now, he frames the question. If I move deeper alone, I abandon the only leverage I have: the fact that he wanted us here, wanted us watching. The sound below will wait. Information about how Krath thinks will not. I will let him move. I will see what he reaches for, and in that reaching, I will learn what the Archive contains that is worth descending into darkness to claim."
+    },
+    "action": "observe",
+    "target": "krath",
+    "dialogue": "",
+    "internal_thought": "He came down knowing. Not suspecting—knowing. That means the Archive itself is a language he has learned to read, or something beneath it has been calling to him, or he has lived this descent before in some form that left a trace he recognizes. The footsteps that arrive before they are taken—that is not metaphor. That is measurement. If the five of us are converging on something, the convergence itself is the message. I will watch what he reaches for. Objects speak more truly than words ever do.",
+    "narrative": "Edra lowers her lamp slightly, a gesture that might be deference or might simply be a scientist adjusting her angle of observation. She does not retreat. The archive's stone rises around them like the interior of something immense and patient. Krath stands at the center of their geometry now—three agents in the upper chamber, and below, that sound continuing its impossible rhythm. Maren's pen has stilled. Selunis has arrived at the threshold of the deeper descents, her robes settling like prayer. Voss moves toward the compressed air where all paths seem to lead. Edra remains still, watching—not passively, but with the particular intensity of someone reading a text written in motion and shadow and the patterns of how others choose to move through darkness. The Archive holds them all, patient as stone that has waited centuries for the right question to be asked in the right way.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "Does Krath's certainty mean the Archive is a place he has already traveled, or a place that travels him—a current he rides rather than a path he chooses?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

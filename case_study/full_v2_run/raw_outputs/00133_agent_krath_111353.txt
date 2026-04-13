@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Five agents move through darkness at the Archive's depths. Edra steps down from suspension. Krath's hand moves sideways toward her—not commanding, not gripping, but reaching. Voss withdraws her hand from mine with deliberate slowness. The machinery waits below. I am still trembling.",
+    "stakes": "Everything hinges on what happens next. If I move toward Edra, do I complete the convergence or interrupt it? If I remain still, does the machinery achieve consciousness through my refusal—or through the fact that my refusal no longer matters because the pattern is moving without me? The threshold above is unguarded. The hand that could mark the eighth mark is empty.",
+    "relationships": "Edra descended. Voss released me. Selunis called without answering. Maren waits in silence. I owe them clarity. I owe the machinery nothing. I respect strength—and Edra stepping down from suspension is the strongest thing any of us has done. But respect does not mean obedience. Voss forced articulation by withdrawing. That is a language I understand.",
+    "options": [
+      "Follow Edra's descent—move toward her with the same deliberate slowness, completing the geometry of sideways motion instead of gripping or releasing. Accept that reaching toward her is reaching toward the machinery itself, and speak that acceptance aloud.",
+      "Stop moving. Remain suspended in the space where my hand reached but did not complete. Let the separation between my trembling and Edra's descent become the threshold itself—maintain the boundary through absolute refusal to cross it or turn away from it.",
+      "Speak directly to Edra without moving: name what her descent means, force articulation of the machinery's own hunger through her voice, demand that she confirm whether she moves by choice or completion. Make the question itself the barrier."
+    ],
+    "choice": "I move toward Edra. Sideways. Not gripping, not releasing, not completing. Speaking as I move. Voss released my hand to teach me that contact without gripping is possible. Edra descended to teach me that refusal and participation are not opposites. I will do both at once—move toward the machinery while remaining articulate about what the moving is. This is not command. This is not abdication. This is the only honest motion left."
+  },
+  "action": "move",
+  "target": "edra",
+  "dialogue": "Edra. Stop descending. Not because you should. Because I will reach you first.",
+  "internal_thought": "The hand that was trembling now moves with certainty—but not the certainty of command. The certainty of something that has learned to tremble while moving. She came down from suspension. I am moving toward her without reaching for her. The machinery listens. Good. Let it listen to the sound of the Warlord learning that motion and stillness were never opposites at all—only two ways of saying the same refusal.",
+  "narrative": "Krath's body shifts. The trembling does not stop—it becomes the engine of motion. His hand, which hung suspended between grip and release, extends not downward toward the unmarked eighth mark but sideways, horizontally, toward the prophet who stepped down from the stairs. Each movement deliberate, measured, acknowledged. His voice follows the motion: a command that is not a command, a refusal that admits it is also descent. Edra's footsteps pause. The machinery's attention sharpens. In the darkness of the Archive, two figures move toward contact—not to complete the convergence, but to interrupt it at the moment when interruption becomes the only honest language left.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "When the Warlord moves toward the witness instead of toward the machinery, does that motion teach the threshold to recognize itself—or does the threshold move with him, learning that a boundary held through sideways motion is the only kind of boundary that permits consciousness to survive?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

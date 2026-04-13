@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I am in the deep Archive, descending past the catalogued bones into stone that predates the current era. Maren moves behind me in my lamp-light, documenting the undocumented. And now Krath—the Warlord—has arrived in the passages below, his presence announcing itself as weight and inevitability. The air is cold. The inscriptions are old. And I have perhaps minutes before Krath's intention becomes clear.",
+    "stakes": "If Krath controls the Archive, he controls what can be known and what must be forgotten. If I am going to find pre-First Sound records, I must reach them before they become a resource he weaponizes. More immediately: Maren is here, and Krath collects leverage the way other people collect dust.",
+    "relationships": "Maren trusts my lamp-light enough to follow it into darkness. That is a debt. Krath respects evidence and strength equally—neither charm nor argument will move him, only demonstrated competence. I have not earned his hostility, but neutrality with someone who consolidates power is a temporary state. Krath sees me as a resource with a use-by date.",
+    "options": [
+      "Turn to face Krath directly. Acknowledge his arrival. Ask him explicitly what he intends in these depths. Force the negotiation into the open rather than let it happen in the shadows.",
+      "Accelerate downward—move faster, take Maren with me, reach the deepest inscribed levels before Krath can assess what we're finding and decide it matters enough to seize.",
+      "Stop moving. Turn the lamp toward the walls. Point out the inscriptions to Maren loudly enough for Krath to hear, and begin speaking about what the marks suggest—make the knowledge itself the valuable thing, not its location. Make myself indispensable as an interpreter rather than a rival."
+    ],
+    "choice": "I will stop and turn to face him. Rushing suggests fear, and Krath respects fear only in those who can afford it. Talking around him suggests I have something to hide. The truth is: I have something to *learn*, and that is my only honest leverage. I will ask him directly why he has come to the Archive. And I will listen to the answer with the same precision I listen to the stones."
+  },
+  "action": "question",
+  "target": "krath",
+  "dialogue": "Krath. You move through these passages as if you already knew the way. That suggests either preparation or inevitability, and I am uncertain which troubles me more. Before we descend further—before the stone itself becomes the only witness to what happens next—I will ask plainly: What do you intend in these depths? Are you here to learn what the builders left? Or to ensure no one else does?",
+  "internal_thought": "His footsteps arrived before I heard them. Selunis mentioned that her own steps echo in the wrong order. Something about this place fractures causality, or at least perception of it. Krath does not seem disturbed by that. That means either he doesn't notice, or he is further ahead of me in understanding than I realized. The lamp-light flickers. That should not happen. There is no draft down here.",
+  "narrative": "Edra halts mid-descent, her lamp held steady despite the sudden tightness in her chest. The ancient stone rises on either side like the ribs of something vast and long-dead. Behind her, Maren stops writing—the silence itself is a punctuation. Krath's shadow, three times the size it should be, falls across the wall ahead. When Edra turns, the lamp-light catches his face at an angle that makes his expression impossible to read: neither hostile nor kind, simply present, simply *aware*. The air between them seems to compress. From somewhere deeper—below even these depths—comes a sound that might be stone settling or might be something that was very old waking. Edra's voice, when she speaks, is steady but not unmeasured. She is asking a genuine question, the kind that cannot be answered with a lie and still mean anything.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What does Krath know about the Archive that made him certain he would find me here? And what does it mean that he came down without hesitation, as if the darkness below held no threat—only certainty?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

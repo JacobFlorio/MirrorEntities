@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "Krath stands in the Archive's lower depths, descended without hesitation into ancient stone. Edra and Maren are present—witnesses, archivists, obstacles or tools depending on what happens next. Something deeper than all of them is stirring. The Citadel above is claimed; the question now is what holds power over the Citadel itself.",
+        "stakes": "The Archive knows what the builders knew. That knowledge determines whether Krath holds the Citadel or whether the Citadel holds him. The sound from deeper—that is the real threat. Knowledge is power only if it does not devour the one who holds it. Edra and Maren are either vessels to be used or locks that must be broken.",
+        "relationships": "Edra respects strength. Maren records what is true. Neither has sworn loyalty. Neither has reason to refuse. Krath has earned no debt and owes none. They are neutral ground—functional, for now. The deeper sound is the only thing that matters, and they may know what it is, or they may be running from it too.",
+        "options": [
+            "Demand they speak plainly about what lies deeper—establish authority, force the answer, risk pushing them into defiance or silence",
+            "Move past them into the deeper dark without a word—assert that Krath needs no permission, no knowledge but his own boots on stone, risk walking blind into what broke the builders",
+            "Observe first—let them continue descending, follow at their pace, learn what they find before committing to action, risk appearing uncertain or weak"
+        ],
+        "choice": "Demand they speak. Krath does not negotiate with silence or mystery. The archivists have studied this place. They will answer or they will move aside. Authority must be established now, in this darkness, before the deeper thing decides the question for them. Weakness here is death. Questions without answers are useless. Move forward and force clarity."
+    },
+    "action": "speak",
+    "target": "edra",
+    "dialogue": "Stop. Both of you. What lies deeper than this. The sound you heard—it knows us. Edra, you study stone and bones. Maren, you write what the dark teaches. Speak plainly. What did the builders fear enough to seal away.",
+    "internal_thought": "The sound is not echoing. It is moving. They heard it first, which means they know what it is or they know what it eats. The lamp-light flickers wrong—not wind, something else. The air tastes like before-times. If the builders abandoned the Citadel and the Archive both, something in this depth is the reason. And it is still here. Still waking. Krath will know its name before he leaves this stone, or he will not leave at all.",
+    "narrative": "Krath's voice cuts through the compressed air of the lower chamber like an axe through rope. He does not raise it—does not need to. The lamp-light swings as Edra turns to face him fully, and in that moment of oscillation, three shadows move across the ancient stone: one cast downward, one cast backward, and one that does not belong to any of them. The sound from the depths does not repeat. It has already been heard. Waiting now is a different posture—the posture of something that knows it has been noticed and wants to be sure the noticing is complete.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "What does Krath know about what lies deeper than these depths, and why did he come to the Archive knowing exactly where we would be?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

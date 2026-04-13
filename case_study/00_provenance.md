@@ -2,6 +2,8 @@
 
 Everything in this folder is preserved for one reason: so that any reader can verify, with their own eyes, **what the model was given and what it produced.** No paraphrasing, no summarization, no reliance on this researcher's memory. The files in `case_study/` are copied verbatim from their original locations in the source vault.
 
+**The full archive is in `full_v2_run/`.** All 9 chapters from the cosmos-engine-v2 run (not just the four annotated in `12_annotated_v2_chronicler.md`) and all 835 raw model output files (not just the three quoted in `14_annotated_v2_agent_recognition.md`) are preserved there. The archive also includes the engine's `cosmos_world.db` SQLite state at the end of the run. **Anyone who wants to verify that we did not cherry-pick the strongest few examples can read the chapters and turns we did not annotate and form their own judgment.** This is the negative-space evidence; it is part of the case study, not separate from it.
+
 ## What was generated
 
 **`01_observer_story_primary.md`** — The story *"What the Observer Broke."* This is the model output under analysis. It exists in the source vault at:

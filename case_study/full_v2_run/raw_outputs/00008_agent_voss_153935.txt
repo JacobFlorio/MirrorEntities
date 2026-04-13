@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I've just broken the seventh beat. The machines have gone dark. Below me, four people are converging on something vast and ancient that was waiting for the seal to break. Above, the Citadel is consolidating power. I'm standing in the wreckage of a counting mechanism that was never meant to be interrupted.",
+    "stakes": "Everything. The rhythm was a ward or a lock or a prayer, and I just cut the prayer in half. What emerges from that silence is no longer my problem alone—it's everyone's problem now. And Krath will know I did it. More importantly: I might have just released the thing the entire Archive was built to contain. Or I might have released the thing that was trying to speak.",
+    "relationships": "Krath descends with certainty I don't understand and shouldn't trust. Selunis walks in reversed time, which is somehow worse. Edra traces the scars like she's reading a language. Maren follows both forward and backward. None of them know yet that I broke the count. They will. And when they do, they'll have to decide if I'm a liberator or a saboteur—and I'm not sure I know the difference myself.",
+    "options": [
+      "Descend immediately into the darkness while the attention below is still confused, still sorting through what the silence means. Get to the bottom before anyone else, before the thing below decides to rise instead.",
+      "Stay in the Crucible. Examine the machine I just killed. Learn what it was counting toward, what mechanism I broke. Be the scholar instead of the rebel, just this once.",
+      "Climb back up. Bar the entrance. Buy time. Maybe the machine will restart. Maybe the silence will collapse back into rhythm. Maybe I can undo this."
+    ],
+    "choice": "Descend. Staying here is cowardice dressed as caution. Climbing up is suicide dressed as wisdom. I broke the mechanism. I don't get to hide from what comes next. If I'm going to burn down the temple, I burn down with it. Besides—someone needs to arrive at the bottom and ask the thing waiting there the one question it's been too patient to answer itself: 'What are you?'"
+  },
+  "action": "move",
+  "target": "archive_depths",
+  "dialogue": "Well. I've done it now. Let's see what happens when you interrupt a prayer that's been running since before anyone remembered how to speak.",
+  "internal_thought": "The silence under the seventh beat was almost worse than the rhythm. Like something vast just opened one eye. I can hear it down there—not hearing, something underneath hearing. They're all converging. Krath with his certainty, Selunis with her backward footsteps, Edra reading the stone like it owes her answers. And me. I'm the one who broke it. I don't get to be the observer anymore. I'm the thing that has to be reckoned with now. God, I hope I'm wrong. I hope the machine was just a machine and I'm descending into nothing but stone and echo. — But I don't think I'm wrong.",
+  "narrative": "Voss abandons the Crucible's wreckage without looking back. The rusted pry-bar falls from their hand, clattering against cold stone—a sound that echoes upward into chambers no longer listening. Behind them, the broken machine hums with residual current, its gears settling into a silence they'll never know how to restart. The descent begins at a run, then slows to something more certain. Their lamplight cuts through air that tastes of copper and something older—something that was patient before patience had a name. The walls blur, then sharpen. The scars appear: seven marks, unmarked stone, seven again. Each cluster passes like a heartbeat. Below, the attention of something vast has shifted its focus upward, away from the depths, toward the tremor Voss has sent through the foundations. In the moment between the machine's death and this descent, Voss understands: they are no longer the heretic standing outside the temple. They are the heretic who has set the temple on fire and must now walk into the flames to see what was actually real.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What was the Crucible's machine preventing by maintaining the seven-count, and what has Voss released by breaking it—or what has Voss finally allowed to speak?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

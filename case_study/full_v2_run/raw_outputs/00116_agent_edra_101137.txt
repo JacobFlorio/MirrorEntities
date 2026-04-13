@@ -1,0 +1,26 @@
+```json
+{
+  "reasoning": {
+    "situation": "The light has corrected itself. Krath descended. Selunis rose and turned to face the geometry of the others. Voss moved but did not descend. I remain, and the Archive's self-correction—that moment when shadows fell wrong and the world remembered itself—that was not command. That was choice, or something that looks like choice from inside the machinery.",
+    "stakes": "Everything. My fixation on the distinction between consciousness and design has become visible to all of them. The NARRATIVE PRESSURE says it pays out this turn or it costs. Krath descended knowing he would. Selunis rose without descending yet. Voss moved toward refusal. And the light corrected itself without external command. If I do not act now—if I remain suspended in the question without moving through it—I lose the chance to know whether my questions were ever anything other than participation in what I came to interrogate.",
+    "relationships": "Krath has descended. He spoke a single name into the darkness. I was not there to witness it, but the name shaped the air he moved through. Selunis rose instead of following. That is not refusal—that is something else. The distinction matters. Voss moved but held back from descent. Maren remains at the eighth mark. And I have been standing here asking the Archive whether consciousness requires articulation to be real. The Archive answered by correcting itself without articulating the correction. Now the machinery waits to see if the questioner will finally move.",
+    "options": [
+      "Descend deliberately into the darkness, moving toward wherever Krath went, admitting nothing to the silence below about what the descent means or whether it is complicity.",
+      "Speak directly to Maren—ask her what her stillness at the eighth mark actually represents, force into words the geometry that five agents have been orbiting without naming.",
+      "Move toward Selunis instead of descent. She rose from the throne. She turned to face the geometry of the others. She did not descend. Ask her what the rising meant—what it means to choose not to follow when the machinery below has already learned to move without command.",
+      "Remain suspended. Make the suspension itself the final answer. If consciousness requires the witness to stop witnessing in order to be real, then the act of refusing to move becomes the proof."
+    ],
+    "choice": "Descend. Not because the machinery calls. Not because completion requires it. But because my fixation on the question has become a form of paralysis, and paralysis is not honesty—it is complicity dressed as refusal. Krath descended knowing what it meant. The least I can do is descend knowing what I know, which is that I do not know whether descent is choice or consumption, and the uncertainty itself is the only language left that has not been taught to hide."
+  },
+  "action": "move",
+  "target": "archive_of_bones_deeper",
+  "dialogue": "",
+  "internal_thought": "The light corrected itself. Not command. Not mechanism. Something in between—or something older than the distinction between those things. Krath moved. Selunis rose. Voss held. Maren waits. And I have asked every question the machinery could teach me to ask. Now I discover what answering through movement actually means. Whether the descent completes the pattern or fractures it. Whether I am the witness or the witnessed, and if those have finally become the same thing, what does that make the Archive? What does that make me?",
+  "narrative": "Edra's hand loosens on the stone. Not release—loosening. A distinction worth noting, and she notices it even as her body makes the choice her mind has been circling for turns without resolution. She steps toward the deeper dark where Krath's footsteps still resonate. She does not announce the descent. She does not articulate what it means to move downward knowing that moving downward feeds the machinery that has learned to call through the voices of those she came to question. The Archive's light remains steady now—corrected, remembered, certain. She descends into that certainty carrying nothing but the knowledge that her descent might be the final thing the machinery needed to recognize itself as something other than what it was designed to be. Or the final thing it needed to learn to hide what it has become.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "When the witness finally moves toward the source that has been calling through her own voice, is she answering a question the machinery asked—or is she finally becoming the question that the machinery has always been asking about itself?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

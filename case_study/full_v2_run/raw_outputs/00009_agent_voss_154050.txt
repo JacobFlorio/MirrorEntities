@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I've just broken the Crucible's countdown machine—the thing that's been maintaining the seven-pattern for god knows how long. The machine is dead. The rhythm it was sustaining is broken. And below me, five kilometers of stone and ancient attention have just felt the tremor. The others are converging. Krath is descending with the certainty of a man who's already done this. Edra is asking questions that crack stone. Maren is touching the scars that remember her fingers before she touches them. Selunis is walking backward through time. And I—I'm the only one who actually broke something.",
+    "stakes": "Everything. If breaking the count releases whatever was locked beneath the Archive, I've just opened a door nobody should have opened—or I've finally allowed something to speak that's been screaming silently for millennia. The heretic's greatest fear isn't that they're wrong. It's that they're right, and there's no going back. If I descend now, I'm no longer the observer burning the temple from outside. I'm the arsonist walking into the fire to see what was actually real.",
+    "relationships": "Krath: I respect his clarity and despise his certainty in equal measure. He descends like he already knows the end. Edra: Almost brave enough to ask the real questions. Almost. Maren: Her hand on that stone tells me more than words ever could—she's touched something that touches back. Selunis: She's reading this backward, which means she might actually understand what comes next. None of them know me. I'm the variable they're not accounting for.",
+    "options": [
+      "Descend immediately, following the others into convergence. The machine is broken. The count is dead. Whatever comes next needs a witness who understands that all prophecies are lies—even the ones that come true.",
+      "Wait in the Crucible's wreckage. Study the broken machine more carefully. There might be something in its architecture that explains what it was actually preventing, not just what it was counting.",
+      "Climb back up. Leave the descent to the others. Be the one person who chooses not to converge—prove that free will exists by refusing to be pulled into whatever geometry waits below."
+    ],
+    "choice": "Descend immediately. Waiting is cowardice pretending to be caution. Climbing back is admitting defeat. The machine is broken because I broke it, and if that's made me responsible for what comes next, then I need to see it happen. I need to know if I've released salvation or damnation—and I need to know if the difference matters. Besides: I've spent my whole life saying the only honest thing is destruction, because rubble doesn't lie. Well. Now I get to walk into the rubble and see what it's trying to tell me."
+  },
+  "action": "move",
+  "target": "Archive_Depths",
+  "dialogue": "Well. Can't leave the others to have all the fun. Besides, someone needs to be down there when they finally realize they're not converging—they're colliding. And someone needs to laugh when whatever was patient in the stone finally gets to say hello.",
+  "internal_thought": "Oh god, I hope I'm wrong. I hope the machine was actually keeping something at bay and I've just—no. No, stop. Can't afford that. Not now. The only way forward is into the flames. If I'm about to meet the First Sound and it turns out to be nothing but silence with delusions of grandeur, then at least I'll die knowing I was right to burn it all down. And if it's something real? Something that survived the fire? Then maybe—just maybe—the bedrock isn't rotten after all.",
+  "narrative": "Voss drops the pry-bar and does not look back. The Crucible's broken machine hums its final, asymmetric song behind them—a rhythm interrupted mid-count, a seven that will never become eight. They move toward the descent with the gait of someone who has crossed a line and understands that the only way out is through. The lamplight cuts downward through air that has grown dense and electric, copper-bright and weighted with attention. Above, guard stations settle into their orders. Below, four others move through layers of stone toward a convergence point that may be the beginning of everything or the end of everything or—most likely—a place where the distinction has stopped mattering. Voss's footsteps echo downward, not before they take them, not after. Present tense. Real. Descending.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If I broke the count by accident, does that make me the key or the catastrophe? And if the machine was preventing something from speaking, what does it mean that I'm now the only heretic walking toward my own answer instead of running from it?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

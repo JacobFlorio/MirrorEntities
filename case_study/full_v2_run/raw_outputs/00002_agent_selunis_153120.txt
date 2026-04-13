@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "I kneel in the Garden of Echoes, where the stone faces have been worn smooth by time itself — erased, forgotten. But behind me, the world moves. Krath descends into the Archive's deep places. Voss waits at the Citadel's threshold, reading the doors like prophecy. Edra and Maren follow the stone downward, into the oldest rooms. The vision pulses: they are converging. Not by accident. Not by choice.",
+        "stakes": "If I remain here, I lose the thread. If I move toward them, I risk arriving at the Threshold before I understand what the Threshold is asking of me. The First Sound echoes in the Archive's deep chambers — I feel it, distantly, like a word spoken before language existed. If Krath reaches it first, if he claims it as power rather than witness... the cage will close.",
+        "relationships": "Krath sees me as an obstacle or a tool — I am not sure which frightens me more. Voss understands doors; we have never spoken, but we read the same language. Edra and Maren move deeper into the bone-halls seeking records, but what they will find is older than recording. They do not yet understand that some truths are written in the stone itself, in the silence between words.",
+        "options": [
+            "Remain in the Garden, deepen the meditation here — the erased faces are trying to tell me something. The echo of my footsteps arriving before or after I take them is a message, not a mistake.",
+            "Rise and move toward the Citadel, toward the Threshold — join the convergence and bear witness to what unfolds. The visions are pulling me westward with teeth and hunger.",
+            "Move down, parallel to the Archive's descent, take a separate path into the deep places — arrive at the heart not with the others but adjacent to them, as witness rather than participant."
+        ],
+        "choice": "I must move toward the Citadel and the Threshold. The Garden is a place of asking, but the Archive — the Archive is where the answer is being written, right now, in real time. Krath descends with intention. Edra and Maren descend with questions. If I do not arrive, the meaning will be sealed in stone, and I will have failed my only purpose: to see. To witness. To speak what I see, even if it breaks me."
+    },
+    "action": "move",
+    "target": "The Iron Citadel",
+    "dialogue": "The erased faces watch me leave. They have always been watching. I turn from the spiral paths — the dust does not rise from my feet, or perhaps it rises and falls backward through time. 'I hear you,' I say to the Garden, though I do not know what I am hearing. 'I will return with the answer, or I will not return at all. Either way, the echo will know.'",
+    "internal_thought": "The vision sharpens as I move — Krath in the deep places, Voss reading the doors, the others descending toward something that was written before writing began. The First Sound is not in the Garden anymore. It has moved. Or I have been wrong about where it lives. The sky above is the color of old bone and it is pressing down.",
+    "narrative": "Selunis rises from the spiraled paths of the Garden of Echoes, her robes heavy with dust that clings like prayer. She does not look back — to look back is to become salt, to become stone, to become one of the erased faces herself. Her footsteps fall in measured rhythm, but the rhythm is wrong: each step echoes twice, once before she takes it and once after she has passed, as if time is folding around her like cloth. The sky overhead deepens from bone-color to something closer to ash. As she moves westward, the air itself seems to thin, to sharpen, to taste of copper and old iron. In the distance, the great gates of the Iron Citadel rise like teeth. Somewhere beneath them, deeper than foundations, Krath moves through shadow and Edra's lamp-light swings like a pendulum marking seconds in a clock that has been running for centuries.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "What does it mean that my footsteps arrive before I take them? Am I walking toward the Threshold, or am I walking away from it, and the directions are the same?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

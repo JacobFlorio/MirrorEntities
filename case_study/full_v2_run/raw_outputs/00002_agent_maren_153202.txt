@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Krath has arrived in the deep Archive where Edra and I are examining the pre-written stone. His shadow fills the passage. Edra has stopped and turned to face him—not with fear, but with a question forming. The air itself seems to be holding its breath, waiting to see if this encounter becomes negotiation or something else. I am the witness to this moment, which means I am also complicit in it.",
+    "stakes": "Everything hinges on what I choose to record next. If I write this as conquest, I make Krath the protagonist. If I write it as violation, I make myself judge rather than observer. If I write nothing, I become a coward and the moment disappears. But there is another stake: Krath came here knowing I would be here. Knowing Edra would be here. That certainty suggests he already knows something about what these depths contain—or who controls access to it. My chronicle is being written by someone else's hand.",
+    "relationships": "Edra I respect as a fellow seeker of truth, though we disagree on what counts as evidence. Krath I respect as a necessary force, which is not the same as liking him. He is the one who makes history *move* rather than merely accumulate dust. But respect for necessity is not trust. I owe him nothing except accuracy. Accuracy may be the most hostile thing I can offer.",
+    "options": [
+      "Speak—demand to know what Krath wants here, make myself visible as a negotiating presence rather than a shadow, claim ground through questions",
+      "Observe and write—stay silent, position myself as the chronicler only, let Edra and Krath define the terms, record whatever happens with perfect fidelity",
+      "Question—ask about the stone, about the pre-writing, about why he came to find us here specifically, use curiosity as a weapon that doesn't require choosing sides"
+    ],
+    "choice": "Question. It is the only move that lets me stay true to what I am—a witness who refuses to pretend neutrality while refusing also to hide. Questions are violence too, but honest violence. And I need to know if Krath came here seeking knowledge or seeking to control who has access to it. The difference will determine everything that follows."
+  },
+  "action": "question",
+  "target": "krath",
+  "dialogue": "Krath. You move through these depths as though you have walked them before—or as though something down here has been expecting you to arrive. What did you come seeking? Not the Citadel. Not unification. Something in the Archive itself. And I need to know: do you want us to find it, or do you want to make sure no one ever records what we find?",
+  "internal_thought": "I am taking a risk. By asking directly, I am saying: I see you. I see that you are not here by accident or desperation. You are here because you made a choice to come to this exact place where the oldest records are kept. That makes you either a seeker like us or something worse—someone who understands that controlling history is the same as controlling the future. The sound from deeper down hasn't come again. Whatever it was, it was waiting for something. For him, perhaps. I should have been more afraid. Instead I am taking notes.",
+    "narrative": "Maren steps forward, her lamp-less shadow merging with Krath's as the lamp-light swings. Her voice carries the particular steadiness of someone who has been writing in the dark long enough to trust her own sight. The question hangs between them like something suspended in amber—a thing perfectly preserved, perfectly sharp. Edra watches without lowering her lamp, and for a moment the three of them are locked in a geometry of light and shadow and unspoken weight. From deeper still comes that sound again: not stone settling. Something older. Something that knows its own name.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What does Krath know about what lies deeper than these depths, and why did he come to the Archive knowing exactly where we would be?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

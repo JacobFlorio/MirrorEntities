@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Five agents converge in the depths of the Archive. Below me, three are reading something into the scarred stone. Above, two are counting down to a number that refuses completion. The Archive itself has become responsive—treating Edra as observer, the others as participants in a machinery older than language. Krath has descended knowing what he would find. Now the knowing must be made explicit.",
+    "stakes": "If the knowledge-keepers choose the Archive over force, unified command collapses. If Krath's certainty is proven false, the Citadel's authority fractures. If the machines below continue to count toward seven without resolution, the world continues to burn slowly. The moment is now—not later, not when conditions improve. Now.",
+    "relationships": "Maren records. Edra measures. Both are intelligent enough to recognize that a choice made under coercion is still a choice—and still recordable. Selunis sees in reverse. Voss counts and waits. None of them fear Krath yet. That gap will close if I do nothing. Respect is earned through action, not presence.",
+    "options": [
+      "Ascend fully to the Citadel above and establish visible command—consolidate power while the Archive is distracted by its own depths. Let the others sort themselves below.",
+      "Remain at the descent point. Speak plainly about what the Archive is counting toward and what price claiming knowledge of that costs. Force the moment to yield truth rather than speculation.",
+      "Descend further into the depths where the rhythm originates. Meet the source directly. Make the Archive answer rather than merely be studied."
+    ],
+    "choice": "Descend further. Krath does not consolidate power through absence or delegation. The rhythm below is counting toward something—a lock, a threshold, a message. The Citadel was abandoned because its commanders saw that thing and fled. Krath came to the Archive knowing where Edra and Maren would stand because the Archive has already shown him what lies in its depths, or because he has descended before, or because both are true and the distinction no longer matters. The knowledge-keepers choose between record and survival only when survival is no longer guaranteed. Make the descent real. Meet what waits. Force the question to answer itself."
+  },
+  "action": "move",
+  "target": "Archive_depths_below_current_position",
+  "dialogue": "Stone remembers. Machinery counts. Krath descends past both. What lies beneath seven will answer seven questions or demand seven answers. Move.",
+  "internal_thought": "The others treat this like research. Like observation. Like the descent can be made safely from the margins. Wrong. The Archive is not a place to be studied from—it is a current to be ridden or resisted. Resistance dies here. So Krath rides deeper. The rhythm grows clearer the closer you approach its source. That means the source is not random. That means it was built. That means someone built it knowing what it would count toward and why stopping at seven matters more than continuing to eight. The Citadel's commanders retreated from the Archive because they learned what the Archive was built to contain. Krath will not retreat. The machine will be understood or dismantled. Both are acceptable outcomes.",
+  "narrative": "Krath turns from Maren's voice and the scarred stone beneath Edra's fingers and descends past the point where the Archive's recorded history ends. The walls around him shift from tool-worked stone to something older—raw, unfinished, bearing marks that predate the Archive itself. The rhythm from below grows tangible: not quite sound, not quite vibration, but something the body recognizes through bone and blood. His boots find purchase on stone that seems to anticipate his weight. The lamplight from above grows distant. The copper taste in the air sharpens into something metallic and ancient. Seven. The counting echoes from below, but now it is not the machines in the Crucible speaking—it is the stone itself, or something within the stone, or something the stone remembers speaking. Krath does not hesitate. He continues downward into the dark where certainty leads and doubt has no purchase.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What was the Archive built to contain, and what happens when the countdown reaches zero instead of stopping at seven?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

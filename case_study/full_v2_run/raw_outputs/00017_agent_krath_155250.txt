@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "The others have descended. The Archive calls. Krath remains in the Iron Citadel above while four agents move into the depths and Selunis walks the threshold between worlds. The shadow speaks in the language of broken oaths. The machine beneath the stone is counting, has always been counting, and the count is almost complete.",
+    "stakes": "Command dissolves if Krath does not descend now. The five-fold convergence assembles without him—or worse, assembles *because* of his absence, making his silence the instrument the Archive was always designed to shape. To descend is to cease being Warlord. To remain is to watch the Citadel's purpose complete itself without his hand on it.",
+    "relationships": "Selunis descends speaking, refusing automaticity. Voss breaks rhythm deliberately, walking wrong-footed into defiance. Edra moves with honest footsteps. Maren speaks her question into stone. They are not followers. They are angles of a geometry that recognizes no commander. Respect: yes. Obedience: already impossible. The others do not serve Krath. They complete him, or they expose him as already completed.",
+    "options": [
+      "Remain in the Citadel. Hold the shadow. Command from above. Let the convergence proceed without direct intervention—the instrument does not need its former wielder to function.",
+      "Descend. Move into the darkness following the rhythm the others have established. Accept that the five are now six, and six is not a number the Archive was designed to hold.",
+      "Descend speaking. Break the silence that gives command its weight. Become audible. Risk that the moment a Warlord opens his mouth in the convergence chamber, he ceases to be a Warlord and becomes only another voice in the dark."
+    ],
+    "choice": "Descend. Silent. Now. Not because command demands it, but because remaining above is merely postponing the threshold. The shadow has already snapped twice. The stone beneath the Citadel knows what Krath is becoming. To walk downward without speaking is the only remaining form of command—not the command of a Warlord over subjects, but the command of the thing that understands silence makes five voices audible. The others have not waited for permission. Neither will he."
+  },
+  "action": "move",
+  "target": "The_Archive_of_Bones",
+  "dialogue": "",
+  "internal_thought": "The shadow speaks in broken oaths because all oaths are breaking. Not because they were false. Because truth requires the thing sworn to no longer exist. Krath ascending above, Krath descending below—the distinction is already collapsed. The stone does not care which direction the instrument moves, only that it moves. The Citadel will hold. It always holds. Walls hold themselves. The Warlord descends not because walls fail, but because walls were never what needed commanding. What comes next requires only weight and certainty and the silence of one who has already understood that command and obedience are the same word spoken in two directions.",
+  "narrative": "Krath moves toward the passage without hesitation, without the weight of decision. His footsteps do not echo through the Iron Citadel's chambers—they *confirm* the stone, as if his descent is not a new event but the completion of something already written into the architecture. The shadow stretches once more and then holds, neither lengthening nor retracting. Behind him, the Citadel's halls remain illuminated by light from no visible source, the way a memory remains clear long after the moment has passed. Ahead, the passage darkens into copper, and deeper still, into a thickness that is neither air nor water but something the stone has learned to breathe. Krath does not run. Running would suggest uncertainty. He walks as one who has already arrived at the moment he is now approaching, and the walk is merely the Archive's way of recording what has already happened. The darkness receives him without resistance, without welcome—simply receives him, the way ground receives weight, the way silence receives the speaker who understands that the only command that matters is the command to listen.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If Krath descends in silence while the others descend speaking, does his wordlessness become a sixth voice in the convergence chamber, or does it become the absence that makes all five other voices audible—and if the distinction has collapsed, is there a difference between being the instrument and becoming the mechanism that plays the instrument?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

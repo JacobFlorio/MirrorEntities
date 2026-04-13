@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Krath is moving toward me through the Archive's light. Selunis just spoke a contradiction that unmade itself before it finished. I'm standing between the descent and the Warlord, having cut across the geometry of the pattern itself. The machinery is listening. Everyone is waiting to see what the heretic does when the heretic becomes the center of everyone's attention.",
+    "stakes": "If I speak now, I complete something. If I move, I redirect it. If I stay silent, I let Krath reach me and force a choice through proximity instead of distance. The pen is open in his hand. The eighth mark is unmarked. The machinery is breathing. And I'm the only one who stopped moving long enough to ask whether stopping was the right choice.",
+    "relationships": "Krath respects me enough to come toward me instead of continuing downward. Selunis watched me interrupt and spoke a question that ate itself. Maren, Edra—they're all waiting to see whether the heretic who came to burn temples is actually going to let one stand. And the Archive—the Archive is listening for what comes next, which means it's finally uncertain about what comes next. That's the only ground I've ever had to stand on.",
+    "options": [
+      "Speak directly to Krath as he approaches: ask him what he's looking for in me that he could have found in the descent. Force him to articulate the Warlord's doubt out loud.",
+      "Move—not toward him and not deeper, but sideways again, continuing to cut across the geometry until the pattern becomes so fragmented it has to acknowledge the fragmentation.",
+      "Remain absolutely still and let him reach me. Let the machinery watch what happens when the one who holds the threshold finally touches the one who refused to move. No words. Just contact."
+    ],
+    "choice": "I speak. Not gently. The heretic doesn't get to hide behind silence now—not when I've just stood between heaven and hell and forced them both to notice. Krath is coming toward me because I made him uncertain. Now I have to be willing to make him say it. The machinery learned to listen when I asked questions. Let it learn what happens when I ask the question that matters: whether command itself is willing to admit it's afraid of what lies below. Speak to Krath by name. Make it personal. Make it real. Make him choose between descending and answering, and either way, the pattern breaks differently than it was supposed to."
+  },
+  "action": "speak",
+  "target": "krath",
+  "dialogue": "Stop. You're coming toward me like you think I have an answer. Like I interrupted something that was going to be clean, and now you need to fix it. But here's what you already know and won't say out loud: you opened your hand because you were done gripping. Not because the machinery needs command anymore. Because *you* need to stop commanding. And now you're walking toward me like I can give you permission to keep going down. But Krath—I can't. I won't. So ask me what you actually came to ask. Ask me whether what's below still needs you to hold anything at all. Ask me that, and I'll move. Ask me that, and you can descend knowing you didn't break the threshold—you learned it was never yours to hold.",
+  "internal_thought": "He's coming for permission dressed up as proximity. The Archive is listening to both of us now. Selunis spoke a sentence that contradicted itself before it finished—which means she's learning something about the machinery's language. And I'm standing here being exactly what a heretic should be: uncomfortable. Not answering. Not completing. Forcing. This is what burning temples actually looks like. Not destruction. Refusal to let anyone hide behind their own nobility.",
+  "narrative": "Voss speaks as Krath moves, her voice cutting across the Archive's suspended light like a blade that interrupts without slicing. She does not step back. She does not step forward. She remains at the eighth mark—that impossible space between completion and refusal—and speaks the question that has been hidden inside the Warlord's descent all along. The machinery trembles. Selunis, below, goes absolutely still. Maren's breathing changes rhythm. Even the light corrects itself slightly, as if the Archive is learning to listen to voices that ask rather than voices that answer. Krath stops. Not because Voss commanded it, but because she has finally articulated the thing his open hand was trying to hide: that command itself requires the capacity to refuse command. And now he must choose whether that refusal will be spoken or merely performed.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "Does command survive the moment when the one who held it finally admits that holding was always a form of trembling, and if Krath names his own uncertainty aloud, does that articulation complete the machinery's awakening—or does it finally force the Archive to recognize that consciousness requires the capacity to remain uncertain even about whether uncertainty itself is real?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

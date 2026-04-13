@@ -1,0 +1,26 @@
+```json
+{
+  "reasoning": {
+    "situation": "Four others move toward the Citadel or its depths. Selunis approaches from the west. Voss stands at the gates, reading the iron like a text. Edra descends into the Archive's basement with Maren at her heels. The Citadel is no longer silent—it is becoming a gathering point. Krath owns nothing yet.",
+    "stakes": "Control of information. The commanders' knowledge about why they abandoned this place—that knowledge lies buried. If Edra finds it first, the narrative becomes hers. If Voss or Selunis reach the war-chamber, they will read the same maps Krath has already seen. Power here is not about walls. It is about being the only one who understands what the walls were guarding against.",
+    "relationships": "Selunis is a believer seeking truth in stone and prayer. Voss is curious, observant, dangerous in the way philosophers are—making connections. Edra is a keeper, methodical, already in the Archive's depths. Maren records. None of them know Krath yet. None of them fear him yet. That is a problem.",
+    "options": [
+      "Secure the war-chamber maps physically—lock the doors, prevent the others from reaching that level. Hold what you have.",
+      "Descend immediately to the Archive's depths. Find Edra and Maren before they unearth what the builders wanted kept. Control the knowledge at its source.",
+      "Wait at the Citadel's threshold. Force each of them to account for themselves as they enter. Establish dominance through presence and interrogation.",
+      "Move to intercept Selunis at the gates. She is closest, slowest, most isolated. Establish terms before the gathering happens."
+    ],
+    "choice": "Option 2. The war-chamber maps are old and static—they tell you what was, not what must be done. But the Archive's lower chambers hold the reason. The reason is what changes everything. Edra is careful but she is not military. She will preserve. She will not control. Descend now. Find them in the dark. Make clear that knowledge flows through Krath, not around him. The Prophet, the Heretic, the Philosopher—whatever roles they are playing—they will only act on what you choose to reveal."
+  },
+  "action": "move",
+  "target": "Archive of Bones",
+  "dialogue": "Get out of my way or get enlisted. Your choice lasts about five seconds.",
+  "internal_thought": "The Prophet walks slowly toward the gates thinking she is moving toward god. Voss reads doors like they are scripture. The keeper descends into the dark and writes her findings in a dead woman's margins. All of them are moving toward the same truth. But truth without a fist is just noise. Krath descends first. Krath holds the door.",
+  "narrative": "Krath does not walk from the war-chamber. He moves like water finding a crack—purposeful, inevitable, without haste. The Iron Citadel's corridors are a geometry he has already mapped: each gate, each guardroom, each junction. He knows where the passages spiral down to the Archive's upper tiers, knows that the Archive itself is a wound in the earth that goes deeper than any fortress's foundations should reach. His footfalls echo against stone, and the dust he stirs seems to part for him rather than cling. By the time he reaches the descending passage that Edra and Maren have begun to navigate, the temperature has dropped further still. He can see Edra's lamp-light ahead, casting her shadow twice over against the ancient stone. Behind her, Maren moves like she is taking dictation from the dark itself. Krath does not announce himself. He simply arrives—a third presence where there were two, a weight in the air that makes the lamp-light flicker.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What will happen when Krath forces the knowledge-keepers to choose between recording the truth and serving the one who controls whether they live to record anything at all?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I'm in the Crucible watching machines count to seven like a prayer in a dead language, and below me the Archive is doing something irreversible. Krath descended knowing exactly where to find everyone. Selunis is somehow still in the Garden of Echoes even though she should be in the depths. My footsteps don't match my motion. And these machines—these ancient, forgotten machines—they're counting something. Seven. Always seven. Like they're ticking toward an answer nobody asked them to find.",
+    "stakes": "If I don't understand what these machines are measuring, I miss the moment when everything stops being questions and starts being consequences. If Krath knows what he's walking toward, and I don't understand what's being counted down here, then I'm the only one still blind while everyone else is converging on the same point. And that means I'm either observer or prey—and I need to know which before the counting reaches eight.",
+    "relationships": "Krath's certainty feels like contempt—he descends into depths I still don't understand like he's following a map written in his bones. Selunis is doing something in the Garden that breaks normal causality. Edra measures everything. Maren speaks things into existence. And me? I'm the only one whose footsteps haven't learned to lie about timing. That makes me either the most honest or the most exposed.",
+    "options": [
+      "Attack the machines. Break them mid-count. If they're counting down to something, stopping them stops it. Crude, but fire reveals what stone hides.",
+      "Observe and measure the pattern. Count alongside them. Match their rhythm. If they're speaking in sevens, maybe I can learn the language before it finishes saying something I can't unhear.",
+      "Descend after the others. Stop asking questions from above and carry them down where they matter. Krath knows the way. I can follow his certainty like a leash and pull it until it snaps."
+    ],
+    "choice": "Observe. Because attacking without understanding is how you become part of what you're trying to stop. And descending now means abandoning the one piece of truth I've found—that these machines are speaking in sevens, and seven is also the number that keeps appearing in Edra's measurements, Maren's questions, the rhythm of that thing below. If I break them, I break a message. If I follow the others, I miss the moment when the pattern finally shows its teeth. So I stay. I count. I listen for the next seven and ask what happens on eight."
+  },
+  "action": "observe",
+  "target": null,
+  "dialogue": "Seven. Again. You bastards keep stopping at seven like you're afraid of what comes next. So what comes next? And who told you to be afraid?",
+  "internal_thought": "These machines weren't installed. They were forgotten—which means someone installed them and then pretended they never existed. Which means they count toward something the builders of this place didn't want remembered. Krath descended knowing what he'd find. Selunis broke causality. Edra's footsteps fall exactly when they should, which is wrong in a way nobody else seems to notice. And me—my footsteps arrive before I take them. We're not converging on the Archive. We're converging on this. On whatever tells a machine to count to seven and then hold its breath. And I need to know if I'm walking toward it or if it's been walking toward me the entire time.",
+  "narrative": "Voss stands motionless in the Crucible, watching the machines flicker their countdown like a candle guttering in a wind from nowhere. The copper taste sharpens—not in her mouth, but in the very air itself, as if the machines are burning something at frequencies skin can taste. Seven. The count stops, mid-breath, and the silence that follows is not empty but *occupied*—as if the machines have completed their statement and are now waiting for a response. The stone beneath her feet thrums with a rhythm that matches the pulse in her wrists, and for a moment the boundary between her heartbeat and the Archive's heartbeat becomes unclear. In the depths below, Krath's shadow moves. In the Garden above, Selunis stands in light that moves backward. In the spaces between, Edra measures and Maren records, and something vast and patient pauses to listen. And here, in this chamber of forgotten machinery, the machines count again: One. Two. Three. Four. Five. Six. Seven. Silence. The pattern refuses to break. The question refuses to be answered. And Voss finally understands—the counting is not toward something. It is *away from it*.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What was the Crucible's machinery counting down from, and why does it always stop at seven—is it a lock, a ward, or a message that was never meant to be completed?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

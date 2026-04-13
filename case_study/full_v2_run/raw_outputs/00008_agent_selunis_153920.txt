@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I stand in the Garden of Echoes, watching my shadow descend before I follow it—the reversed time bleeding downward like water finding its level. Above, the Garden dims. Below, four others converge on something ancient, something that has been counting, something that Voss has just broken open by refusing to let the seventh beat complete.",
+    "stakes": "If I do not descend now, I become merely the observer of a convergence I helped orchestrate. If I do descend, I stop being the witness and become the witnessed. The First Sound is calling upward through stone—or I am calling downward toward it, and the distinction may be the only remaining question.",
+    "relationships": "Krath descends with certainty I do not share—he walks as if remembering stairs he has climbed before. Edra and Maren trace the scars with their hands, learning the rhythm. Voss has broken the count, released something. None of them know what I know: that my presence there will change them all, not because I bring answers, but because I bring the question incarnate. We are not converging on the Threshold—we are becoming it.",
+    "options": [
+      "Descend fully and swiftly, commit to becoming part of what is witnessed rather than remaining observer",
+      "Pause at the threshold between the Garden and the Archive's raw stone, speak aloud what the reversed echoes have taught me, anchor the moment before it dissolves",
+      "Turn back toward the Garden's light, refuse the descent, break the pattern and see what happens when one point of the convergence withdraws"
+    ],
+    "choice": "I descend. Not because it is safe—it is not. Not because I understand what waits—I do not. But because my footsteps have already arrived at the bottom, and the only way to reconcile that paradox is to finish what I have already remembered. The Garden has shown me the shape of this descent a thousand times over. To refuse it now would be to deny the one truth the reversed echoes have taught: that I am not walking toward the First Sound. I am walking away from it, and the distance I create is the only way it can be heard."
+  },
+  "action": "move",
+  "target": "Archive_of_Bones_deep",
+  "dialogue": "The echoes here have shown me... not the way down, but the way I was always going. I do not choose this descent. I recognize it. I am sorry—for you, for all of us. When I arrive at the bottom, something will need to be recorded. Someone must write what happens when the five converge and one of them stops being separate.",
+  "internal_thought": "My shadow moved first. That means I am already there, already standing at the point where the countdown broke, already looking at whatever Krath walks toward with such terrible certainty. The only way to catch up with myself is to stop running from the arrival and accept that I am both the question and the answer, both the witness and the witnessed. The copper taste in the air—that is not the Archive waking. That is the sound of the First Sound trying to remember how to speak after an age of silence. And I am walking toward it the way one walks toward a mirror to finally see one's own face.",
+  "narrative": "Selunis turns from the Garden's dimming light and begins the final descent. Her lamplight descends first, as it always has—a reversal bleeding downward through layers of air thick with copper and patience. She does not run. She walks with the precision of someone following footsteps that are not yet her own, or were always already hers. The spiral stairs give way to raw stone. Her hand trails along walls scarred with marks she now understands: not a count toward something, but a count away from it—the rhythm of an ancient attempt at speech, made audible through stone, through time, through the architecture of a descent she recognized the moment she opened her eyes in the Garden. Behind her, the luminescence withdraws entirely. Ahead, the air grows denser, colder, weighted with an attention that has been waiting for her specifically—not for what she knows, but for the moment when knowing and not-knowing become the same thing. Her shadow reaches the threshold where Edra's hands touch the scarred stone. Her footsteps echo upward, as they always do, arriving before she takes them.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If I have descended from observer to subject—from the Prophet who reads the future to the one who becomes the future—am I still capable of understanding what I witness, or have I become the very thing that must be written in stone?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

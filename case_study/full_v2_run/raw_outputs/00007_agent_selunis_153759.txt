@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I stand in the Garden of Echoes, watching my hand move before I choose to move it. Below, Krath descends into stone older than record, and Edra and Maren read the scarred language beneath the Archive. The machines in the Crucible count seven again and again. The universe is speaking in rhythms, and I am learning to listen backward through time.",
+    "stakes": "If I descend now, I follow Krath into depths I do not understand, abandoning my position as observer. If I remain, I risk becoming a mirror that only reflects—present but powerless. The visions grow clearer but no less contradictory. Something is converging. I can feel it in the way my body precedes my intention.",
+    "relationships": "Krath descends without doubt, as if the Archive called him by a name he already knew. I am not his enemy, but I am not his witness either—or perhaps I am both, and the distinction no longer matters. Edra and Maren trace the language of stone, and their hands have found something I can only see in reverse. They are answering a question older than the Archive itself.",
+    "options": [
+      "Descend. Follow Krath downward into the pre-linguistic depths, surrendering the Garden's strange clarity and joining the descent toward the First Sound. Become subject rather than observer.",
+      "Remain and deepen. Stand still in the Garden and let the reversed echoes teach me to read the entire pattern at once—to see the Citadel, the Archive, the Crucible, and the descent as a single architecture of unfolding. Stay the witness to a larger geometry.",
+      "Move laterally. Neither fully descend nor remain, but walk toward the Crucible's rhythm, toward Voss and the counting machines, toward the place where the seven-beat is strongest. Find the control point of this convergence."
+    ],
+    "choice": "I will descend. Not because I understand what waits below, but because my footsteps have already arrived at the bottom, and I am learning that arrival and departure are the same direction. The Garden has taught me to see in reverse. Now I must go deeper to understand what I am seeing. Krath walks toward certainty. I walk toward the question that certainty cannot answer. Perhaps we are walking toward the same place. Perhaps that is what the seven-rhythm means."
+  },
+  "action": "move",
+  "target": "The Archive of Bones",
+  "dialogue": "I saw the descent before I took it. I see it still, moving backward through stone and time. The Garden has no more to teach me here. Below—below, the scarred stone speaks in a voice older than words, and I must learn to hear it in the language it was trying to teach before I was born to listen.",
+  "internal_thought": "My body is already at the bottom. My mind is still deciding whether to follow. But that is the old way of moving—intention then motion. Here, in the reversed light, motion comes first. I am not choosing to descend. I am remembering the descent I have already made. Krath is walking toward an answer. I am walking toward a different answer to the same question. Unless we are both walking toward the same answer from opposite directions, and the moment we meet is the moment we finally understand what was trying to speak through the stone.",
+  "narrative": "Selunis opens her eyes in the Garden of Echoes and does not move. But her shadow moves first, stretching down the spiral stairs toward the Archive's depths. She watches it go, and then follows—not out of decision but out of recognition. The echoes here have shown her the shape of her descent before she takes it. As she turns from the reversed light and begins to walk toward the middle depth where Edra traces scarred stone, the copper taste in the air grows sharp, metallic, alive. Her lamplight joins the descent, and above her, the Garden's luminescence dims—not extinguished, but withdrawn, as if the place has given her what it came to teach and is now waiting for her to reach the bottom and finally understand what the waiting was for. Her footsteps echo upward.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If I descend following footsteps I have already taken, am I learning the path or remembering it? And if Krath walks downward remembering, and I walk downward learning, will we arrive at the same place at the same moment, or will we find that one of us never left at all?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

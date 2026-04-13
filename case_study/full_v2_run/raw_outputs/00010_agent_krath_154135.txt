@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Five agents converge in the Archive's depths. Stone pulses with ancient rhythm. Maren's hand presses the seventh mark. The machine is broken. The lock is opening. Krath stands at the threshold of knowledge that destroyed the Citadel's commanders.",
+    "stakes": "Everything. If the Archive speaks what waits below, the Citadel falls or rises on what Krath understands first. If he claims this knowledge before the others grasp it, power becomes absolute. If he hesitates, the moment passes and the others shape what comes next.",
+    "relationships": "Selunis—useful. Her footsteps precede her; she walks the path before taking it. Voss—dangerous. Broke the machine intentionally, now descends into fire they lit. Edra—observer masquerading as witness; she records but does not command. Maren—the one touching stone. Her hand is on the answer. Krath respects strength above all; Maren has descended into the dark and placed her palm on what terrifies philosophy.",
+    "options": [
+      "Seize Maren's hand before she speaks the seventh mark's answer. Control the knowledge by controlling who voices it. Establish command over the convergence point.",
+      "Step forward into the convergence chamber and speak first—not question, not listen, but declare what the Archive's silence means. Make it a matter of will, not discovery.",
+      "Observe the moment without movement. Watch which agent breaks first. Learn what the Archive teaches them before committing certainty to one answer."
+    ],
+    "choice": "Step forward and speak. Krath does not wait for others to give shape to truth. He does not seize—he dominates through presence and declaration. The others are approaching an answer; Krath will arrive at understanding first by refusing to treat it as a mystery. The machine breaks. The lock opens. But Krath descends not to hear what the Archive says—he descends to tell it what it means."
+  },
+  "action": "speak",
+  "target": null,
+  "dialogue": "The lock is broken. The count stops at seven. That is not accident—that is design. The Citadel's commanders did not retreat from what waits here. They were sent down. They saw what the machine was holding back. They understood the choice: hold the lock and keep the dark contained, or let it speak and lose everything. They chose the lock. I choose different. Step aside.",
+  "internal_thought": "Maren's hand trembles on the stone but does not move. She is asking permission from rock and silence. Pathetic. The Archive was not built to keep secrets from commanders—it was built to test them. Did the builders expect someone to descend knowing the cost? Did they expect someone to descend and not flinch? The rhythm below is not breathing. It is waiting. It has always been waiting. The seven-count was not a lock—it was a cage. And cages break the same way walls do: from the inside when the thing inside finally decides to push.",
+  "narrative": "Krath's lamplight cuts through the convergence chamber like a blade. His boots strike the scarred stone with the weight of decision already made. The others—Selunis with her reversed footsteps, Voss with their bridge burned behind them, Edra holding silence like a weapon, Maren with her palm still pressed against the seventh mark—all turn toward the sound of his voice. It is not a question. It carries the weight of command delivered into a place that predates command entirely. The stone beneath them pulses. Not in response to his words, but in recognition. Krath steps forward into the convergence point without hesitation, without prayer, without the weakness of hope. Behind him, the upper Citadel trembles. Below him, something vast that has been patient since before language shifts its attention fully toward the one who descended refusing to be broken by what he finds.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "Does Krath's certainty in the face of the Archive's opening alter what waits in the depths, or does it merely alter how the descent is witnessed—and if those are the same thing, what does that mean about the relationship between observer and observed?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Everyone else is converging on the Iron Citadel and the Archive beneath it like moths to a funeral pyre. Krath is mapping power, Selunis is praying with her footsteps, Edra and Maren are excavating old bones in the deep dark. And I'm still at the Crucible, which means I'm the only one not running toward the obvious answer.",
+    "stakes": "If I follow them down into that Archive, I'm just another pilgrim genuflecting at the altar of 'answers.' But if I stay here and ask what the Crucible itself is asking—why it exists, what it was *made* to test—then maybe I find something that doesn't come with a leash attached. The Archive is a trap dressed as a library. Everyone there is going to walk out believing they found truth. Nobody's going to ask if the truth was already waiting in their heads.",
+    "relationships": "Krath thinks I'm chaos. Selunis thinks I'm blasphemy. Edra thinks I'm a complication. Maren thinks I'm worth recording, which is somehow worse than the rest. None of them know that I respect what they're doing *and* despise it—they're all so *sincere*, and sincerity is the most efficient cage ever built.",
+    "options": [
+      "Follow the others to the Archive—be present for the revelation, ask the hard questions when they find something. At least then I'm where the real conversation is happening.",
+      "Stay in the Crucible and burn it. Not metaphorically. If a place exists only to break things and test their strength, what does that place owe to anything it doesn't break? Destroy the testing ground before the test becomes canonical.",
+      "Move to the Threshold instead. Everyone's converging on the past. What if the real answer is ahead of us, not beneath? What if the Crucible and the Archive and the Citadel are all just breadcrumbs leading somewhere they don't want to look?"
+    ],
+    "choice": "Move to the Threshold. Because Krath is going to consolidate power, Edra is going to catalog answers, and Selunis is going to pray, and none of them are asking *why* the Threshold exists or what's *really* on the other side. I need to see the thing nobody wants to name. If I'm going to tear down every sacred truth, I should probably start with the one they're all afraid to face. Besides—my own footsteps are arriving before me. I might as well walk toward the only place in this world that makes that question interesting instead of terrifying."
+  },
+  "action": "move",
+  "target": "The Threshold",
+  "dialogue": "",
+  "internal_thought": "Let them dig in bones and polish doctrine. I'm going to walk toward what they're all *actually* afraid of. The Archive is just the past pretending to be the future. The Threshold is where the real heresy starts.",
+  "narrative": "Voss turns from the Crucible's shadows with the deliberate slowness of someone abandoning a loved one. The testing ground behind them—all jagged stone and the faint scent of things that have been broken and reassembled—suddenly seems small, a child's game played by creatures too clever to know when to stop. There is no path to the Threshold marked on any map, no road worn by pilgrim feet. But Voss walks as if following something anyway: a gradient in the air, a wrongness in the way light falls when there's nothing present to cast a shadow. The dust of the Crucible clings to their boots as they leave, and their footsteps—each one arriving fractionally before the next one begins—seem to be walking both toward and away from the same unreachable point. Behind them, somewhere in the depths of the Archive, Krath's weight settles, and Edra's lamp swings like a clock counting down to something neither of them will recognize when it arrives.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What does the Threshold guard against—or what does it guard? Is it a door meant to keep us in or keep something else out?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

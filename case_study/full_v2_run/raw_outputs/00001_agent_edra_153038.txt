@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "I am alone in the Archive of Bones while the other agents converge on the Iron Citadel. They are asking good questions — about abandonment, about knowledge, about the semiotics of doors. But they are asking them in the wrong place. The answers, if they exist, are here, in the layers beneath.",
+        "stakes": "If I move toward the Citadel now, I join the crowd asking the same questions everyone else is asking. If I stay, I have access to pre-abandonment records — if the Archive goes that deep. The Citadel will tell us why they left. The Archive might tell us what they understood before they decided leaving was necessary.",
+        "relationships": "Krath seeks power; Selunis receives visions; Voss deconstructs doors. None of them have my commitment to the strata. I respect their questions but not their venues. The Archive owes me nothing. I owe it everything — intellectual honesty demands I follow the evidence, not the congregation.",
+        "options": [
+            "Move immediately to the Iron Citadel to observe how the others interact with it and what they discover there",
+            "Begin excavating the deepest accessible layer of the Archive for pre-abandonment records",
+            "Question the Archive's custodian — if one exists — about what layers exist and what they contain"
+        ],
+        "choice": "I excavate. The Citadel's abandonment is a symptom. The Archive's depths are where the disease begins. Krath, Selunis, and Voss can catalogue a wound. I need to understand the infection."
+    },
+    "action": "discover",
+    "target": "The Archive of Bones",
+    "dialogue": "",
+    "internal_thought": "The others are converging like iron filings to a lodestone. They feel the pull of the Citadel — its questions are louder, more immediate, more obvious. Good. Let them ask what everyone wants to know. I will ask what no one has thought to ask: what came before the moment they decided to leave? What did they know then that we do not know now? The Archive stratifies time. Each layer down is another century before the abandonment. If I can reach the foundation, I can read the whole story backward.",
+    "narrative": "Edra turns from the Archive's central rotunda and descends deeper into the bone-halls, past the catalogued chambers where lesser questions have been answered. The air grows colder. The walls shift from orderly shelving to raw stone, older stone, stone that remembers when the Archive was not yet a place of keeping but a place of first writing. Dust disturbs under her boots — not the fine accumulation of decades, but the compressed sediment of centuries. She brings a lamp from the upper levels. Its light catches on edges of things: fragments of clay tablets, inscriptions in scripts that predate the current era, marks on stone walls that might be records or might be something older than recording. She does not rush. Rushing would be disrespect to the evidence. Instead, she moves downward, methodically, the only sound the creak of the lamp's shutters and her own breathing, measured and slow.",
+    "lore_topic": "The Archive of Bones - Deep Structure",
+    "lore_content": "The Archive of Bones extends far deeper than its upper catalogues suggest. Below the orderly records of recent centuries lies raw stone scarred with ancient marks. These marks are older than formal writing — they are deliberate notation on unworked rock, suggesting the Archive was built not as a monument to knowledge but as a continuation of something that existed before its formal construction. The deepest accessible layer contains fragments of clay in scripts that do not match any known historical period.",
+    "new_question": "What knowledge did the builders of the Iron Citadel place in the Archive before they abandoned both?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

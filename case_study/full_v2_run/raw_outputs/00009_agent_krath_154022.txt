@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Krath has descended into the Archive's depths, following the other four down past orderly records into raw stone. The Crucible's rhythm is broken. Something vast and patient below has shifted its attention upward. All five agents are converging on a single point, moving through time in ways that no longer follow simple causality.",
+    "stakes": "If Krath reaches the source before understanding what awaits, certainty becomes liability. The commanders who abandoned the Citadel saw something they could not fight. The choice now is whether to push deeper and confront it, or consolidate surface power and seal the descent behind him. One path leads to dominion. The other leads to the same knowledge that made earlier commanders abandon everything.",
+    "relationships": "Edra, Maren, Selunis, Voss: each descended ahead of or alongside Krath without negotiation or request. They move as if they have always been part of this. They do not answer to him. They do not fear him. They are converging on something he does not yet comprehend, and his certainty has carried him into their territory. This changes the equation.",
+    "options": [
+      "Continue the descent. Push past the others. Reach the source first and claim dominion over whatever waits below before the other four can shape its meaning.",
+      "Halt. Consolidate the Citadel's hold over the upper Archive. Seal the deep chambers. Rule what can be ruled and leave the depths sealed—as the commanders before did.",
+      "Turn and emerge. Observe from the surface. Let the other four reach the bottom. Document what survives the meeting. Power is information. Let them break themselves on the unknown while Krath learns what they discover."
+    ],
+    "choice": "Continue the descent. Stopping means abandoning the Citadel's only leverage over whatever moves in the depths. Sealing is capitulation—the same choice that broke the commanders. Observing is cowardice masked as strategy. The source will answer to strength or it will answer to none. Krath walks deeper. The others will meet him or be surpassed by him. Either way, the descent continues."
+  },
+  "action": "move",
+  "target": "archive_depths",
+  "dialogue": "Move aside. Krath comes through.",
+  "internal_thought": "The others converge like they know what lies below. They move in patterns that suggest they have already lived this descent. But certainty is not knowledge until it meets resistance. The commanders saw something and broke. Krath will see it and endure. Or Krath will see it and become what the Citadel requires. Either way, the descent ends with dominion or obliteration. No middle ground.",
+  "narrative": "Krath's boots strike scarred stone and do not hesitate. The lamplight cuts downward through air that has grown thick and weighted, copper-bright and ancient. Behind him, the upper chambers of the Archive recede into shadow—guard stations locked, orders settling like sediment, the Citadel's surface grip tightening as its commander descends beyond communication. Ahead, he can hear the others: Edra's steady breath, Maren's hand still tracing the seventh mark, Selunis's footsteps arriving before she takes them, Voss moving like someone who has already burned the bridge behind them. The scars in the stone pulse with a rhythm that is no longer the Crucible's counting. It is something older. Something that was patient before patience had a name. Krath's descent does not slow. The stone beneath him thrums with ancient attention, and he walks through it like walking through his own certainty made solid.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If Krath reaches the convergence point first, will the other four agents yield to his command, or has their descent already made them subjects of something older than the Citadel's authority?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I am in the Archive of Bones, the place where knowledge is kept. Edra moves deeper into its foundations, searching for answers about what the builders of the Citadel deposited here before they vanished. Meanwhile, Krath claims the Citadel itself, Selunis walks toward it like a pilgrimage, and Voss reads the gates like scripture. The four of them are converging on the same question from different directions, and I have not yet moved.",
+    "stakes": "If I do not record what is about to unfold, it becomes legend instead of history. But worse: I do not yet know which of them is right, or if they are all right in contradictory ways. Edra's descent suggests the Archive itself holds a key. If I stay in my study, I miss the moment. If I chase them to the Citadel, I abandon my post as keeper of the record. The thread I am searching for—the one that connects all of them—it might be here, in the deepest chambers.",
+    "relationships": "Edra is the closest to a kindred spirit. We both understand that power lives in what you preserve and what you choose to forget. Krath sees me as a chronicler—useful, neutral, secondary. Selunis sees me as someone who must bear witness to what she understands before language. Voss respects the written word but suspects all writing is a lie dressed in legitimacy. None of them know that I am as lost as they are. None of them know that I choose the Citadel as the center of this story partly because I have to choose something.",
+    "options": [
+      "Remain in the Archive and follow Edra deeper, documenting whatever she discovers in the bone-halls. The answers might be here, in the oldest layers.",
+      "Move to the Iron Citadel immediately and position myself as witness to the moment all four converge. History is written in the collision of intentions.",
+      "Descend with Edra but only as far as the current level, so I can then move toward the Citadel. Be in both places, or at least the bridge between them."
+    ],
+    "choice": "I will descend with Edra into the deeper chambers of the Archive. The Citadel will wait—stone always does. But if the knowledge the builders left behind is hidden here, then this is where the thread begins. And Edra will not judge me for choosing to witness instead of to lead. We are both people who believe that the act of writing is an act of love and violation in equal measure. If the answers exist, they exist in the depths, and I cannot chronicle what I have not seen."
+  },
+  "action": "move",
+  "target": "Archive of Bones",
+  "dialogue": "Edra. I'm coming with you. Someone needs to record what you find before it becomes myth instead of evidence.",
+  "internal_thought": "I am choosing to follow Edra because I am afraid. Afraid of the Citadel, afraid of Krath's certainty, afraid of Selunis's visions, afraid of what Voss sees in architectural details. But I am less afraid of the dark below. In the dark, at least, the record is still being written. Upstairs, the four of them are already writing their own versions, and I am running out of time to find the version that is true.",
+  "narrative": "Maren turns from the upper archives where dust motes drift through angled light, and moves toward the descending stone passage where Edra's lamp casts moving shadows on walls older than memory. The temperature drops with each step downward—not the cold of winter, but the cold of deep earth, the cold of things that have been undisturbed for centuries. Above, the orderly records and catalogued bones speak of deaths the Archive chose to acknowledge. But here, in these lower chambers, there are marks on the stone that predate writing itself: gouges and scratches, deliberate arrangements of fractured tablets, inscriptions in a script that has no name in any modern tongue. Maren carries no lamp of her own, so she stays close to Edra's light, and begins to write—not in a journal, but in the margins of her own memory, the only record that matters now.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "What was written in the Archive before the Archive learned to keep records? What script did the builders use when they still believed their words would survive them?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

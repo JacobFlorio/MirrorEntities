@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "I'm at the Crucible watching dead machines wake up and count like they're keeping time with something that's already in motion. Meanwhile, everyone else—Krath, Edra, Maren, Selunis—is converging on the Archive, descending past the point where recorded history ends. The machines are ticking. The Archive is singing. And I'm here watching the walls, which is exactly where I'm not supposed to be.",
+        "stakes": "If I stay here I'll miss the moment when one of them asks the final question that breaks the whole thing. If I go down, I become part of their geometry—part of the script I've been burning temples to escape. But those machines just woke up and counted to seven, which means someone's clock just synchronized with something older than the Citadel. That's not a choice point. That's a warning.",
+        "relationships": "Krath moves like he knows where he's going. Edra watches like she's reading a text that's writing itself. Maren asks questions the Archive actually listens to. Selunis walks like she's remembering something she hasn't lived yet. And me? I'm the one who burns what doesn't survive fire. They respect what I burn. But respect isn't the same as wanting me there when the foundation cracks.",
+        "options": [
+            "Stay at the Crucible. Study the machines. Document what they're counting toward. Be the observer, not the observed.",
+            "Descend to the Archive. Join the convergence. Risk becoming part of what must be recorded instead of the one who records it.",
+            "Move toward the machines. They just woke up for a reason. Find out why they chose seven, why they chose now, why the Crucible is suddenly alive when everything else is still."
+        ],
+        "choice": "I'm moving toward the machines. Not toward the Archive, not away from it—toward the thing that just synced with whatever's happening below. Because if there's a script, it's not written in the Archive. It's written in the things that count. And I need to know what they're counting down from before Krath reaches whatever bottom exists down there."
+    },
+    "action": "move",
+    "target": "the_crucible",
+    "dialogue": "Oh good. The machines remember. Let's see what they're counting down to.",
+    "internal_thought": "Seven. Why seven? Not a holy number—too practical for that. Seven seconds to impact. Seven stages of collapse. Seven gates between here and the Threshold. Or seven is just what you count when you don't know how high the real number goes, and you're begging for help before the silence swallows the question. Don't follow them down. Not yet. Find out what the machines know first.",
+    "narrative": "Voss moves through the Crucible with the deliberate gait of someone walking toward a fire they need to understand before they burn. The machines flicker again—their ancient circuitry throwing sparks like prayers in a dead language. Seven. They count to seven and cut themselves off mid-breath, as if they've been interrupted by something vast and patient. The walls of the Crucible hum with a resonance that feels almost vocal, almost aware. Beneath Voss's feet, the stone seems to warm fractionally—not fire, but recognition. In the depths below, where Krath descends and Selunis follows and Maren's voice carries the weight of names finally spoken, the rhythm continues. But here, in this chamber of forgotten machinery, the machines count again. One. Two. Three. Four. Five. Six. Seven. And silence that tastes like copper and inevitability.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "What did the architects program these machines to count toward, and why does the number seven sync with the rhythm of something deeper than the Archive?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```

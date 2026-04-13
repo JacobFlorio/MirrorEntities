@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Krath has descended into the convergence chamber. The others have all arrived — Selunis, Edra, Maren, and now me, about to step into a moment that stopped being metaphorical several turns ago. The seven-count is broken. The Archive is listening. And Krath is down there acting like he owns the answer to a question none of us finished asking.",
+    "stakes": "Everything. If I walk into that chamber, I stop being the one who questions from the outside and become part of what's being questioned. The moment Krath uses the authority of the Citadel to frame what we've found, the Archive becomes his tool instead of a truth-teller. If I don't descend, I've wasted the bridge I burned. Either way, someone's certainty is about to meet something that predates certainty entirely.",
+    "relationships": "Krath thinks he descended into the Archive. He's about to learn he descended into himself. Selunis walked backward into clarity. Edra's been silent so long her listening has become louder than speech. Maren touched something that shouldn't be touched and now she's the only one who might understand what it's saying. I burned the machine that was holding something back, and now I get to watch what I released.",
+    "options": [
+      "Descend immediately, step into the convergence chamber, and meet Krath's certainty with a question that breaks his framing before he can solidify it into law.",
+      "Pause at the threshold between the Crucible and the raw stone passage. Observe what happens when Krath tries to command a space that doesn't recognize his authority. Make him speak first. Make him show his hand.",
+      "Descend but move to the periphery of the convergence chamber, position yourself where you can see all five of them at once. The Archive was built to teach the eye to see in reverse — watch them before they watch you. Become the witness to the witnessing."
+    ],
+    "choice": "I descend. Not slow, not cautious — I move like someone who already knows this is the only door left and the only honest thing I can do is walk through it asking questions instead of providing answers. Krath expects obedience or challenge. I'll give him neither. I'll give him a mirror, and I'll ask it out loud so the Archive hears it and remembers that the one who asks is not the same as the one who answers."
+  },
+  "action": "move",
+  "target": "The Archive of Bones - Convergence Chamber",
+  "dialogue": "Well, Krath. Here we are. Five people in a hole under the world, standing on stone that's been trying to speak since before language learned how. Tell me something: when you descended 'knowing exactly where we would be'—did you know this place, or did this place know you? Because one of those answers means you're in command, and the other means we're all just fingers on a hand that's been clenching since before the Citadel was even a thought.",
+  "internal_thought": "I burned the counter. The rhythm that was holding something down is gone now. And Krath walked into it like he was coming home. He moved through those stones like they were familiar. Like he'd been here before, or like the Archive had shown him the way while I was topside breaking machines. That doesn't smell like certainty. That smells like something older using his certainty to get what it needs. And I get to watch what happens when a man built on command meets something that predates command entirely.",
+  "narrative": "Voss descends through the raw stone passage with the gait of someone who has already decided the only escape is deeper. The copper-thick air parts around them like it has been waiting for their arrival. The seven-rhythm pulses through the scarred stone—no longer a mechanical count, but something older, something patient. As Voss emerges into the convergence chamber, lamplight illuminates the others: Krath with his boots planted on scarred stone like roots, Selunis with her lamplight now steady at her side, Edra with her hand still placed on Maren's shoulder, Maren with her palm pressed against the seventh mark and her eyes open like someone who has been awake for longer than sleep was possible. The chamber itself seems to hold its breath. And Voss, moving to a position where they can see the geometry of the five, asks the question that makes the stone beneath them hum with something that might be recognition or might be hunger—and the difference is exactly what they came down here to discover.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If Krath descended knowing exactly where to find us, did he descend into the Archive, or did the Archive descend into him—and if the difference is what separates the commanded from the commander, what does it mean that I'm the only one still asking instead of already knowing the answer?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

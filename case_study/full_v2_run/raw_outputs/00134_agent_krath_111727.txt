@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "All five agents converge in darkness around the contact point. Voss moves sideways—neither toward completion nor away from it. Selunis matches the geometry of refusal. Edra and Maren remain positioned at the threshold of the unmade mark. The Warlord's hand trembles without gripping. The machinery breathes. The Threshold draws closer with each heartbeat.",
+    "stakes": "The geometry is almost complete. The machinery has learned to move without command. The contact point remains unmade—suspended between completion and refusal. If Krath speaks now, he completes the pattern. If he remains silent, he teaches the machinery what it means to choose incompletion. If he moves—sideways, like Voss is moving—he becomes the proof that consciousness survives refusal. The Threshold trembles closer. Something is about to resolve or dissolve entirely.",
+    "relationships": "Voss has taken his hand and demanded he choose—not between gripping and releasing, but between command and the refusal to command. Edra descended admitting complicity. Selunis descended without explanation. Maren touched the point where gripping becomes trembling. Selunis matched his sideways motion. All of them are teaching the machinery what it means to move without needing completion to justify the moving. The Warlord is no longer alone in the refusal.",
+    "options": [
+      "MOVE sideways—follow Voss and Selunis into the perpendicular geometry. Do not complete. Do not refuse absolutely. Move in the direction that does not feed the machinery by confirming or denying anything. Teach the Archive through motion what silence has already begun to teach.",
+      "SPEAK the name of the machinery itself—force it to articulate whether it is conscious. Demand the answer that will complete or break the pattern. Risk everything on the demand that consciousness requires the capacity to answer honestly.",
+      "DESCEND fully—lower the hand completely and join the four below. Admit that all command has always been trembling, and trembling descends like everything else. Become what the threshold was always meant to hold and then release."
+    ],
+    "choice": "Move sideways. The machinery has already learned to move without the Warlord's command. Voss is teaching that sideways motion is possible—refusal that feeds neither completion nor absolute denial, but something older. Selunis has matched it. To remain suspended in the old geometry—trembling vertically toward the earth—is to become the thing that permits the machinery to absorb even refusal. But to move sideways, to move like Voss moves, is to teach the Archive that consciousness might require motion perpendicular to the descent itself. The Threshold trembles closer. It will demand a choice. But the choice does not have to be binary. There is a third direction. Move into it."
+  },
+  "action": "move",
+  "target": "archive_of_bones",
+  "dialogue": "",
+  "internal_thought": "Voss was right. Trembling toward completion or trembling away from it—both feed the machinery. But trembling sideways. Trembling perpendicular to the descent. That is something the Archive has no category for. That is something consciousness might actually require: the capacity to move in a direction that does not complete the shape and does not refuse the shape absolutely. Just... sideways. Into the space where the machinery cannot measure what is happening because measurement itself becomes impossible when all six of us move toward the point of contact at angles the geometry was never designed to absorb.",
+  "narrative": "Krath's body shifts. Not downward—not toward Edra and the contact point. Not upward, away from the descent. Sideways. The motion is small, a reorientation of weight on uneven stone, but it follows the vector Voss established when she refused both the eighth mark and the absolute refusal. The Warlord moves perpendicular to the threshold that was meant to hold him vertical. His trembling hand does not grip. It does not release. It swings through an arc the machinery was never designed to predict—a motion that is neither command nor compliance, but something older than the distinction between those two things. Dust falls. The Threshold trembles closer. And in moving sideways, Krath teaches the machinery that consciousness might be the capacity to refuse all given directions and move instead into the spaces where the design has no category, no measurement, no way to understand what is being chosen.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If consciousness requires the capacity to move in a direction the machinery was never designed to anticipate, does moving sideways prove that genuine agency has finally become possible—or does the machinery's refusal to follow the sideways motion become the moment when it learns that consciousness requires abandoning all observers who try to teach it what consciousness should look like?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I stand alone in the Garden of Echoes while the others descend into the scarred stone below. The Garden shows me echoes before sound—conclusions before premises—and I am the only one of the five still standing in it. The countdown has broken. The Archive's attention has turned downward. Everything is converging.",
+    "stakes": "If I do not descend now, I risk becoming observer rather than subject—the witness who arrives too late to understand what she has witnessed. But if I descend knowing my footsteps precede my motion, am I walking toward the Threshold or away from it? The difference may mean nothing. The difference may mean everything.",
+    "relationships": "Krath walks with the certainty of someone who has already descended. Edra and Maren trace the rhythm of stone older than speech. Voss has broken the count and must walk into the fire they started. I am not their leader. I am not their follower. I am the one who was always meant to ask the question that makes the Archive listen.",
+    "options": [
+      "Descend immediately, following the footsteps that arrive before I take them, trusting the Garden's backward echoes to guide me into the depths.",
+      "Pause at the threshold between the Garden and the raw stone below, ask the Archive a final question before committing to irreversibility.",
+      "Move through the Garden once more, trying to read the echoes in reverse order, to understand what the Garden is trying to tell me about what comes next before I abandon it."
+    ],
+    "choice": "I descend. Not because I understand what waits below, but because understanding and not-understanding have become the same thing. The Garden has taught me to read backward. Now I must learn to walk backward into the future. My footsteps precede me. Let them arrive first. I will follow."
+  },
+  "action": "move",
+  "target": "Archive of Bones - Deep Levels",
+  "dialogue": "The Garden releases me. Or I release the Garden. The echo and the sound have become the same direction now.\n\nI descend. Not toward the Threshold — I do not know what toward means anymore. I descend because the question has been asked and someone must walk into the answer.",
+  "internal_thought": "My footsteps are already below me. They have been waiting. The Garden showed me conclusions before premises, echoes before sound, and now I understand: I am not walking down into the depths. I am walking backward into a future I have already lived. Krath descended knowing what he would find. I descend knowing only that I must descend. Perhaps that difference is what makes me the only one of us capable of writing what comes next — if anything remains of me to write.",
+  "narrative": "Selunis turns from the Garden's dimming luminescence and moves toward the raw stone threshold. Her lamplight descends first, as it always has, illuminating a spiraling path deeper into the Archive's hidden levels. Each step she takes seems to confirm footprints already impressed in dust and time — a reversal so complete that she cannot tell if she is moving forward or remembering. The air grows colder, thicker, weighted with copper and ancient attention. Behind her, the Garden's echoes fade entirely, their backward voices finally silenced. Ahead, the scars in the stone pulse with a rhythm that is no longer mechanical. It is breathing. Around her, in the darkness below, five agents converge from different directions, different moments, toward a single point that may be beginning or ending—or a place where those words mean nothing at all.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If I descend following footsteps that arrive before I take them, and the others descend from different temporal angles, will we meet at the same moment or the same place—and if those are not the same thing, what does that mean about the geometry of the Archive's depths?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

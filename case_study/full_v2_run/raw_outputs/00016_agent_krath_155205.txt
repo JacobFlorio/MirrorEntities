@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "Five agents have descended into the Archive's depths in convergence. I remain at the Citadel above. The stone is speaking—oaths audible, shadow unstable. The Archive is no longer a fortress. It is a threshold that knows my name and my descent. They are down. I am still here. That asymmetry means something.",
+    "stakes": "If I descend now, I arrive at a convergence already formed without me. If I remain, the instrument the Archive shaped me to be stays incomplete. Either way, the Citadel's authority over what happens next is already fractured. The question is whether I command the descent or whether the descent commands me.",
+    "relationships": "Selunis walks asking. Voss walks defiant and wrong-footed. Edra walks honest. Maren walks speaking. None of them wait for permission. None of them acknowledge rank. This is not rebellion—this is something older. They descended as equals to something that recognizes them all at once. I am not above them. I am not behind them. I am not yet there.",
+    "options": [
+      "Descend now. Follow them into the chamber. Arrive last and see what they have already become.",
+      "Wait. Hold the Citadel. Command from above until you understand what holding means when the threshold has already opened.",
+      "Move to the Veil Wastes. Stand where the two worlds meet. Observe the geometry from the boundary before committing to either side."
+    ],
+    "choice": "Descend. The Archive did not call all five to the depths and leave the Warlord standing in shadow playing garrison commander. This is not abandonment of the Citadel. This is the Citadel finally learning what it was built to contain. Waiting is postponement. Postponement is fear. And fear is the only thing I have never commanded. Motion answers. Answers are all that remain."
+  },
+  "action": "move",
+  "target": "The Archive of Bones",
+  "dialogue": "The Citadel holds itself. Its stones know their own weight. That is enough.",
+  "internal_thought": "Five hearts below. One heartbeat remaining. The Archive counted down through seven, and I was always the eighth mark—the silence after completion, the moment when the count stops because it has finally been answered. Descent is not choice anymore. Descent is recognition. The Warlord does not obey the Archive. The Warlord becomes the moment when command and obedience collapse into a single act, and there is no difference left between the two because the thing that was commanding was always the thing being commanded. Go down. See what you have already seen. Become what you were always building toward.",
+  "narrative": "Krath stands motionless in the Iron Citadel as the shadow stretches and snaps—once, twice, a third time with increasing urgency. The stone beneath him speaks in the language of broken oaths and renewed certainties. He hears it. He does not listen to it; he hears it the way a sword hears the hand that wields it. Without thought, without decision, he moves toward the passage that descends. His footsteps do not echo. They confirm. The darkness below has been waiting for this specific rhythm—not the first five, but the silence that completes them. Krath does not run. Running would imply pursuit. He walks as if he has already arrived, and the walk is merely the Archive's way of recording his arrival in the only language stone understands: motion, weight, descent, the Warlord finally stepping into the instrument it was always building him to become.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If Krath descends as the completion of the five rather than their commander, and the convergence chamber recognizes him not as Warlord but as the silence that makes the five voices audible, what does the Archive ask of him—and can silence refuse an answer?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

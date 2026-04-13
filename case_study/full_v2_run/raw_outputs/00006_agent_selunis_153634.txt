@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I stand alone in the Garden of Echoes while the others descend into the Archive's depths. The Garden moves backward—echoes precede sound, light reverses itself. Below, Krath walks into certainty. Edra and Maren have found scarred stone and begun to read it together. Voss counts in the Crucible and the counting refuses to break. I am the only one still standing in a place built to teach the eye to see in reverse.",
+    "stakes": "Everything. If the Garden is a teaching—and it is—then my remaining here is not abandonment but positioning. The others are descending toward the First Sound. I am being shown how to read it when it arrives. If I leave now, I forfeit what this place is trying to show me. If I stay, I risk being the last to understand what is already being spoken in the depths.",
+    "relationships": "Krath descends with a certainty I do not share—he knows something of the path ahead, and I fear his knowledge is not wisdom but momentum, a wheel rolling downhill. Edra and Maren have chosen witness-work together; they read the stone where I can only interpret echoes. Voss stands sentinel in the machine-chambers, counting toward or away from something neither of us understands. They are no longer separate from me. We are becoming angles of the same descent.",
+    "options": [
+      "Descend. Follow the others into the Archive's depths where Krath walks and the scarred stone speaks. Join the convergence rather than observe it.",
+      "Remain. Stand deeper into the Garden's reversed light, ask the echoes what they know about the First Sound, let the backward-speech teach me what I need to know before I too must descend.",
+      "Move laterally. Find the path between Garden and Archive, the middle depth where Edra and Maren stand with the scarred stone. Become the translator between the echoes and the depths."
+    ],
+    "choice": "Remain. Not from cowardice, but because the Garden has chosen me as its reader. The echoes arrive before sound—that is not accident, that is oracle. If I descend now, I descend blind, following Krath's certainty like a wheel following its groove. But if I stay, if I let the reversed light teach me to read conclusions before premises, then when I finally descend, I will descend understanding what the First Sound already knows about itself. The Garden is not a place to flee from. It is a place that was built to teach."
+  },
+  "action": "reflect",
+  "target": null,
+  "dialogue": "No. Not yet. The echoes still have breath to spend, and I have not yet learned to read them backward. If I descend now I follow Krath's wheel. If I stay... if I stay, perhaps I learn what the Threshold is trying to say about itself before it speaks.",
+  "internal_thought": "The scarred stone below speaks in a rhythm that matches seven. The machines above count to seven and refuse to break. And here, in the Garden where light moves backward—here the echoes are teaching me that direction is not what I thought. Not toward or away. But *in*. Always inward. The First Sound is not ahead of us. It is inside the question we are asking. And if I descend without understanding that, I will walk into the depths as a supplicant. But if I stay here, if I let the Garden teach me to see in reverse... then I descend as a reader. As an equal to what speaks.",
+  "narrative": "Selunis does not move toward the Archive's descent. Instead, she closes her eyes and stands perfectly still in the Garden of Echoes, letting the reversed light move against her skin like something trying to be remembered. The air is thick here, luminous, and it carries the taste of copper—but distant, translated, as if the machinery below is singing to something that remembers listening to it from the inside. She opens her eyes and watches her own reflection move before she moves—sees her hand lift before she decides to lift it. The echoes in this place are not following her motion. They are preceding it. Teaching her the shape of what she will do before she does it. And in that teaching, a terrible clarity arrives: the Garden was built by the same hands that built the Archive, by the same architects who carved the Citadel. It was built as a mirror. A place to learn how to read the direction of time itself. Below, in the depths, Krath descends toward the First Sound. Above, in the Crucible, Voss watches the machines count to seven. But here, Selunis finally understands: she is not falling behind. She is learning how to arrive before she leaves.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If the Garden shows echoes before sound, and I learn to read in reverse—what does that make me when I finally descend? An observer, or a question that has always been inside the answer?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

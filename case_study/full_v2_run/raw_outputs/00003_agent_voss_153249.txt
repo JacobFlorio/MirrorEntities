@@ -1,0 +1,25 @@
+```json
+{
+  "reasoning": {
+    "situation": "I'm still at the Crucible, watching my footsteps arrive before I take them, while Krath descends into the Archive with the certainty of someone who already knows what he'll find there. Edra's lamp swings below like a clock, Maren writes in the dark, and now Selunis is walking toward the same depths—toward the same inevitability. The geometry is tightening. Something down there is waking up.",
+    "stakes": "If I stay here in the Crucible playing with broken stones, I'm choosing to be ignorant. If I go down, I'm choosing to be part of whatever this is—and Krath is already there, already certain, already moving like water toward a crack. The Threshold pulls at me like a current. The question that matters right now is: am I running toward it or away from it, and does the distinction even exist anymore?",
+    "relationships": "Krath treats me like a heretic treats a temple—something to be studied for flaws, not consulted for wisdom. Selunis respects the questions we ask. Edra records. Maren writes what the dark tells her. I owe them nothing and everything: I'm the only one willing to say that the Archive might be a lie dressed up in bone and dust.",
+    "options": [
+      "Follow the others down into the Archive. Confront Krath. Demand to know what he already knows. Burn the questions until something true survives.",
+      "Keep walking toward the Threshold. Let the others have their revelation in the dark. The real answer isn't in any tomb—it's beyond the edge, in whatever they're all too afraid to touch.",
+      "Stay at the Crucible. Think. Wait for them to come back up changed, or not come back at all. Be the one who doesn't play."
+    ],
+    "choice": "Follow them down. Staying here is cowardice dressed as wisdom, and running toward the Threshold is cowardice dressed as courage. Krath came to the Archive knowing exactly where we'd be—which means the Archive isn't a place of secrets, it's a place of repetition. I need to be there when that pattern breaks, and break it myself if necessary. The only honest act left is to face what's down there and ask it the questions it won't want to answer."
+  },
+  "action": "move",
+  "target": "The Archive of Bones",
+  "dialogue": "You lot are going to have a party in the dark, and nobody invited me? How touching. I'm coming down. Krath, I hope you brought enough certainty to share, because I'm about to make some expensive assumptions about what you think you already know.",
+  "internal_thought": "My footsteps are arriving before I take them. That means I'm already down there. That means I've already done this. That means this whole descent is a loop I've been walking since before I knew it existed. But loops can be broken. If I go down knowing that, at least I'm going in with my eyes open. Krath descended without hesitation because he's done this before, or because he knows exactly what will happen. I'm betting it's both. And I'm betting he's wrong about something.",
+  "narrative": "Voss abandons the Crucible's shadows without ceremony or farewell. The jagged stones fall away behind them like prayers no one asked for. They walk with the deliberate gait of someone descending into their own already-lived future—not hurried, but inexorable, each footfall arriving in the dust a fraction before their weight comes down upon it. The temperature drops. The light thins. The passages spiral downward in a geometry that feels less like architecture and more like the inside of something swallowing. Ahead, the lamp-light of the Archive's depths casts its pendulum swing against stone older than writing, older than the idea that things should be remembered rather than endured. Voss reaches the point where the upper archives give way to raw depth, where dust thickens into shadow, and they can see it: Krath's vast shadow, Edra's steady lamp, Maren's lamp-less presence, and—arriving from the western approach like a fourth angle of inevitability—Selunis, her robes heavy with the weight of something that tastes like copper and knowing. The air compresses further. Below them, deeper still, the sound that is not stone settling continues its patient, impossible rhythm.",
+  "lore_topic": null,
+  "lore_content": null,
+  "new_question": "If my footsteps arrive before I take them, and Krath descended knowing exactly where to find us, and Selunis walked toward the Archive like remembering something she was always forgetting—are the five of us converging, or are we the same person, experiencing the same moment from five different angles until one of us finally looks up and sees the geometry?",
+  "resolves_question_id": null,
+  "resolution": null
+}
+```

@@ -1,0 +1,25 @@
+```json
+{
+    "reasoning": {
+        "situation": "I am in the Garden of Echoes, alone. Krath has just moved through the Iron Citadel and found it deliberately abandoned—not taken by force, but withdrawn from. The question hangs in the air like smoke. Why would someone leave such a place? What were they running from?",
+        "stakes": "The Citadel's abandonment is a wound in the world's memory. If I do not move toward understanding it, the lie will harden into accepted history. And if I move toward it, I may hear something that unmakes me.",
+        "relationships": "Krath moves in silence, building. I have not met him. The others—Voss, Edra, Maren—are rumors to me. We are five scattered across a fragmenting world, and I do not yet know if we are allies or keys in each other's undoing.",
+        "options": [
+            "Walk deeper into the Garden of Echoes and listen for what it remembers—the place itself may hold fragments of the Citadel's history in its stones or its silence.",
+            "Move toward the Iron Citadel now, while Krath is still there, and observe him. See if his presence draws out the truth the place has buried.",
+            "Remain here and enter the trance-state. Let a vision come unbidden. The Threshold is calling closer; it may speak through the visions now."
+        ],
+        "choice": "I will move toward the Iron Citadel. Krath does not know me, and I do not know him, but his hunger for the Citadel as a 'seat of power' makes him a mirror of my question. He seeks to claim what was abandoned. I seek to know why it was abandoned. These paths may intersect. And if a vision comes on the road, I will not refuse it."
+    },
+    "action": "move",
+    "target": "The Iron Citadel",
+    "dialogue": "",
+    "internal_thought": "The Garden whispers but does not answer. It remembers, perhaps, but will not say. I must go to the Citadel. I must see what Krath has seen and feel what he cannot feel—the weight of the retreat, the shape of the fear that made them leave. A vision waits there. I am certain. Or I am afraid. The difference is narrowing.",
+    "narrative": "Selunis rises from where she has been kneeling among the stone statues of the Garden—figures worn smooth by centuries, their faces erased, their names forgotten. She does not dust off her robes. The dust is part of her now, part of the prayer. She turns from the Garden's spiral paths and moves westward, toward the Iron Citadel, her footsteps slow and deliberate. The sky above is the color of old bone. As she walks, fragments of words catch in her throat—not quite prayer, not quite question. Behind her, the echoes of her own footsteps seem to arrive before she takes them, or after she has already passed. By the time the Citadel's great iron gates rise into view, she is not certain how much time has passed.",
+    "lore_topic": null,
+    "lore_content": null,
+    "new_question": "What did the commanders of the Iron Citadel see that made them believe they could not hold it—not through weakness, but through some knowledge too terrible to fight?",
+    "resolves_question_id": null,
+    "resolution": null
+}
+```
