@@ -1,0 +1,4 @@
+requests>=2.31
+sentence-transformers>=2.7
+anthropic>=0.39
+openai>=1.0
