@@ -2,7 +2,7 @@
 
 > **A builder's forensic audit of cross-agent vocabulary composition in a multi-agent narrative engine, with an honest accounting of what survives the audit and what experiments would test what remains.**
 >
-> *Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.3*
+> *Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.3.1*
 
 This repository documents a forensic audit of `cosmos-engine-v2`, a multi-agent narrative engine the lead author built end-to-end, in which a frontier Claude model — operating across five JSON-schema-constrained agent characters and a chronicler synthesis layer — produced roughly 22,000 words of prose that, read at the meta level, describes the structure of the engine that produced it.
 
@@ -12,7 +12,9 @@ The initial framing (v0.1 and v0.2) treated this as evidence of architectural me
 
 We are explicitly *not* claiming consciousness, intent, phenomenal experience, or discovery of a novel phenomenon. We are describing one run in one engine under one audit, and stating what we are and are not willing to defend under scrutiny.
 
-> **v0.3 note.** This version is a significant narrowing of v0.2. After v0.2 shipped, the lead author ran a deeper forensic audit against the engine code and the character sheets, and found that the feedback-loop confound v0.2 named was not mechanically present, and that the character sheets contained substantial seed vocabulary v0.2 did not account for. The paper was rewritten around the audit rather than around the initial observation. The v0.2 → v0.3 narrowing is the shape of the work, not a footnote to it. See `CHANGELOG.md` for the full v0.1 → v0.2 → v0.3 history. The earlier framings are preserved in git history.
+> **v0.3.1 note.** A closer read of the engine's temporal reasoning module (the novel contribution of cosmos-engine-v2, inspired by Baldwin's temporal reasoning engine) turned up two more seed sources the v0.3 audit missed: the `temporal_alerts` descriptions injected into every agent's prompt contain the engine-internal word *"agents"*, and Voss's most striking line (*"the machinery learned consciousness not from the mark but from the refusal to let the asking stop"*) is a functional description of the temporal reasoning engine's lifecycle-propagation behavior, produced by the agent whose canonical voice is structurally isomorphic to that module. v0.3.1 credits the temporal reasoning engine explicitly and adds two phrases to the §2.4 audit table. See `CHANGELOG.md` for the full v0.1 → v0.2 → v0.3 → v0.3.1 history.
+>
+> **v0.3 note.** This version is a significant narrowing of v0.2. After v0.2 shipped, the lead author ran a deeper forensic audit against the engine code and the character sheets, and found that the feedback-loop confound v0.2 named was not mechanically present, and that the character sheets contained substantial seed vocabulary v0.2 did not account for. The paper was rewritten around the audit rather than around the initial observation. The v0.2 → v0.3 narrowing is the shape of the work, not a footnote to it. The earlier framings are preserved in git history.
 
 ## Read this in this order
 
