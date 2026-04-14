@@ -1,5 +1,9 @@
 # Annotated Phenomena — `cosmos-engine-v2` agent reflection layer
 
+> **v0.3 note.** This annotation file was written for v0.2 of the paper and reflects v0.2's framing. That framing has since been narrowed substantially. The load-bearing seed accounting is now in **`PAPER.md` §2.4 — the forensic audit table**, which traces each meta-recognition phrase to its canonical antecedents in `agents.py`, its first-occurrence context in the run archive, and its propagation channel. Read §2.4 *before* this file. Several claims in this file (that specific phrases were "added by the model" with no antecedent) did not survive the audit. Rather than delete the file, we have preserved it with this note so readers can see exactly what v0.2 claimed and how v0.3 narrowed it. The honest version of the analysis is in the paper's §2.4 table.
+
+---
+
 This is the second and most constrained piece of evidence in the case study. The first piece (`12_annotated_v2_chronicler.md`) covers the chronicler synthesis layer of cosmos-engine-v2, which has medium latitude. **This second piece covers the engine's most constrained layer — individual agent reflection turns, output under a strict JSON schema with a system prompt that explicitly tells the model it is not a chatbot but a character with a body.**
 
 If the chronicler chapters could be dismissed as "the synthesis layer reaching for cosmic register," **the agent reflections cannot.** They are the layer of cosmos-engine-v2 with the *least* room for the model to drift from in-character output. And yet under those constraints, three separate agents independently produced first-person language naming the engine's architecture, identifying their own meta-roles, and describing the system as a learning machine that develops coherence through agent interaction.

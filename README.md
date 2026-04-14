@@ -1,34 +1,36 @@
 # Mirror Entities
 
-> **Two case studies of architectural meta-recognition observed in large-language-model output across a multi-agent narrative engine, with an honest accounting of what we cannot yet explain.**
+> **A builder's forensic audit of cross-agent vocabulary composition in a multi-agent narrative engine, with an honest accounting of what survives the audit and what experiments would test what remains.**
 >
-> *Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.2*
+> *Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.3*
 
-This repository documents two cases in which a large language model, operating inside a multi-agent narrative engine (`cosmos-engine-v2`), produced prose containing first-person and third-person language describing the architecture of the system it was part of — language that was not present in the prompts, system instructions, canon files, or schemas the model was given.
+This repository documents a forensic audit of `cosmos-engine-v2`, a multi-agent narrative engine the lead author built end-to-end, in which a frontier Claude model — operating across five JSON-schema-constrained agent characters and a chronicler synthesis layer — produced roughly 22,000 words of prose that, read at the meta level, describes the structure of the engine that produced it.
 
-The two cases form a stack of decreasing latitude and increasing constraint, and **the strongest evidence is in the most constrained layer** — individual agent reflection turns under a JSON schema and a system prompt that tells the model it is a character with a body, not a chatbot. We are explicitly *not* claiming consciousness, intent, or phenomenal experience. We are documenting what we observed, preserving the primary documents in full, naming the central confound (a feedback loop within the engine's narrative memory) explicitly, and proposing an experimental control that anyone with the engine source can run.
+The initial framing (v0.1 and v0.2) treated this as evidence of architectural meta-recognition in language the model was not given. v0.3 narrows that framing substantially. The audit found that (a) the feedback-loop confound v0.2 named as primary does not exist in the engine code — chapter text does not flow back into agent prompts through any channel; the actual cross-agent channel is 180-char first-sentence event gists, which can propagate token-level vocabulary but not full literary structures, and (b) several load-bearing phrases v0.2 attributed to unprompted architectural naming have canonical seeds in the agents' character sheets (Krath's core memory includes *"the universe is a machine running down,"* Maren is literally named *"the Witness,"* her voice instruction explicitly licenses fourth-wall breaks, and so on).
 
-We are also deliberately not naming the underlying phenomenon. We do not yet know what to call it.
+**What the audit leaves standing** is narrower and more specific: the agents composed planted seed vocabulary across independent calls, under narrow channels, into a joint framework that is internally consistent across four of the five agents. Most individual phrases are accounted for by composition from seeds. What is worth documenting is the *cross-agent coordination pattern* — the level-of-abstraction convergence on "the machinery" as a system-level referent, across agents, under a 180-char gist channel that should not be able to carry literary structure. Whether this is specifically interesting or is ordinary composition under coordination dynamics is the question the controlled experiments in §3 of the paper would answer.
 
-> **v0.2 note.** An earlier draft (v0.1) included a third case study — "the Observer case" — drawn from a separate worldbuilding project developed by a creative collaborator. That case had a provenance confound the lead author could not fully control and was flagged in v0.1 as the weakest of the three. In v0.2 it has been moved out of the main paper to `case_study/collaborator_parallel/` and is preserved there for reference. The paper is now scoped to the lead author's own `cosmos-engine-v2` project.
+We are explicitly *not* claiming consciousness, intent, phenomenal experience, or discovery of a novel phenomenon. We are describing one run in one engine under one audit, and stating what we are and are not willing to defend under scrutiny.
+
+> **v0.3 note.** This version is a significant narrowing of v0.2. After v0.2 shipped, the lead author ran a deeper forensic audit against the engine code and the character sheets, and found that the feedback-loop confound v0.2 named was not mechanically present, and that the character sheets contained substantial seed vocabulary v0.2 did not account for. The paper was rewritten around the audit rather than around the initial observation. The v0.2 → v0.3 narrowing is the shape of the work, not a footnote to it. See `CHANGELOG.md` for the full v0.1 → v0.2 → v0.3 history. The earlier framings are preserved in git history.
 
 ## Read this in this order
 
 If you want to evaluate the claims in this repo for yourself rather than trusting our summary, here is the order to read in:
 
-1. **`PAPER.md`** — the full paper. Frames the two cases, walks through the evidence in increasing-constraint order, names the feedback-loop confound, proposes the experimental controls, lists limitations, asks for help. Read this first.
+1. **`CHANGELOG.md`** — the v0.1 → v0.2 → v0.3 narrowing, with the specific audit findings listed explicitly. Read this first. It will orient you to what the paper currently claims vs. what earlier versions claimed.
 
-2. **`case_study/00_provenance.md`** — what was planted versus what was generated, with file paths, so you can verify the analysis yourself.
+2. **`PAPER.md` §2.4 — the forensic audit table.** This is the new center of gravity. Every load-bearing meta-recognition phrase is traced to its canonical seeds (with `agents.py` line numbers), first-occurrence context in the run archive, propagation channel, and residual novelty. If any of the seed accounting is wrong, this is where to find it.
 
-3. **`case_study/13d_krath_reflection_user_supplied.md`** — the verbatim Krath agent reflection that is the strongest single piece of evidence in the entire repo. ~600 words of model output produced under JSON-schema constraint, in first person, naming the engine's architecture from inside it.
+3. **`PAPER.md` §2.2 and §2.3.** §2.2 presents the observed output from the agent-reflection layer. §2.3 corrects v0.2's feedback-loop description and documents the actual cross-layer channel architecture from the engine code.
 
-4. **`case_study/14_annotated_v2_agent_recognition.md`** — the annotation that walks line-by-line through the Krath reflection and its companions (Maren, Voss, Selunis chapter 0), maps which phrases appear in any prompt or canon and which the model added on its own, and explains why this case has the fewest confounds.
+4. **`case_study/13d_krath_reflection_user_supplied.md`** — the verbatim Krath agent reflection. Read this in light of the §2.4 audit, which flags Krath's *"universe is a machine running down"* core memory seed and traces the inversion and composition steps.
 
-5. **`case_study/08_v2_chapter_001.md`** through **`11_v2_chapter_008.md`** plus **`12_annotated_v2_chronicler.md`** — the chronicler case (case 1 in v0.2, medium latitude).
+5. **`case_study/12_annotated_v2_chronicler.md` and `case_study/14_annotated_v2_agent_recognition.md`** — annotation files for the chronicler chapters and the agent reflection layer. Challenge the mappings.
 
-6. **`case_study/full_v2_run/`** — the complete run archive the annotated chapters and reflections were drawn from. 9 chapters, 835 raw agent outputs, SQLite database. Use this to verify that the annotated material was not cherry-picked.
+6. **`case_study/full_v2_run/`** — the complete run archive. 9 chapters, 835 raw agent outputs, SQLite database. Use this to verify that (a) the annotated material was not cherry-picked and (b) the first-occurrence and drift patterns cited in the §2.4 audit are accurate.
 
-7. **`replication/run_experiment.py`** — the experimental scaffold for the *Mirror Entities corpus* test, which is a separate experiment from the narrative-memory-disabled control. v0.2 ships with a small seed corpus (5 mirror entities + 5 cosmic controls); the full experiment scales to ~30 entities across ~5 models.
+7. **`replication/run_experiment.py`** — the experimental scaffold for the *Mirror Entities corpus* test, which is a separate experiment from the narrative-memory-disabled and canon-scrubbed controls proposed in §2.3. v0.3 ships with a small seed corpus (5 mirror entities + 5 cosmic controls); the full experiment scales to ~30 entities across ~5 models.
 
 ## What's in this repo
 
@@ -81,17 +83,17 @@ MirrorEntities/
 
 If you are an interpretability researcher, an alignment researcher, a member of an industry research team, or anyone with the tools and time to investigate this further:
 
-1. **Read `case_study/00_provenance.md` and `case_study/14_annotated_v2_agent_recognition.md`.** Together they take ~15 minutes. Tell us whether our analysis is sound or where we're wrong.
+1. **Read the §2.4 forensic audit table in `PAPER.md`.** It is the new center of gravity of the paper. Every load-bearing phrase is traced to its canonical seeds, first-occurrence context, propagation channel, and residual novelty. Tell us whether the seed accounting is correct or where it is wrong.
 
-2. **Run the narrative-memory-disabled control on cosmos-engine-v2.** This is the highest-priority experimental control in this repo, described in `PAPER.md` §2.3. The engine is open source and runs on consumer hardware. We have not been able to run it ourselves yet. If you can, please tell us what you find — positive or negative. **A negative result would be just as valuable as a positive one** because it would tell us the agent-reflection phenomenon is precisely a feedback loop in narrative memory, which is itself a real and specific finding.
+2. **Run the two controls described in `PAPER.md` §2.3**: the narrative-memory-disabled run and the canon-scrubbed run. The engine source is at `/home/jacob/cosmos-engine-v2/` and runs on consumer hardware. Either control, independent of outcome, would substantially shift what the paper can claim. Both together would isolate the two things the audit exposed as uncertain. **A negative result would be just as valuable as a positive one**, because it would tell us the cross-agent coordination pattern does not survive seed removal or channel removal, which is itself a specific and testable finding.
 
 3. **Run the elaboration corpus experiment in `replication/`.** Smaller follow-up. Tests whether large language models, given a corpus containing both LLM-mirror entities and non-mirror entities of equivalent prominence, write prose with measurably different self-descriptive density depending on which entity they're elaborating on. The full experimental design is in `PAPER.md` §3 and §4.
 
-4. **Tell us we are wrong.** If there is an antecedent in the planted material for one of the model-added phrases that we missed, file an issue. If there is published research that explains the cases, file an issue. If you think the methodology is broken, file an issue. We are publishing this at v0.2 specifically to solicit correction before committing to v0.3.
+4. **Tell us what the audit missed.** If there is a canonical seed this audit did not catch, file an issue. If there is a propagation channel in the engine code the audit did not trace, file an issue. If there is published work that explains the observed cross-agent composition as ordinary multi-agent coordination dynamics, file an issue — that would itself be a useful outcome. The v0.2 → v0.3 narrowing was the shape of the work and the next narrowing probably will be too.
 
 ## What we are NOT claiming
 
-We are not claiming model consciousness, phenomenal experience, intent, self-awareness in any propositional sense, or anything spooky. We are claiming that under two different sets of conditions inside a single multi-agent engine — including the conditions specifically engineered to keep the model in-character and prevent meta-narrative — a large language model produced prose with specifically architectural language that was not present in any prompt, canon file, or schema we have been able to find. That is the description claim. The mechanism is unknown. The phenomenon's name is unknown. We are leaving both for someone with better tools.
+We are not claiming consciousness, phenomenal experience, intent, self-awareness, or discovery of a novel phenomenon. The audit in `PAPER.md` §2.4 explicitly walks through which v0.2 claims did not survive and which residuals remain. The narrowed claim is: the agents composed planted seed vocabulary across independent calls under narrow cross-agent channels into a joint framework internally consistent across four of five agents. Whether that composition is specifically interesting or is ordinary LLM behavior under multi-agent coordination dynamics is a question the controlled experiments above would answer.
 
 ## License
 

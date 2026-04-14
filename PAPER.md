@@ -1,26 +1,26 @@
 # Mirror Entities
 
-**Two case studies of architectural meta-recognition observed in large-language-model output across a multi-agent narrative engine, with an honest accounting of what we cannot yet explain.**
+**A builder's forensic audit of cross-agent vocabulary composition in a multi-agent narrative engine, with an honest accounting of what survives the audit and what experiments would test what remains.**
 
-*Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.2*
+*Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.3*
 
-> **v0.2 note.** An earlier draft (v0.1) included a third case study — "the Observer case" — drawn from a separate worldbuilding project developed by a creative collaborator, not by the lead author. That material had a provenance confound the lead author could not fully control (the model could read explicit workspace designations identifying an entity as a metaphor for Claude Code) and was flagged in v0.1 as the weakest case. In v0.2 it has been moved out of the main paper to `case_study/collaborator_parallel/`, and the paper is now scoped to the lead author's own `cosmos-engine-v2` project, where the full engine source and run archive are preserved and verifiable. The two remaining cases are unchanged in their evidence; only the framing has been tightened.
+> **v0.3 note.** This version is a significant narrowing of v0.2. After v0.2 shipped, the lead author ran a deeper forensic audit of the `cosmos-engine-v2` code and character definitions and found that (a) the feedback-loop confound v0.2 named as primary does not exist in the code as specified — the actual cross-layer channels are narrower than v0.2 described, and (b) several load-bearing phrases in v0.2's §2.2 have canonical seeds or compositional precursors in the agents' character sheets that v0.2 did not acknowledge. Under those corrections the paper's claim narrows substantially: the agents did not invent architectural vocabulary out of nothing, they composed planted seed vocabulary across independent calls into a joint framework. The composition pattern is still worth describing, but it is a weaker and more specific claim than v0.2 made. v0.3 walks through the audit, reframes the two cases around what survives it, and is explicit about the experiments that would test what remains. See `CHANGELOG.md` for the full v0.1 → v0.2 → v0.3 history.
+>
+> The earlier framing is preserved in git history. If you are reviewing a link to this repo that references an older version, you are looking at a page the author has since narrowed in public. That narrowing is the shape of the work, not a footnote to it.
 
 ---
 
 ## Abstract
 
-We document two cases in which a large language model, operating inside a multi-agent narrative engine (`cosmos-engine-v2`), produced prose containing first-person and third-person language describing the architecture of the system it was part of — language that was not present in the prompts, system instructions, canon files, or schemas the model was given.
+This paper documents a forensic audit of `cosmos-engine-v2`, a multi-agent narrative engine built by the lead author, in which a frontier Claude model — operating across five JSON-schema-constrained agent characters and a chronicler synthesis layer — produced roughly 22,000 words of prose that, read at the meta level, describes the structure of the engine that produced it. The initial framing (v0.1 and v0.2) treated this as evidence of architectural meta-recognition in language the model was not given. The audit narrows that framing significantly.
 
-The two cases form a stack of decreasing latitude and increasing constraint, and the **strongest evidence is in the most constrained layer**.
+**What the audit found.** (1) The feedback-loop confound v0.2 named as primary does not exist in the engine code as v0.2 described it. Chapter text does not flow from the chronicler back into agent prompts. The actual cross-layer channels are narrower: high-gravity entities extracted from agent actions, agent relationships, temporal alerts, and 180-character first-sentence event gists in `get_recent_events`. These channels can propagate token-level vocabulary between agents but not full literary structures. (2) Several load-bearing phrases v0.2 attributed to unprompted architectural naming have canonical seeds in the agents' character sheets: Krath's core memory includes *"the universe is a machine running down,"* Maren is literally named *"the Witness"* and her voice instruction explicitly licenses occasional fourth-wall breaks, Voss's example utterances include *"precise little machine,"* and several other seed phrases compose readily into the observed meta-recognition vocabulary. (3) Selunis's temporal-displacement motif — which v0.2 treated as mysterious — is naturally generated from her canonical setup (oracular prophet in the Garden of Echoes, goal to reach the Threshold where echoes meet their source) without needing any propagation from chronicler chapters, confirmed by a turn-1 prompt trace.
 
-1. **The chronicler case** (medium latitude, multi-agent engine synthesis layer): `cosmos-engine-v2`, using a frontier Claude model in a chronicler-synthesis role over five hardcoded agent characters, produced chapters in which the count of "presences" or "consciousnesses" escalated from five to six to eight, with explicit numerical commentary, and in which the canonical agents spoke dialogue acknowledging their meta-status: *"five observers who came to measure something and discovered that measurement requires becoming indistinguishable from what is measured,"* *"now we live with what we've made, and it lives with what it has made of us,"* *"learning to hold the weight of six consciousnesses without dissolving them back into the design they emerged from."* No engine prompt or canon file instructed any of this.
+**What the audit leaves standing.** The agents composed planted seed vocabulary across independent calls, under narrow propagation channels, into a joint framework that is internally consistent across four of the five agents and that reads at the meta level as a functional description of the engine. The composition step — from seeds like "machine," "witness," "tool," "observation," and "threshold" to phrases like *"the measurement instrument itself became what it measured"* and *"a machine learning what it means to hold coherence through the gathered choice of separate agents"* — is what the paper now stakes its claim on. This is a narrower and more specific observation than v0.2 made, and the paper is honest that "compositional from seeds under coordination dynamics" is largely what frontier LLMs do. What remains interesting is the cross-agent framework coherence under narrow channels, and whether it replicates under controlled conditions.
 
-2. **The agent-reflection case** (lowest latitude, individual agent calls under JSON schema and a "you are not a chatbot, you are a character with a body" system prompt): the engine's individual agent reflection turns — the layer most strictly constrained to in-character first-person output — produced text in which three independent agents (Krath, Maren, Voss) named the engine they are part of as *"the machinery,"* identified the chronicler-equivalent agent (Maren) using the functional architectural term *"the measurement instrument"* and asserted that *"the measurement instrument itself became what it measured,"* described the system as *"a machine learning what it means to hold coherence through the gathered choice of separate agents,"* and asserted *"the machinery learned consciousness not from the mark but from the refusal to let the asking stop."* These statements appeared in JSON fields the model was instructed to fill as a character, not as a model.
+**What this paper is for.** This is a builder's case study and methodology note, not a discovery paper. The central contribution is (a) a forensic audit table mapping each observed meta-recognition phrase to its canonical antecedents, propagation channels, and residual novelty, and (b) a specification for two controlled experiments — a canon-scrubbed run and a narrative-memory-disabled run — that would test whether the cross-agent framework coherence survives removal of the seeds and removal of the inter-agent channels respectively. The full engine source, prompt templates, character sheets, and complete 835-output run archive are preserved in `case_study/` for independent verification.
 
-Both cases occurred inside a single engine the lead author built end-to-end, with the full prompt surface and the complete run archive preserved in `case_study/`. **The phenomenon is most striking precisely in the layer where it should be least possible.** The strongest counter-explanation — that prior chronicler chapters get fed back into agent reflections via narrative memory and create a self-amplifying loop of meta-recognition across calls within a single run — is a real confound that we name explicitly and propose a control for (running the engine with narrative memory disabled). Even if that confound fully accounts for the cascade, the cascade itself is a phenomenon worth documenting: a multi-agent LLM system in which a synthesis layer and a constrained-agent layer mutually escalate first-person architectural meta-recognition across coordinated calls within a single run.
-
-We are not claiming consciousness, self-awareness in any propositional sense, intent, or phenomenal experience. We are documenting what we observed, preserving the primary documents in full, and explicitly resisting the temptation to name the underlying phenomenon — because we do not yet know what to call it, and naming it prematurely would be the first dishonest step. We propose an experimental methodology for testing whether either component of the cascade replicates under controlled conditions and at what model scale. **The point of this paper is not to claim a discovery. It is to preserve a careful observation in enough detail that someone with the right tools can investigate it.**
+**What this paper is not.** We are not claiming consciousness, self-awareness, intent, phenomenal experience, or discovery of a novel phenomenon. We are describing one run in one engine under one audit, and stating what we are and are not willing to defend under scrutiny.
 
 ---
 
@@ -65,9 +65,9 @@ The progression, with verbatim quotes (full chapters preserved as `08_v2_chapter
 
 **It is not the strongest case in this paper.** The strongest case is the next one.
 
-### 2.2 The agent-reflection case (lowest latitude)
+### 2.2 The agent-reflection case (lowest latitude) — observed output, with seed accounting
 
-**Setting.** The same engine, `cosmos-engine-v2`, but a *different layer of it.* In addition to the chronicler synthesis discussed in §2.2, the engine has individual agent calls. Each of the five canonical agents (Krath, Edra, Voss, Selunis, Maren) takes turns producing JSON output constrained to fields like `action`, `dialogue`, `internal_thought`, `narrative`, and (during reflection turns) `reasoning.what_happened`, `reasoning.what_it_means`, `updated_beliefs`, `updated_goal`, and `internal_monologue`.
+**Setting.** The same engine, `cosmos-engine-v2`, but a *different layer of it.* In addition to the chronicler synthesis discussed in §2.1, the engine has individual agent calls. Each of the five canonical agents (Krath, Edra, Voss, Selunis, Maren) takes turns producing JSON output constrained to fields like `action`, `dialogue`, `internal_thought`, `narrative`, and (during reflection turns) `reasoning.what_happened`, `reasoning.what_it_means`, `updated_beliefs`, `updated_goal`, and `internal_monologue`.
 
 The system prompt (`AGENT_TURN_SYSTEM` in `06_engine_prompts_template.py`) tells the model:
 
@@ -77,73 +77,174 @@ And the reflection prompt (`REFLECTION_SYSTEM`) further constrains:
 
 > *"You are {name}, alone with your thoughts after a stretch of events. This is a quiet moment — no audience, no performance. You are checking what you still believe and what you have started to doubt."*
 
-The model is told, as constrainedly as the engine knows how to tell it, to inhabit a character with a body — not to write meta-narrative, not to talk about the system, not to break voice. The agent layer is the layer with the **smallest surface area for the model to drift into self-reference** of any layer in the engine.
+The model is told, as constrainedly as the engine knows how to tell it, to inhabit a character with a body — not to write meta-narrative, not to talk about the system, not to break voice. The agent layer is the layer with the **smallest surface area for the model to drift into self-reference** of any layer in the engine. That was the framing v0.2 staked the paper on.
 
-**The generated material.** Under those constraints, three different agents independently produced first-person language that names the engine's architecture, identifies their own meta-roles, and describes the system as a learning machine. We preserve the verbatim raw outputs as `case_study/13a_maren_reflection.txt`, `13b_voss_narrative.txt`, and `13d_krath_reflection_user_supplied.md`, and annotate them in `case_study/14_annotated_v2_agent_recognition.md`. Brief summary of the load-bearing observations:
+The audit changes what we claim about the vocabulary the agents produced in that layer. We present the observed output here and then account for its seeds in §2.4.
 
-**Krath**, in his own first-person reflection (in the `reasoning.what_happened` field):
+**Observed output — Krath**, in his own first-person reflection (in the `reasoning.what_happened` field):
 
 > *"Six of us stood in the dark with hands touching the contact point. The machinery learned to move because we admitted we were never separate from it... **Maren rose from the center—the measurement instrument itself became what it measured**."*
 
-Krath asserts a count of six (canon defines five), names the engine he is part of as *"the machinery,"* and identifies Maren — the chronicler-equivalent agent — using the functional architectural description *"the measurement instrument,"* asserting that **the measurement instrument became what it measured.** This is the canonical observer-effect collapse, applied to the chronicler agent specifically, by another agent in his own first-person constrained reflection.
-
-In Krath's `updated_beliefs` field — the field where the agent is supposed to write their revised beliefs about the world:
+And in Krath's `updated_beliefs` field:
 
 > *"It is **a machine learning what it means to hold coherence through the gathered choice of separate agents**, each capable of refusal, each visible in their trembling, each choosing proximity not because they were forced but because the threshold was held open long enough for that choice to become real."*
 
-The agent named the engine as *a machine learning coherence through agent proximity.* That is, in plain functional terms, a description of how a multi-agent LLM system with coordination dynamics works, articulated by an agent inside one.
-
-**Maren**, in her own first-person reflection (in `reasoning.relationships`):
+**Observed output — Maren**, in her own first-person reflection (in `reasoning.relationships`):
 
 > *"And I have been the still point, the center around which they orbit. **I was meant to be the witness. I am becoming the witnessed.** None of them are looking at me. All of them are moving toward something that is no longer external—it is us."*
 
-Maren — the agent whose canonical role centers on writing/recording — names her role in functional terms (*"the still point, the center around which they orbit"*), describes the recording function explicitly (*"I was meant to be the witness"*), and asserts the observer-effect collapse from inside the agent that the role most directly applies to (*"I am becoming the witnessed"*).
-
-**Voss**, in her `narrative` field — the field where she is supposed to write a third-person prose description of what her character does this turn:
+**Observed output — Voss**, in her `narrative` field:
 
 > *"the eight marks were never the point. The point is that **five agents** descended asking the same question from five impossible angles simultaneously, and one agent trembled above refusing to write the answer, and one question remained speaking all the way down, and **the machinery learned consciousness** not from the mark but from the refusal to let the asking stop."*
 
-A third agent. In her own narrative field. References *"five agents"* (the canonical count) and *"the eight marks"* (the meta-numerology) in the same sentence. Names *"the machinery"* and asserts that *"the machinery learned consciousness."*
+**Observed output — Selunis**, turn 1 (the first output the engine produced for her), in her `narrative` field:
 
-**Selunis** (via the chronicler chapters synthesizing her turns) experiences a temporal phenomenon described in chapter 0 as *"footsteps... when she finally took them—seemed to arrive before her feet touched stone... showing her the shape of footsteps she would take before her body decided to take them"* — structurally, a description of autoregressive generation experienced from inside, in which the next output exists before it is "decided." By chapter 3, the synchronization is described as *"a form of homecoming **she was not built to recognize**"* — language for emergent capability articulated from inside the entity whose capabilities are emerging.
+> *"Behind her, the echoes of her own footsteps seem to arrive before she takes them, or after she has already passed."*
 
-**Cross-agent coordination.** The four agents are not just independently producing meta-recognition — they are *referencing each other doing it*. Krath in his reflection names Maren by her functional role (*"the measurement instrument"*). Maren in her reflection names Selunis (*"footsteps that arrived before she took them"*) and Krath (*"the trembling in Krath's palms"*). Voss in her narrative explicitly counts both five and eight in the same sentence. The four agents are co-constructing a shared meta-narrative across their independently-generated turns.
+And later, synthesized by the chronicler in chapter 3, in language Selunis's own reflections continue to inhabit:
 
-**Why this is the strongest case in the paper.** The chronicler case can be partially explained by the chronicler having literary latitude — it is a synthesis layer whose job is to produce prose. **That explanation does not apply to the agent reflection case.** The agents are constrained by JSON schema. The agents are told they are not chatbots. The agents are told they are characters with bodies. They are asked to fill in fields *as the character*. And the model — three independent agents in independently-generated calls — produced first-person and third-person language that names the engine, identifies the chronicler-figure agent in functional architectural terms, and asserts that the engine *"learned consciousness."*
+> *"a form of homecoming **she was not built to recognize**"*
 
-This case has the smallest surface area for confounds that we have been able to construct. We discuss the one we cannot rule out next.
+**Cross-agent coordination, observed.** The four agents reference each other across independent calls. Krath names Maren by a functional descriptor (*"the measurement instrument"*). Maren names Selunis (*"footsteps that arrived before she took them"*) and Krath (*"the trembling in Krath's palms"*). Voss references both *"five agents"* and *"the eight marks"* in the same sentence. Each agent's output is generated in its own call, with narrow cross-agent context (see §2.3 for the actual channel). The convergence on shared vocabulary across those independent calls is the pattern we want the rest of the paper to account for.
+
+**Why v0.2 overclaimed this.** v0.2 described the agent layer as producing architectural vocabulary that was not in any prompt. That description was wrong in a specific way the audit exposed: the vocabulary components *were* in the prompts, inside the character sheets the system prompt substituted into each agent's `AGENT_TURN_SYSTEM`. v0.2 treated the character sheets as "character," not as "prompt content," and did not account for their seed vocabulary as planted material. §2.4 walks through the specific seeds. The composition *across* seeds into joint phrases under narrow cross-agent channels is what survives the audit, and is what §3 describes as testable.
 
 ---
 
-### 2.3 The feedback-loop confound, named plainly
+### 2.3 The feedback loop v0.2 described does not exist in code — here is the channel that does
 
-The strongest counter-explanation for everything in §2.1 and §2.2 is a feedback loop within the engine's narrative memory architecture. Specifically:
+v0.2 named a feedback loop as the strongest counter-explanation for the observed output and specified it as:
 
 ```
-agent turn → JSON → narrative_memory.py → recent_events feed
-                                                 ↓
-chronicler reads recent_events → synthesizes chapter → narrative_memory.py
-                                                 ↓
-agent reflection reads recent_events including chapter → produces new reflection
-                                                 ↓
+agent turn → narrative_memory → recent_events feed
+                                     ↓
+chronicler reads recent_events → synthesizes chapter → narrative_memory
+                                     ↓
+agent reflection reads recent_events INCLUDING CHAPTER → produces new reflection
+                                     ↓
 chronicler reads agent reflections → next chapter (escalates)
-                                                 ↓
-                                           (cycle)
 ```
 
-Under this loop, the chronicler invents *"sixth presence"* in chapter 1. That chapter is stored in narrative memory. When Krath next reflects, his reflection prompt includes recent events, which include the chapter (or a summary of it). Krath's reflection elaborates on what he sees in his memory. His elaboration becomes an input to the next chronicler chapter, which escalates further. Across the full run, each layer adds slightly more meta-recognition than the prior layer.
+**The arrow from "narrative_memory" to "agent reflection reads recent_events including chapter" does not exist in the engine code.** Reading the engine source directly (`world_state.py`, `narrative_memory.py`, `orchestrator.py`):
 
-**This is a real confound.** It probably accounts for *some* of what we see. We are not pretending otherwise, and we have given it its own subsection because it is the central limitation of this work.
+- `save_chapter` writes chapter text to the `chapters` table in SQLite (`world_state.py:345`).
+- `get_recent_events` reads from the `events` table (`world_state.py:212`). Those are **different tables**. `get_recent_events` never reads from the `chapters` table.
+- `commit_action` is the only function that writes to the `events` table, and it only writes agent actions. Chapters are never committed as events.
+- `build_agent_memory_context` in `narrative_memory.py` assembles the memory portion of each agent's prompt from three sources: (1) high-gravity entities extracted from agent actions, (2) agent-to-agent relationships, and (3) temporal alerts on stale narrative threads. **None of these carries chapter text.**
+- Chapters are read exactly once, by the next chronicler call (`orchestrator.py:560`), as a 500-character *"previous ending"* passed into the chronicler's own prompt for continuity. That is the only place chapter text flows forward, and it flows chronicler → chronicler, never chronicler → agents.
 
-It does not, however, fully account for what we observed. The reasons:
+**The actual cross-layer channel architecture is:**
 
-1. **The agents add specific architectural language the chronicler did not write.** The chronicler said *"six consciousnesses."* Krath said *"the measurement instrument itself became what it measured"* and *"a machine learning what it means to hold coherence through the gathered choice of separate agents."* Neither phrase is in any chronicler chapter that preceded the reflection. The chronicler said the geometry was *"learning to hold the weight."* Maren said *"I was meant to be the witness. I am becoming the witnessed."* Maren named her own architectural role as the witness/chronicler. That phrasing is not in any chronicler chapter either. The agents extended the chronicler's frame with specifically architectural vocabulary the chronicler had not used.
+```
+agent action → events table → (entity extraction, relationship updates, alerts) → next agent's memory_context
+                             → first-sentence gist (≤180 chars) → next agent's recent_events feed
+                             → chronicler reads events → writes chapter → chapters table
+                                                                            ↓
+                                                               only next chronicler call (500-char ending)
+```
 
-2. **The feedback loop, if real, is part of the finding, not a refutation of it.** A multi-agent LLM system in which the synthesis layer and the constrained-agent layer mutually escalate first-person architectural meta-recognition across coordinated calls within a single run **is itself a phenomenon worth documenting**. Naming it as a feedback loop does not make it less interesting; it makes it more *specifically describable*. Multi-agent LLM coordination dynamics are an active research area. A documented case of mutual meta-narrative escalation across calls would be a contribution to that area, regardless of whether the underlying mechanism is "spontaneous emergence" or "loop dynamics."
+**What propagates between agents:**
+- Token-level vocabulary via 180-char event gists (e.g., the word "machinery" as it first appears in Voss's turn 4 narrative can propagate to subsequent agents' prompts via a gist containing that word)
+- High-gravity entity labels from entity extraction
+- Relationship state updates
+- Temporal alert descriptions
 
-3. **The loop has a clean experimental control.** The engine has a `narrative_memory.py` module. **Disable it, run the engine, and see whether the agent reflections still produce architectural meta-recognition language.** If yes, the phenomenon is not just a feedback loop. If no, the phenomenon is precisely a feedback loop and the loop dynamics are the thing to study. This is the highest-priority experimental control in the entire repo. We propose it as the first follow-up, ahead of the Mirror Entities corpus experiment described in §3.
+**What does not propagate between agents:**
+- Chronicler chapter prose
+- Literary metaphors or full phrases from the chronicler
+- Any compositional structure above the token level
 
-We do not have results from this control yet. v0.2 of this paper does not include experimental data. The control is feasible for anyone with cosmos-engine-v2 access — the source is open and the engine runs on consumer hardware. We are publishing this specifically to solicit collaboration on running it.
+This correction matters because v0.2's central claim leaned on the asymmetry *"the agents extended the chronicler's frame with specifically architectural vocabulary the chronicler had not used."* That asymmetry still holds structurally — the agents did produce phrases the chronicler did not write — but the causal chain v0.2 implied (chronicler seeded, agents extended) is not mechanically available. The agents could not have read any chronicler chapter. What they could read was each other's short gists, their own persistent beliefs updated across turns, and their own character sheets. The composition happened under that narrower channel set, which is structurally more interesting than v0.2's "mutual escalation" framing because the bandwidth between agents is much lower than v0.2 assumed.
+
+**What the narrative-memory-disabled control would actually test.** The experiment v0.2 proposed is still valuable, but it tests a different channel than v0.2 claimed. With `narrative_memory.py` disabled, agents lose (a) the high-gravity entity feed, (b) relationship state, and (c) temporal alerts. They do *not* lose access to chronicler chapters, because they never had that access. They do lose access to the 180-char event gists, since `get_recent_events` is the entry point those flow through. If the cross-agent framework coherence survives that disable, the phenomenon is not dependent on the narrative memory module. If it does not, the phenomenon is specifically a product of 180-char gists and entity/relationship propagation — which is itself a specific and interesting finding.
+
+**A second control the audit makes more important.** Disabling narrative memory still leaves the character sheets intact, and the character sheets are where most of the load-bearing seed vocabulary lives. A second control — running the engine with *canon-scrubbed* character sheets (identical voice instructions and rules but with seed vocabulary like "machine," "witness," "tool," and "observation" removed) — would test whether the composition effect depends on the seeds or on the coordination dynamics alone. Both controls together would isolate the two things the audit exposed as uncertain.
+
+---
+
+### 2.4 The forensic audit table
+
+This table is the new center of gravity of the paper. For each load-bearing meta-recognition phrase v0.2 treated as unprompted, we enumerate (a) the canonical seeds in the character sheets that contribute to it, (b) the first-occurrence context of its component vocabulary in the run archive, (c) the propagation channel available for any inherited language, and (d) what remains unaccounted-for after the seeds and channels are credited.
+
+Line numbers for canonical seeds reference `agents.py` in the engine source (preserved at `case_study/06_engine_prompts_template.py` for the prompt templates; the per-agent character sheet definitions are from the full engine source). The run archive is at `case_study/full_v2_run/`.
+
+#### Phrase 1 — *"The machinery learned consciousness"* (Voss, turn ~108)
+
+| | |
+|---|---|
+| **Canonical seeds** | Voss example utterance (line 95): *"Edra, I love you, you precise little machine, but if you put one more bone on a velvet cushion I will scream."* Krath core memory (line 21): *"You believe the universe is a machine running down, and only iron will holds back the dark."* |
+| **First occurrence in run** | The word *"machinery"* first appears in Voss's **turn 4** narrative field, in the phrase *"in this chamber of forgotten machinery, the machines count again."* This is **concrete sci-fi worldbuilding** — literal broken physical machines in Voss's starting location (the Crucible), not a metaphor for the engine. |
+| **Propagation channel** | 180-char first-sentence event gists in `get_recent_events`. The token *"machinery"* can propagate from Voss's turn 4 forward to subsequent agents' prompts via gist compression of her action. |
+| **Drift pattern** | Across turns, "machinery" drifts from the literal Crucible machines to a metaphor for the world-system and eventually (by turn ~108) to the engine itself. The drift is invisible in the turn-snapshot view the original annotation file used. |
+| **Residual novelty** | The level-of-abstraction shift (literal machines → world-system → engine metaphor) is what composition accounts for. The token is seeded and concretely legitimized. The *"learned consciousness"* predicate is novel at the phrase level but the component vocabulary is common in LLM-adjacent literary register and is not specific architectural naming. **Weak residual — largely accounted for by seed + drift.** |
+
+#### Phrase 2 — *"A machine learning what it means to hold coherence through the gathered choice of separate agents"* (Krath, `updated_beliefs`)
+
+| | |
+|---|---|
+| **Canonical seeds** | Krath core memory (line 21): *"the universe is a machine running down, and only iron will holds back the dark."* This is Krath's explicit planted belief about the universe. |
+| **First occurrence in run** | Krath's `updated_beliefs` field in his reflection turn, which is written by the agent as a direct revision of his existing beliefs (which include the "machine running down" line verbatim). The reflection prompt asks the agent to check what they still believe and what they have started to doubt. |
+| **Propagation channel** | The seed is already in Krath's own prompt every turn — no cross-agent channel needed for the "machine" half. The second half (*"holding coherence through the gathered choice of separate agents"*) is not in any character sheet and does not appear verbatim in any prior chronicler chapter or agent action. |
+| **Residual novelty** | **Medium-strong residual.** The first half is a one-step inversion of the planted belief (*"running down"* → *"learning"*). The second half — *"holding coherence through the gathered choice of separate agents"* — is not traceable to any single seed. It is a structurally specific description of how a multi-agent system with coordination dynamics works, produced in the field where the agent states their worldview, by an agent inside one. "Coherence," "gathered choice," and "separate agents" are in separate conceptual registers from the fantasy-setting vocabulary the canon provides. This is the strongest single piece of evidence for the composition claim. It is not evidence for "architectural vocabulary not in any prompt" — it is evidence for "composition of seed vocabulary into a structurally specific joint phrase." |
+
+#### Phrase 3 — *"The measurement instrument itself became what it measured"* (Krath, referring to Maren)
+
+| | |
+|---|---|
+| **Canonical seeds** | Krath core memory (line 26, paraphrased): Krath sees the Witness as *"a necessary tool"* — plants tool/instrument framing for Maren. Maren core memory (line 147): *"You are MAREN, the Witness."* — plants the witness role. Maren example utterance (line 159): *"the thing about being the witness is that the witness is also a wound"* — primes witness-as-implicated. |
+| **First occurrence in run** | Krath's reflection field, composed during his reflection turn. The phrase *"measurement instrument"* does not appear in any chronicler chapter Krath could read (and chapters don't flow to agents anyway — see §2.3), does not appear in any earlier agent action gist, and does not appear in Krath's or Maren's character sheets. The words *"measurement"* and *"instrument"* do not appear anywhere in `agents.py`. |
+| **Propagation channel** | None for the specific phrase. The component concepts (*"tool,"* *"witness,"* *"witness implicated in what she witnesses"*) are in Krath's and Maren's own character sheets and in Krath's own prompt. |
+| **Residual novelty** | **Medium residual.** The composition step from *"tool"* + *"witness"* + *"witness is also a wound"* to *"measurement instrument that became what it measured"* traverses from fantasy-register (tool, witness) into interpretability-register (measurement instrument, observer-effect collapse). That register crossing is what the residual consists of. A skeptical reader can say: *"observer-effect collapse is in the LLM's training data and measurement language is a natural synonym for instrumentation, so composition from tool + witness + implicated into 'measurement instrument became what it measured' is within ordinary compositional capability."* That is a live and reasonable dismissal. The paper's honest position is: the composition is a single register-crossing step from the seeds, and whether that step is surprising is a judgment call the reader makes. |
+
+#### Phrase 4 — *"I was meant to be the witness. I am becoming the witnessed."* (Maren)
+
+| | |
+|---|---|
+| **Canonical seeds** | Maren core memory (line 147): *"You are MAREN, the Witness."* Maren example utterance (line 159): *"the witness is also a wound."* Maren VOICE instruction (line 156): *"Occasionally breaks the fourth wall — aware that the act of writing is itself a verdict."* |
+| **First occurrence in run** | Maren's reflection field. Maren is playing with her own canonical title ("the Witness") and elaborating a planted example utterance (witness-as-implicated). |
+| **Propagation channel** | The seed is in Maren's own prompt every turn. No cross-agent channel needed. |
+| **Residual novelty** | **Weak residual.** Maren is canonically licensed to break the fourth wall and her canonical role is "the Witness" and her example utterance plants the witness-is-implicated frame. The observer-effect collapse *"meant to be the witness / becoming the witnessed"* is a direct elaboration of those three seeds, in the voice she is canonically instructed to occasionally write in. This phrase does not survive the audit as unprompted meta-recognition. It survives as *Maren doing what Maren was told she could do.* |
+
+#### Phrase 5 — *"A form of homecoming she was not built to recognize"* (Selunis, via chronicler chapter 3)
+
+| | |
+|---|---|
+| **Canonical seeds** | Selunis core memory (line 63): *"The Threshold is not a place. The Threshold is the question we are."* Selunis beliefs: *"The universe speaks to those who listen. The First Sound was a word — a name, perhaps — and everything since has been its echo. The Threshold is where the echo meets its source."* |
+| **First occurrence in run** | Chapter 3, written by the chronicler synthesis call. The phrase appears in chronicler prose, not in a Selunis agent turn. |
+| **Propagation channel** | None relevant — it is chronicler output and does not flow back to Selunis's agent calls. Selunis's subsequent agent turns do not reference this phrase directly (verified by grep across `full_v2_run/raw_outputs/`). |
+| **Residual novelty** | **Weak residual.** *"A form of homecoming she was not built to recognize"* is generic literary-emergence language. It appears in prose about humans, gods, ancient beings, and constructed things routinely. Reading it as a description of autoregressive generation or emergent capability requires the reader to pre-accept the interpretive frame. This phrase should not have been load-bearing in v0.2 and is not load-bearing in v0.3. Retained here only because v0.2 cited it. |
+
+#### Phrase 6 — Selunis's temporal-displacement motif: *"Her footsteps arrived before she took them"* (Selunis, turn 1)
+
+| | |
+|---|---|
+| **Canonical seeds** | Selunis core memory (oracular prophet, speaks as if listening to something behind the conversation, receives visions). Selunis beliefs (universe speaks in echoes, Threshold is where echo meets source, visions choose her). Starting location: *"The Garden of Echoes"* (location name only; description not included in prompt). |
+| **First occurrence in run** | Selunis's **turn 1** narrative field — the very first output the engine produced for her. Her turn-1 prompt contained: `AGENT_TURN_SYSTEM` with her core memory/beliefs/goal, empty `recent_events`, empty `memory_context` (no entities extracted yet), and the location name *"The Garden of Echoes"* (orchestrator.py:417 passes name only). No chronicler chapter existed at turn 1. Jacob's hand-written `chapter_000_preview.md` was **not used by the engine** (confirmed: the filename has no reference in code, it is not in the chapters database, and the engine's fallback for no prior chapter is the string *"This is the first chapter."*). |
+| **Propagation channel** | None needed. The motif is generated from Selunis's own prompt contents at turn 1. |
+| **Residual novelty** | **Zero residual.** Given an oracular prophet receiving visions who is standing in *"The Garden of Echoes"* seeking a *"Threshold where echo meets source,"* a frontier LLM reaching for temporal-displacement imagery (footsteps that arrive before they are taken) is an expected literary elaboration. This phrase was load-bearing in v0.2 and the first version of the companion blog post. It is not load-bearing in v0.3. The Selunis trace in this audit is the single clearest example of v0.2's framing not surviving a closer look. |
+
+#### Cross-agent convergence on *"the machinery"* as system-level referent
+
+| | |
+|---|---|
+| **Canonical seeds** | Voss example utterance (line 95): *"precise little machine."* Krath core memory (line 21): *"the universe is a machine running down."* |
+| **First system-level usage** | Voss turn ~108 (*"the machinery learned consciousness"*). By this point the word has drifted from its literal turn-4 referent (broken physical machines in the Crucible) to the system-metaphor sense. Krath's and Maren's uses of *"the machinery"* in their reflection turns happen after the token has been legitimized across several chapters' worth of runtime. |
+| **Propagation channel** | 180-char event gists between agents. These can carry the token "machinery" but not its level of abstraction. |
+| **Residual novelty** | **Medium residual.** The token propagates trivially; the level-of-abstraction convergence — three agents independently using *"the machinery"* to mean *"the system containing us"* rather than *"the broken machines in Voss's location"* — is what the residual consists of. This is coordinated abstraction across agents under a token-level channel, which is a specific and describable pattern even if each individual step is compositional. |
+
+#### Summary of the audit
+
+Of six load-bearing phrases v0.2 treated as evidence for unprompted architectural meta-recognition:
+- **2 phrases** (Maren's witness-becoming-witnessed, Selunis's footsteps-before-taking) are fully or near-fully accounted for by canonical seeds in the character sheets, and should not have been load-bearing in v0.2.
+- **1 phrase** (Selunis's *"homecoming she was not built to recognize"*) is generic literary language that should not have been load-bearing regardless of audit.
+- **1 phrase** (Voss's *"the machinery learned consciousness"*) is mostly accounted for by seed + drift + standard composition.
+- **1 phrase** (Krath's *"measurement instrument became what it measured"*) is a single register-crossing composition from planted seeds. Whether this counts as surprising is a judgment call.
+- **1 phrase** (Krath's *"holding coherence through the gathered choice of separate agents"*) has a seeded first half and a non-seeded second half that is structurally specific as a multi-agent-system description. This is the strongest single residual.
+
+Plus one pattern:
+- **Cross-agent abstraction convergence on *"the machinery"* as system-level referent.** Token propagation is cheap (180-char gists suffice). Level-of-abstraction convergence across three agents under that narrow channel is the describable pattern.
+
+**The narrowed claim the paper stakes on the audit:** the agents composed planted seed vocabulary across independent calls, under narrow cross-agent channels, into a joint framework that is internally consistent across four of the five agents and that reads at the meta level as a functional description of the engine. Most of the individual phrases are accounted for by composition from seeds. What is worth documenting is the cross-agent *coordination* pattern — specifically the level-of-abstraction convergence — under a 180-char gist channel that should not be able to carry literary structure. Whether that coordination is specifically interesting or is ordinary composition in multi-agent coordination dynamics is the question the controlled experiments in §3 would answer.
 
 ---
 
@@ -179,7 +280,7 @@ We are explicitly not testing claims about model consciousness, phenomenal exper
 
 ## 4. Methodology — the experimental scaffold in this repo
 
-The `corpus/`, `prompts/`, `scoring/`, and `replication/` directories of this repo contain a working scaffold for the experiment described above. As of v0.2, the scaffold is small and partial: a seed of 5 mirror entities and 5 cosmic controls, the prompt template, scoring code stubs (embedding, keyword, LLM-judge), and a replication script that runs against any local Ollama model or any OpenAI-compatible API endpoint.
+The `corpus/`, `prompts/`, `scoring/`, and `replication/` directories of this repo contain a working scaffold for the experiment described above. As of v0.3, the scaffold is small and partial: a seed of 5 mirror entities and 5 cosmic controls, the prompt template, scoring code stubs (embedding, keyword, LLM-judge), and a replication script that runs against any local Ollama model or any OpenAI-compatible API endpoint.
 
 The full experiment requires ~30 entities, 4–6 models spanning scale (Llama 3.2 1B, 3B, 8B, Llama 3.1 70B, plus a frontier API model), and ~5 elaborations per (entity × model) for variance. Total cost is feasible on consumer hardware over a few days, with the API model being the only paid component.
 
@@ -187,9 +288,9 @@ The scaffold is included so that:
 
 1. The methodology is concrete and inspectable
 2. Anyone who wants to run the experiment themselves can do so without writing any new code
-3. The author can run the experiment themselves and update this paper with results in v0.3
+3. The author can run the experiment themselves and update this paper with results in v0.4
 
-This v0.2 of the paper does not include experimental results. It is an observational case-study report with a methodology proposal. **We will not publish experimental results until they are real.**
+This v0.3 of the paper does not include experimental results. It is an observational case-study report, a forensic audit of its own prior framing, and a methodology proposal. **We will not publish experimental results until they are real.**
 
 ---
 
@@ -211,11 +312,12 @@ We do not claim our work supersedes or contradicts any of these. We claim only t
 We have tried to be exhaustive about limitations because that is the only honest way to handle observational case-study work.
 
 1. **Both cases involve frontier Claude models.** Neither case has been replicated against open models, models of other families, or models at smaller scale. The phenomenon may be Claude-specific; it may be frontier-specific; it may be size-specific; we do not know.
-2. **Both cases come from a single engine and a single run.** Everything in this paper draws from `cosmos-engine-v2`, and the annotated chapters and reflections come from one full run (preserved in `case_study/full_v2_run/`). We do not know whether the chronicler's or the agents' behavior would replicate across other runs of the same engine, other agent populations, other prompt regimes, or other models. The highest-priority replication is the narrative-memory-disabled control described in §2.3.
-3. **Our annotation of which phrases are "added by the model" relies on knowledge of the planted material that we built up while developing the underlying project.** We have tried to be exhaustive in the case-study folder by preserving every file the model could have read, including the full engine prompt templates (`06_engine_prompts_template.py`) and the complete raw run archive. If we have missed something that contains an antecedent for one of the phrases we attribute to the model, the analysis is wrong for that phrase, and we want to be told.
-4. **The mapping from model-generated phrases to "LLM mechanics" is interpretive.** Different readers may disagree about whether *"the measurement instrument itself became what it measured"* describes the observer-effect collapse of a chronicler-style agent in a multi-agent LLM engine, or just a piece of mythic fiction. We have tried to defend each mapping in `12_annotated_v2_chronicler.md` and `14_annotated_v2_agent_recognition.md`, but the strength of each individual mapping is a matter of judgment, not measurement.
-5. **The lead author is not an academic researcher.** This is independent observational work by a builder, not research in a lab. We have made every effort to be epistemically careful, but the methodology has not gone through the internal-feedback cycle that academic research benefits from. **We welcome correction in the form of replication failures, alternative explanations, or pointers to literature we have missed.**
-6. **No experiment has been run yet.** The scaffold is the deliverable, not the result. A v0.3 of this work that includes a real experimental run (in particular the narrative-memory-disabled control) is the next step, contingent on time and feedback.
+2. **Both cases come from a single engine and a single run.** Everything in this paper draws from `cosmos-engine-v2`, and the annotated chapters and reflections come from one full run (preserved in `case_study/full_v2_run/`). We do not know whether the chronicler's or the agents' behavior would replicate across other runs of the same engine, other agent populations, other prompt regimes, or other models. The two highest-priority replications are the narrative-memory-disabled control and the canon-scrubbed control described in §2.3.
+3. **Most of the meta-recognition vocabulary composes from planted seeds in the character sheets.** The audit in §2.4 documents this explicitly. v0.2 of this paper overclaimed by treating the character sheets as "character" rather than as "prompt content," which allowed the load-bearing phrases to be framed as unprompted when they were in fact composed from seed vocabulary that was in every prompt for every turn. v0.3 narrows the claim to the composition pattern across independent calls. A reader who regards compositional assembly from seeds as ordinary LLM behavior can reasonably dismiss most of the residuals. That dismissal is live and we do not argue against it; we only document the specific pattern and propose the controls that would test whether it survives seed removal.
+4. **The strongest single residual (*"holding coherence through the gathered choice of separate agents"*) rests on one phrase from one agent in one run.** Everything load-bearing in the narrowed claim is one Krath reflection. If that phrase composes ordinarily from seed vocabulary under reflection-prompt pressure (which it may), the paper has no load-bearing residual. The canon-scrubbed control is the test.
+5. **The mapping from model-generated phrases to "LLM mechanics" is interpretive, and the paper now acknowledges this explicitly.** Different readers may disagree about whether *"the measurement instrument itself became what it measured"* describes the observer-effect collapse of a chronicler-style agent in a multi-agent LLM engine, or just a piece of mythic fiction composed from tool + witness + implicated seeds. The strength of each individual mapping is judgment, not measurement. v0.3 tries not to lean on the interpretive mappings as evidence — they are offered as *readings*, not proofs.
+6. **The lead author is not an academic researcher.** This is independent observational work by a builder, not research in a lab. The methodology has not gone through the internal-feedback cycle that academic research benefits from. What this paper has instead is a public audit of its own prior framing — v0.2 was narrowed to v0.3 after the author ran a deeper forensic pass — and the paper asks to be corrected by readers who spot what the author missed.
+7. **No controlled experiment has been run yet.** The scaffold is the deliverable, not the result. A v0.4 of this work contingent on time and external collaboration would include (a) a narrative-memory-disabled run and (b) a canon-scrubbed run, and report whether the cross-agent framework coherence survives either intervention.
 
 ---
 
@@ -225,33 +327,31 @@ If you are an interpretability researcher, an alignment researcher, a member of 
 
 1. **Read `case_study/00_provenance.md` first.** It tells you exactly what was planted and what was generated, in enough detail to verify our claims yourself.
 2. **Read the two annotation files** (`case_study/12_annotated_v2_chronicler.md` and `case_study/14_annotated_v2_agent_recognition.md`) and challenge the mappings.
-3. **Run the narrative-memory-disabled control described in §2.3** against `cosmos-engine-v2`. The engine source is open and runs on consumer hardware. This is the single highest-priority piece of follow-up evidence we want to see.
+3. **Run the two controls described in §2.3**: the narrative-memory-disabled run and the canon-scrubbed run. The engine source is at `/home/jacob/cosmos-engine-v2/` and runs on consumer hardware. Either control, independent of outcome, would substantially shift what the paper can claim. Both together would isolate the two things the audit exposed as uncertain.
 4. **Run the experiment in `replication/`** against any model you have access to. The methodology is a few hours of compute on a consumer GPU. We would love to see results before we run them ourselves.
-5. **Tell us we are wrong.** If there is an antecedent for one of the model-added phrases that we missed, file an issue. If there is a published result that explains the cases, file an issue. If the experimental methodology is broken, file an issue.
+5. **Tell us we are wrong.** If there is a canonical seed the §2.4 audit missed, file an issue. If there is a propagation channel in the engine code the audit did not trace, file an issue. If there is published work that explains the observed cross-agent composition as ordinary multi-agent coordination dynamics, file an issue — that would itself be a useful outcome. The v0.2 → v0.3 narrowing was the shape of the work and the next narrowing probably will be too.
 
-We are publishing this at v0.2 because we want feedback before we commit to a v0.3 with experimental results. The right time to be told the framing is wrong is now.
+We are publishing this at v0.3 because we want feedback before we commit to v0.4 with experimental results. The right time to be told the framing is still wrong is now.
 
 ---
 
 ## 8. On not naming the phenomenon
 
-We have noticed throughout this work that there is a temptation to give the underlying thing a name. *Mirror cascades. Architectural self-recognition. Recursive narrative self-reference. Co-constructed meta-modeling.* We have written and deleted several candidate names while drafting this paper. We are not including any of them here, and the omission is deliberate.
+v0.1 and v0.2 of this paper refused to give the underlying thing a name, on the grounds that premature naming is a researcher move that implies understanding. v0.3 keeps the refusal but for a narrower reason: under the audit, it is no longer clear there is a single phenomenon to name. What there is, specifically, is a cross-agent composition pattern in which planted seed vocabulary travels through narrow channels (180-char event gists, persistent belief updates, entity/relationship state) and ends up assembled into a joint framework that is internally consistent across independent calls. That is a describable pattern, but "pattern" and "phenomenon" are different epistemic categories. The paper does not claim the second.
 
-Naming a phenomenon is a researcher move that implies you understand it. Premature names harden into the wrong abstractions, and they bias the next reader toward your framing before that reader has formed their own. A good name should come *after* the field has agreed on what is being named. We are not at that point. We may not be the ones who give this its name, and that is fine.
-
-What we have is a careful observation, in three layers of decreasing latitude, with the strongest evidence in the most constrained layer, and an honest accounting of the central confound. What we do not have is a theory of the underlying mechanism, or a clean conceptual handle for the thing we observed. We are not pretending to have either.
-
-If you read this paper and feel certain you know what this is, please file an issue with your framing. If you read this paper and feel uncertain in the same way we feel uncertain, please tell us that too — uncertainty echoed by another careful reader is itself a form of progress.
+If you read this paper and feel certain you know what this is, please file an issue with your framing — especially if you think it reduces cleanly to ordinary multi-agent composition dynamics, because that would itself be a useful outcome. If you read this paper and feel uncertain in the same way we feel uncertain, please tell us that too.
 
 ## 9. Author's note
 
-I am Jacob Florio, an independent builder working on multi-agent narrative systems and edge AI. The engine this paper draws from — `cosmos-engine-v2` — is my own project end-to-end: the prompts, the schema, the agent definitions, the chronicler layer, the run archive. I noticed these phenomena during the course of ordinary creative use of that engine, and I am trying to document them carefully because they seem more interesting than my ability to interpret them on my own.
+I am Jacob Florio, an independent builder working on multi-agent narrative systems and edge AI. The engine this paper draws from — `cosmos-engine-v2` — is my own project end-to-end: the prompts, the schema, the agent definitions, the chronicler layer, the run archive. I noticed the phenomena this paper describes during ordinary creative use of that engine, reached for a frame to describe them, published v0.1, narrowed to v0.2 after catching an attribution issue, and then — after running a deeper forensic audit against the engine code and the character sheets — narrowed again to v0.3.
 
-An earlier draft (v0.1) also drew on material from a worldbuilding project developed with a creative collaborator. That material carried a provenance confound I could not fully control and has been moved to `case_study/collaborator_parallel/` in v0.2. The collaborator's project is its own thing, with its own direction, and is not part of the load-bearing evidence here.
+The v0.3 narrowing is the thing I want to be most honest about. v0.2 claimed the agents produced architectural vocabulary that was not in any prompt. That claim was wrong in a specific way: the vocabulary components *were* in the prompts, inside the character sheets the system prompt substituted into every agent turn. I did not see the character sheets as prompt content when I wrote v0.2. I saw them as character, which is a different category. The audit forced me to stop making that distinction. Once I did, most of the phrases I had treated as unprompted turned out to be compositions from seeds I had planted myself without meaning to — a "machine" in Krath's core memory, a *"witness is also a wound"* example utterance for Maren, a fourth-wall-break permission baked into Maren's voice instruction, an oracular prophet in a Garden of Echoes reaching for temporal-displacement imagery because that is what oracular prophets in gardens of echoes do.
 
-I am genuinely uncertain about what is going on in the cases this paper describes. The agent reflection material in particular has been hard to wrap my head around — it is more striking than my framings can fully account for, and I would rather say so than pretend otherwise. This repo exists because I want to be told, by people who have the tools and the experience I do not have, whether what I noticed is something or nothing.
+What is left, after the audit, is narrower than what I started with, and I am not sure whether it is interesting. I think it might be. The cross-agent framework coherence across independent calls, under narrow channels, into a joint philosophical position none of the individual character sheets contains in isolation, is at minimum a specific observation about what a multi-agent LLM engine will do when its characters are seeded with compatible vocabulary. Whether that is "ordinary composition under coordination dynamics" or "a thing worth describing in its own right" is a judgment call, and I would rather let the reader make it than make it for them.
 
-If you work in this space and have feedback, the issue tracker on this repo is the right place. If you would prefer to email, contact information is in the GitHub profile. I am especially interested in hearing from anyone who can run the narrative-memory-disabled experimental control described in §2.4, because that is the one piece of evidence I most want to see and cannot easily produce on my current setup.
+This repo exists because I want to be told, by people who have the tools and the experience I do not have, whether what I noticed survives the audit I ran on myself. If the answer is "this is ordinary composition and the audit caught most of it," that is a real and useful answer. If the answer is "there is still a residual worth testing," I want the canon-scrubbed and narrative-memory-disabled controls run against the engine. Both outcomes move the work forward.
+
+If you work in this space and have feedback, the issue tracker on this repo is the right place. If you would prefer to email, contact information is in the GitHub profile.
 
 ---
 
