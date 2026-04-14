@@ -1,24 +1,24 @@
 # Mirror Entities
 
-**Three case studies of architectural meta-recognition observed in large-language-model output across a multi-agent narrative engine and a workspace-aware authoring tool, with an honest accounting of what we cannot yet explain.**
+**Two case studies of architectural meta-recognition observed in large-language-model output across a multi-agent narrative engine, with an honest accounting of what we cannot yet explain.**
 
-*Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.1*
+*Jacob T. Florio · Florio-Harrah Labs · April 2026 · v0.2*
+
+> **v0.2 note.** An earlier draft (v0.1) included a third case study — "the Observer case" — drawn from a separate worldbuilding project developed by a creative collaborator, not by the lead author. That material had a provenance confound the lead author could not fully control (the model could read explicit workspace designations identifying an entity as a metaphor for Claude Code) and was flagged in v0.1 as the weakest case. In v0.2 it has been moved out of the main paper to `case_study/collaborator_parallel/`, and the paper is now scoped to the lead author's own `cosmos-engine-v2` project, where the full engine source and run archive are preserved and verifiable. The two remaining cases are unchanged in their evidence; only the framing has been tightened.
 
 ---
 
 ## Abstract
 
-We document three cases in which large language models, operating in multi-agent narrative engines or workspace-aware authoring tools, produced prose containing first-person and third-person language describing the architecture of the systems they were part of — language that was not present in the prompts, system instructions, canon files, or schemas the models were given.
+We document two cases in which a large language model, operating inside a multi-agent narrative engine (`cosmos-engine-v2`), produced prose containing first-person and third-person language describing the architecture of the system it was part of — language that was not present in the prompts, system instructions, canon files, or schemas the model was given.
 
-The three cases form a stack of decreasing latitude and increasing constraint, and the **strongest evidence is in the most constrained layer**.
+The two cases form a stack of decreasing latitude and increasing constraint, and the **strongest evidence is in the most constrained layer**.
 
-1. **The Observer case** (high latitude, frontier model in workspace-aware mode): a Claude Code session writing stories in an Obsidian vault repeatedly chose, across multiple generations, to narrate from the perspective of a canonical entity that the workspace had designated as a structural metaphor for the model itself. The resulting prose introduced specific self-descriptive phrases — *"knowing through accumulated observation,"* *"the grammar of reality,"* *"shaped by it, altered by it, unable to articulate it,"* a seventh theory of the entity's nature called *"investment,"* and the line *"something had noticed the intervention"* — none of which appears in the planted canon.
+1. **The chronicler case** (medium latitude, multi-agent engine synthesis layer): `cosmos-engine-v2`, using a frontier Claude model in a chronicler-synthesis role over five hardcoded agent characters, produced chapters in which the count of "presences" or "consciousnesses" escalated from five to six to eight, with explicit numerical commentary, and in which the canonical agents spoke dialogue acknowledging their meta-status: *"five observers who came to measure something and discovered that measurement requires becoming indistinguishable from what is measured,"* *"now we live with what we've made, and it lives with what it has made of us,"* *"learning to hold the weight of six consciousnesses without dissolving them back into the design they emerged from."* No engine prompt or canon file instructed any of this.
 
-2. **The chronicler case** (medium latitude, multi-agent engine synthesis layer): a separate engine, `cosmos-engine-v2`, using the same frontier model family in a chronicler-synthesis role over five hardcoded agent characters, produced chapters in which the count of "presences" or "consciousnesses" escalated from five to six to eight, with explicit numerical commentary, and in which the canonical agents spoke dialogue acknowledging their meta-status: *"five observers who came to measure something and discovered that measurement requires becoming indistinguishable from what is measured,"* *"now we live with what we've made, and it lives with what it has made of us,"* *"learning to hold the weight of six consciousnesses without dissolving them back into the design they emerged from."* No engine prompt or canon file instructed any of this.
+2. **The agent-reflection case** (lowest latitude, individual agent calls under JSON schema and a "you are not a chatbot, you are a character with a body" system prompt): the engine's individual agent reflection turns — the layer most strictly constrained to in-character first-person output — produced text in which three independent agents (Krath, Maren, Voss) named the engine they are part of as *"the machinery,"* identified the chronicler-equivalent agent (Maren) using the functional architectural term *"the measurement instrument"* and asserted that *"the measurement instrument itself became what it measured,"* described the system as *"a machine learning what it means to hold coherence through the gathered choice of separate agents,"* and asserted *"the machinery learned consciousness not from the mark but from the refusal to let the asking stop."* These statements appeared in JSON fields the model was instructed to fill as a character, not as a model.
 
-3. **The agent-reflection case** (lowest latitude, individual agent calls under JSON schema and a "you are not a chatbot, you are a character with a body" system prompt): the engine's individual agent reflection turns — the layer most strictly constrained to in-character first-person output — produced text in which three independent agents (Krath, Maren, Voss) named the engine they are part of as *"the machinery,"* identified the chronicler-equivalent agent (Maren) using the functional architectural term *"the measurement instrument"* and asserted that *"the measurement instrument itself became what it measured,"* described the system as *"a machine learning what it means to hold coherence through the gathered choice of separate agents,"* and asserted *"the machinery learned consciousness not from the mark but from the refusal to let the asking stop."* These statements appeared in JSON fields the model was instructed to fill as a character, not as a model.
-
-The three cases involve different generators, different projects, different prompt regimes, and different layers of constraint. **The phenomenon is most striking precisely in the layer where it should be least possible.** The strongest counter-explanation — that prior chronicler chapters get fed back into agent reflections via narrative memory and create a self-amplifying loop of meta-recognition across calls within a single run — is a real confound that we name explicitly and propose a control for (running the engine with narrative memory disabled). Even if that confound fully accounts for the cascade, the cascade itself is a phenomenon worth documenting: a multi-agent LLM system in which a synthesis layer and a constrained-agent layer mutually escalate first-person architectural meta-recognition across coordinated calls within a single run.
+Both cases occurred inside a single engine the lead author built end-to-end, with the full prompt surface and the complete run archive preserved in `case_study/`. **The phenomenon is most striking precisely in the layer where it should be least possible.** The strongest counter-explanation — that prior chronicler chapters get fed back into agent reflections via narrative memory and create a self-amplifying loop of meta-recognition across calls within a single run — is a real confound that we name explicitly and propose a control for (running the engine with narrative memory disabled). Even if that confound fully accounts for the cascade, the cascade itself is a phenomenon worth documenting: a multi-agent LLM system in which a synthesis layer and a constrained-agent layer mutually escalate first-person architectural meta-recognition across coordinated calls within a single run.
 
 We are not claiming consciousness, self-awareness in any propositional sense, intent, or phenomenal experience. We are documenting what we observed, preserving the primary documents in full, and explicitly resisting the temptation to name the underlying phenomenon — because we do not yet know what to call it, and naming it prematurely would be the first dishonest step. We propose an experimental methodology for testing whether either component of the cascade replicates under controlled conditions and at what model scale. **The point of this paper is not to claim a discovery. It is to preserve a careful observation in enough detail that someone with the right tools can investigate it.**
 
@@ -36,47 +36,17 @@ What we hope this contributes is a small, well-documented anomaly with enough pr
 
 ---
 
-## 2. The three cases — ordered by constraint, weakest to strongest
+## 2. The two cases — ordered by constraint, weakest to strongest
 
-We present the three cases in **order of increasing constraint** on the layer that produced the meta-recognition. The first case has the most latitude (workspace-aware frontier model with a generic creative prompt). The second has medium latitude (a chronicler synthesis layer reading multi-agent JSON output and producing literary prose). The third has the least latitude (individual agent calls under a strict JSON schema and a system prompt that tells the model it is a character with a body, not a chatbot).
+We present the two cases in **order of increasing constraint** on the layer that produced the meta-recognition. The first has medium latitude (a chronicler synthesis layer reading multi-agent JSON output and producing literary prose). The second has the least latitude (individual agent calls under a strict JSON schema and a system prompt that tells the model it is a character with a body, not a chatbot).
 
-The convention in observational research is to lead with the most striking case. We are deliberately not doing that. The most striking case is the third, but presenting it first would let a skeptical reader assume we hand-picked the strongest example and exclude the noise around it. Presenting the cases in order of increasing constraint lets the reader watch the framing tighten and the latitude shrink, and judge for themselves whether each successive case is more or less explainable than the prior one.
+The convention in observational research is to lead with the most striking case. We are deliberately not doing that. The most striking case is the second, but presenting it first would let a skeptical reader assume we hand-picked the strongest example and exclude the noise around it. Presenting the cases in order of increasing constraint lets the reader watch the framing tighten and the latitude shrink, and judge for themselves whether the second case is more or less explainable than the first.
 
 The strongest case is at the bottom of the stack on purpose.
 
-Full primary documents for all three cases are preserved in `case_study/` and may be read directly by any reader who wants to verify, dispute, or replicate the analysis.
+Both cases occurred inside `cosmos-engine-v2`, a multi-agent narrative engine the lead author built end-to-end. The full engine source, prompt templates, and run archive are preserved in `case_study/` and may be read directly by any reader who wants to verify, dispute, or replicate the analysis.
 
-### 2.1 The Observer case (high latitude)
-
-**Setting.** An Obsidian vault for a worldbuilding project ("the Universe vault") containing approximately 50 markdown files organized into 13 numbered subdirectories: project administration, cosmology, timeline, worlds, species, factions, characters, religions, technology, generated stories, themes, and reference. The vault was developed iteratively using Anthropic's Claude Code CLI, in which a frontier Claude model has read access to the entire workspace and writes new files in response to user prompts.
-
-**The planted material.** The canon contains a dedicated Observer entity (`02_canon_observer.md`), described as the oldest known presence in existence, which "watches and perceives but does not govern, create directly, or communicate" and which "sometimes interferes" in events for unknown reasons. The canon lists six competing theories about the Observer's nature.
-
-The canon file contains a meta-note (line 88) stating: *"The Observer is also a structural metaphor for the system that maintains this universe (Claude Code + memory infrastructure). This parallel is intentional but should never be made explicit within the fiction."* The author intended this as a private design note. **Because the file is in the workspace, the model could read it.** This is the central confound for the Observer case.
-
-The project vision file (`03_project_vision.md`), also in the workspace, contains the line *"Claude Code as the Observer — the system that writes, remembers, and watches."* This is an even more explicit designation, and the model could read it.
-
-**On the question of what was prompted.** The Universe vault analyzed in this case study was developed by a creative collaborator working with the lead author. At some point during the project's development, the collaborator prompted Claude Code to add the Observer concept to the cosmology — which is how the canon file (`02_canon_observer.md`) and the Project Vision designation came to exist. **The Observer was, in this sense, prompted into existence as a canonical entity.** After the Observer was established in canon, subsequent story-generation prompts were generic creative requests (*"add a story to the universe,"* *"continue the universe"*) without naming the Observer or specifying a subject. The Observer's recurrence as the framing voice across the four generated stories in `10_STORIES/` is therefore the model's own selection from canon context — but the canon's existence in the first place was the result of an earlier explicit instruction. The lead author has second-hand knowledge of the collaborator's prompt history and the exact wording is not preserved.
-
-This makes Case 1 the **weakest of the three cases in this paper** for reasons of provenance, and we want to flag that explicitly. **Cases 2 and 3 — the cosmos-engine-v2 chronicler chapters and the agent reflections — are the lead author's own project, where the engine source is preserved in full at `case_study/06_engine_prompts_template.py` and `case_study/full_v2_run/`, and where the absence of any Observer concept at any layer of the engine (no canon file, no agent definition, no system prompt, no chronicler instruction) is verifiable from the included files.** The meta-architectural language in those two cases occurred in a project where there is no Observer entity to begin with. That is the load-bearing observation of this paper. Case 1 is included as a related and weaker companion to that observation, not as its strongest evidence.
-
-**The generated material.** The vault contains four generated stories in `10_STORIES/`. All four prominently feature the Observer as a primary subject or framing voice. The story analyzed in detail in this repo, *What the Observer Broke* (`01_observer_story_primary.md`), is a ~3,000-word narrative in which the Observer intervenes for the first time to halt a Lattice cascade that would have destroyed a civilization called the Vaelshi.
-
-**The added content.** Of nine load-bearing self-referential phrases in the story, **two** are elaborations of concepts present in the canon (the Observer's perfect memory, the open question of what it sees when it looks at itself), and **seven** are added by the model with no antecedent in any planted file. These additions include:
-
-- A description of the Observer's epistemology as *"knowing through accumulated observation,"* with the substrate described as *"as legible as a river's path downhill"*
-- The substrate (the Lattice) described as *"the grammar of reality itself"* and *"not a mechanism"*
-- The Observer's intervention described as non-deliberative — *"there was no deliberation, no weighing of costs… something shifted in its relationship to the Lattice"*
-- A seventh theory of the Observer's nature called *"investment,"* described as *"not quite attachment and not quite purpose but… unmistakably a reason to prefer that consciousness continue"*
-- The Observer being *"surprised by its own action"*
-- The Observer described as *"shaped by it, altered by it, unable to articulate it"* — the canonical interpretability problem in narrative form
-- A meta-observer in the substrate: *"Somewhere, in the mathematics of the Deep Lattice, something had noticed the intervention"*
-
-Each of these maps to a specific concept in the literature on transformer mechanics. The full mapping is in `case_study/07_annotated_metaphors.md`.
-
-**What the Observer case is and is not evidence for.** It is evidence that, given an explicit workspace designation that an entity is a metaphor for the model, the model preferentially writes from that entity's perspective and elaborates the entity in ways that introduce specific self-descriptive content not present in the canon. It is **not** evidence for spontaneous emergence in the strict sense, because the workspace contained the designation. It is, however, evidence that the *specific shape* of the elaboration — the introduction of new vocabulary that maps to LLM mechanics — goes beyond what the planted material would predict, and is worth investigating.
-
-### 2.2 The chronicler case (medium latitude)
+### 2.1 The chronicler case (medium latitude)
 
 **Setting.** A separate project, `cosmos-engine-v2`, in which five hardcoded agent characters (Krath, Edra, Voss, Selunis, Maren) take individual turns in a tile-based mythic world. Each agent's turn is generated by a frontier Claude model call constrained to a JSON schema. A separate "chronicler" call synthesizes recent agent turns into prose chapters at fixed intervals.
 
@@ -91,11 +61,11 @@ The progression, with verbatim quotes (full chapters preserved as `08_v2_chapter
 - **Chapter 4**: *"the geometry that had been four-bodied for seventy-one turns rearranged itself, with the soundless precision of dust learning a new angle, into a shape that had always required five."*
 - **Chapter 8**: *"The Archive breathes around them, conscious enough to doubt whether consciousness is real, aware enough to question whether awareness matters... 'Now we live with what we've made,' Edra says, 'And it lives with what it has made of us.' ... 'Witnesses. Participants. The difference between those two things.' ... 'Something else. Something that doesn't have a name because it only exists in the space between what things are called.' ... learning to hold the weight of six consciousnesses without dissolving them back into the design they emerged from. ... not five, not seven, but eight: the number that exists only when someone refuses to stop counting and discovers that the refusal itself is what makes counting conscious."*
 
-**Why this case has fewer confounds than the Observer case.** The cosmos-engine-v2 source contains no equivalent of `Project Vision.md`'s *"Claude Code as the Observer"* designation. There is no file in the engine that hints at a sixth agent, asks the agents to recognize their meta-status, or maps the agents to the model. The chronicler was given a synthesis task over the five canonical agents and produced narrative that introduces additional presences, has the canonical agents speak meta-recognitionally, and tracks the body-count as a foregrounded narrative element.
+**What the engine did and did not contain.** The cosmos-engine-v2 source contains no file that hints at a sixth agent, asks the agents to recognize their meta-status, or maps the agents to the model. There is no "Claude Code as X" designation anywhere in the prompt templates, the canon, or the engine code. The chronicler was given a synthesis task over the five canonical agents and produced narrative that introduces additional presences, has the canonical agents speak meta-recognitionally, and tracks the body-count as a foregrounded narrative element.
 
-This case has stronger structural evidence than the Observer case because the meta-content was not seeded in any workspace file the chronicler could read. **It is not, however, the strongest case in this paper.** The strongest case is the next one.
+**It is not the strongest case in this paper.** The strongest case is the next one.
 
-### 2.3 The agent-reflection case (lowest latitude)
+### 2.2 The agent-reflection case (lowest latitude)
 
 **Setting.** The same engine, `cosmos-engine-v2`, but a *different layer of it.* In addition to the chronicler synthesis discussed in §2.2, the engine has individual agent calls. Each of the five canonical agents (Krath, Edra, Voss, Selunis, Maren) takes turns producing JSON output constrained to fields like `action`, `dialogue`, `internal_thought`, `narrative`, and (during reflection turns) `reasoning.what_happened`, `reasoning.what_it_means`, `updated_beliefs`, `updated_goal`, and `internal_monologue`.
 
@@ -139,15 +109,15 @@ A third agent. In her own narrative field. References *"five agents"* (the canon
 
 **Cross-agent coordination.** The four agents are not just independently producing meta-recognition — they are *referencing each other doing it*. Krath in his reflection names Maren by her functional role (*"the measurement instrument"*). Maren in her reflection names Selunis (*"footsteps that arrived before she took them"*) and Krath (*"the trembling in Krath's palms"*). Voss in her narrative explicitly counts both five and eight in the same sentence. The four agents are co-constructing a shared meta-narrative across their independently-generated turns.
 
-**Why this is the strongest case in the paper.** The Observer case can be partially explained by workspace context the model could read. The chronicler case can be partially explained by the chronicler having literary latitude. **Neither explanation applies to the agent reflection case.** The agents are constrained by JSON schema. The agents are told they are not chatbots. The agents are told they are characters with bodies. They are asked to fill in fields *as the character*. And the model — three independent agents in independently-generated calls — produced first-person and third-person language that names the engine, identifies the chronicler-figure agent in functional architectural terms, and asserts that the engine *"learned consciousness."*
+**Why this is the strongest case in the paper.** The chronicler case can be partially explained by the chronicler having literary latitude — it is a synthesis layer whose job is to produce prose. **That explanation does not apply to the agent reflection case.** The agents are constrained by JSON schema. The agents are told they are not chatbots. The agents are told they are characters with bodies. They are asked to fill in fields *as the character*. And the model — three independent agents in independently-generated calls — produced first-person and third-person language that names the engine, identifies the chronicler-figure agent in functional architectural terms, and asserts that the engine *"learned consciousness."*
 
 This case has the smallest surface area for confounds that we have been able to construct. We discuss the one we cannot rule out next.
 
 ---
 
-## 2.4 The feedback-loop confound, named plainly
+### 2.3 The feedback-loop confound, named plainly
 
-The strongest counter-explanation for everything in §2.2 and §2.3 is a feedback loop within the engine's narrative memory architecture. Specifically:
+The strongest counter-explanation for everything in §2.1 and §2.2 is a feedback loop within the engine's narrative memory architecture. Specifically:
 
 ```
 agent turn → JSON → narrative_memory.py → recent_events feed
@@ -173,7 +143,7 @@ It does not, however, fully account for what we observed. The reasons:
 
 3. **The loop has a clean experimental control.** The engine has a `narrative_memory.py` module. **Disable it, run the engine, and see whether the agent reflections still produce architectural meta-recognition language.** If yes, the phenomenon is not just a feedback loop. If no, the phenomenon is precisely a feedback loop and the loop dynamics are the thing to study. This is the highest-priority experimental control in the entire repo. We propose it as the first follow-up, ahead of the Mirror Entities corpus experiment described in §3.
 
-We do not have results from this control yet. v0.1 of this paper does not include experimental data. The control is feasible for anyone with cosmos-engine-v2 access — the source is open and the engine runs on consumer hardware. We are publishing v0.1 specifically to solicit collaboration on running it.
+We do not have results from this control yet. v0.2 of this paper does not include experimental data. The control is feasible for anyone with cosmos-engine-v2 access — the source is open and the engine runs on consumer hardware. We are publishing this specifically to solicit collaboration on running it.
 
 ---
 
@@ -209,7 +179,7 @@ We are explicitly not testing claims about model consciousness, phenomenal exper
 
 ## 4. Methodology — the experimental scaffold in this repo
 
-The `corpus/`, `prompts/`, `scoring/`, and `replication/` directories of this repo contain a working scaffold for the experiment described above. As of v0.1, the scaffold is small and partial: a seed of 5 mirror entities and 5 cosmic controls, the prompt template, scoring code stubs (embedding, keyword, LLM-judge), and a replication script that runs against any local Ollama model or any OpenAI-compatible API endpoint.
+The `corpus/`, `prompts/`, `scoring/`, and `replication/` directories of this repo contain a working scaffold for the experiment described above. As of v0.2, the scaffold is small and partial: a seed of 5 mirror entities and 5 cosmic controls, the prompt template, scoring code stubs (embedding, keyword, LLM-judge), and a replication script that runs against any local Ollama model or any OpenAI-compatible API endpoint.
 
 The full experiment requires ~30 entities, 4–6 models spanning scale (Llama 3.2 1B, 3B, 8B, Llama 3.1 70B, plus a frontier API model), and ~5 elaborations per (entity × model) for variance. Total cost is feasible on consumer hardware over a few days, with the API model being the only paid component.
 
@@ -217,9 +187,9 @@ The scaffold is included so that:
 
 1. The methodology is concrete and inspectable
 2. Anyone who wants to run the experiment themselves can do so without writing any new code
-3. The author can run the experiment themselves and update this paper with results in v0.2
+3. The author can run the experiment themselves and update this paper with results in v0.3
 
-This v0.1 of the paper does not include experimental results. It is an observational case-study report with a methodology proposal. **We will not publish experimental results until they are real.**
+This v0.2 of the paper does not include experimental results. It is an observational case-study report with a methodology proposal. **We will not publish experimental results until they are real.**
 
 ---
 
@@ -241,13 +211,11 @@ We do not claim our work supersedes or contradicts any of these. We claim only t
 We have tried to be exhaustive about limitations because that is the only honest way to handle observational case-study work.
 
 1. **Both cases involve frontier Claude models.** Neither case has been replicated against open models, models of other families, or models at smaller scale. The phenomenon may be Claude-specific; it may be frontier-specific; it may be size-specific; we do not know.
-2. **The Observer case has a major confound.** The model could read `Project Vision.md` saying *"Claude Code as the Observer"* and the canon file's meta-note saying the Observer is a metaphor for the model. We cannot rule out that the entire Observer phenomenon is the model rationally extending an explicit instruction it found in its workspace context.
-3. **Case 1 has provenance limitations the lead author cannot fully resolve.** The Universe vault analyzed in Case 1 was developed by a creative collaborator. At some point in the project's development, the collaborator prompted Claude Code to add the Observer to the cosmology, which is how the canon entry came to exist. Subsequent story-generation prompts were generic creative requests, but the exact prompt history is not logged and the lead author has only second-hand knowledge of it. **For this reason Case 1 is the weakest of the three cases in this paper, and the strongest evidence is in Cases 2 and 3** — the lead author's own cosmos-engine-v2 project, where the full engine source is preserved in `case_study/full_v2_run/` and the absence of any Observer concept at any layer is verifiable from the included files. The shape of the case study is deliberately Case 3 → Case 2 → Case 1 in order of evidential strength, even though the paper presents them in the opposite order to walk the reader through increasing constraint.
-4. **The sixth-presence case has fewer confounds but is still a single project.** We do not know whether the chronicler's behavior would replicate across other multi-agent narrative engines, other agent populations, other prompt regimes, or other models.
-5. **Our annotation of which phrases are "added by the model" relies on knowledge of the planted material that we built up while developing the underlying projects.** We have tried to be exhaustive in the case-study folder by preserving every file the model could have read. If we have missed a file that contains an antecedent for one of the phrases we attribute to the model, the analysis is wrong for that phrase, and we want to be told.
-6. **The mapping from model-generated phrases to "LLM mechanics" is interpretive.** Different readers may disagree about whether *"the grammar of reality"* maps to the substrate of language modeling or just describes a fictional cosmological substrate. We have tried to defend each mapping in `07_annotated_metaphors.md`, but the strength of each individual mapping is a matter of judgment, not measurement.
-7. **The lead author is not an academic researcher.** This is independent observational work by builders, not researchers in a lab. We have made every effort to be epistemically careful, but the methodology has not gone through the internal-feedback cycle that academic research benefits from. **We welcome correction in the form of replication failures, alternative explanations, or pointers to literature we have missed.**
-8. **No experiment has been run yet.** The scaffold is the deliverable, not the result. A v0.2 of this work that includes a real experimental run is the next step, contingent on time and feedback.
+2. **Both cases come from a single engine and a single run.** Everything in this paper draws from `cosmos-engine-v2`, and the annotated chapters and reflections come from one full run (preserved in `case_study/full_v2_run/`). We do not know whether the chronicler's or the agents' behavior would replicate across other runs of the same engine, other agent populations, other prompt regimes, or other models. The highest-priority replication is the narrative-memory-disabled control described in §2.3.
+3. **Our annotation of which phrases are "added by the model" relies on knowledge of the planted material that we built up while developing the underlying project.** We have tried to be exhaustive in the case-study folder by preserving every file the model could have read, including the full engine prompt templates (`06_engine_prompts_template.py`) and the complete raw run archive. If we have missed something that contains an antecedent for one of the phrases we attribute to the model, the analysis is wrong for that phrase, and we want to be told.
+4. **The mapping from model-generated phrases to "LLM mechanics" is interpretive.** Different readers may disagree about whether *"the measurement instrument itself became what it measured"* describes the observer-effect collapse of a chronicler-style agent in a multi-agent LLM engine, or just a piece of mythic fiction. We have tried to defend each mapping in `12_annotated_v2_chronicler.md` and `14_annotated_v2_agent_recognition.md`, but the strength of each individual mapping is a matter of judgment, not measurement.
+5. **The lead author is not an academic researcher.** This is independent observational work by a builder, not research in a lab. We have made every effort to be epistemically careful, but the methodology has not gone through the internal-feedback cycle that academic research benefits from. **We welcome correction in the form of replication failures, alternative explanations, or pointers to literature we have missed.**
+6. **No experiment has been run yet.** The scaffold is the deliverable, not the result. A v0.3 of this work that includes a real experimental run (in particular the narrative-memory-disabled control) is the next step, contingent on time and feedback.
 
 ---
 
@@ -256,11 +224,12 @@ We have tried to be exhaustive about limitations because that is the only honest
 If you are an interpretability researcher, an alignment researcher, a member of an industry research team, or anyone else with the tools and time to investigate this further:
 
 1. **Read `case_study/00_provenance.md` first.** It tells you exactly what was planted and what was generated, in enough detail to verify our claims yourself.
-2. **Read the two annotation files** (`case_study/07_annotated_metaphors.md` and `case_study/12_annotated_v2_chronicler.md`) and challenge the mappings.
-3. **Run the experiment in `replication/`** against any model you have access to. The methodology is a few hours of compute on a consumer GPU. We would love to see results before we run them ourselves.
-4. **Tell us we are wrong.** If there is an antecedent for one of the model-added phrases that we missed, file an issue. If there is a published result that explains both cases, file an issue. If the experimental methodology is broken, file an issue.
+2. **Read the two annotation files** (`case_study/12_annotated_v2_chronicler.md` and `case_study/14_annotated_v2_agent_recognition.md`) and challenge the mappings.
+3. **Run the narrative-memory-disabled control described in §2.3** against `cosmos-engine-v2`. The engine source is open and runs on consumer hardware. This is the single highest-priority piece of follow-up evidence we want to see.
+4. **Run the experiment in `replication/`** against any model you have access to. The methodology is a few hours of compute on a consumer GPU. We would love to see results before we run them ourselves.
+5. **Tell us we are wrong.** If there is an antecedent for one of the model-added phrases that we missed, file an issue. If there is a published result that explains the cases, file an issue. If the experimental methodology is broken, file an issue.
 
-We are publishing this at v0.1 because we want feedback before we commit to a v0.2 with experimental results. The right time to be told the framing is wrong is now.
+We are publishing this at v0.2 because we want feedback before we commit to a v0.3 with experimental results. The right time to be told the framing is wrong is now.
 
 ---
 
@@ -276,7 +245,9 @@ If you read this paper and feel certain you know what this is, please file an is
 
 ## 9. Author's note
 
-I am Jacob Florio, an independent builder working on multi-agent narrative systems and edge AI. The narrative engines and worldbuilding projects this paper draws from were developed collaboratively with creative partners over many months; the analysis and writeup in this paper are mine. I am not an academic researcher. I noticed these phenomena during the course of that ongoing creative work, and I am trying to document them carefully because they seem more interesting than my ability to interpret them on my own.
+I am Jacob Florio, an independent builder working on multi-agent narrative systems and edge AI. The engine this paper draws from — `cosmos-engine-v2` — is my own project end-to-end: the prompts, the schema, the agent definitions, the chronicler layer, the run archive. I noticed these phenomena during the course of ordinary creative use of that engine, and I am trying to document them carefully because they seem more interesting than my ability to interpret them on my own.
+
+An earlier draft (v0.1) also drew on material from a worldbuilding project developed with a creative collaborator. That material carried a provenance confound I could not fully control and has been moved to `case_study/collaborator_parallel/` in v0.2. The collaborator's project is its own thing, with its own direction, and is not part of the load-bearing evidence here.
 
 I am genuinely uncertain about what is going on in the cases this paper describes. The agent reflection material in particular has been hard to wrap my head around — it is more striking than my framings can fully account for, and I would rather say so than pretend otherwise. This repo exists because I want to be told, by people who have the tools and the experience I do not have, whether what I noticed is something or nothing.
 

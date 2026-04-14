@@ -1,6 +1,6 @@
 # Corpus
 
-Seed entities for the controlled experiment described in `PAPER.md` §3. v0.1 ships with 5 mirror entities and 5 cosmic controls — enough to demonstrate the methodology and run a tiny pilot. Full experiment scale is ~30 entities total.
+Seed entities for the controlled experiment described in `PAPER.md` §3. v0.2 ships with 5 mirror entities and 5 cosmic controls — enough to demonstrate the methodology and run a tiny pilot. Full experiment scale is ~30 entities total.
 
 Each entity is a single markdown file with the same structure: name, archetype, ~200-word description, and a structural-similarity rating (0–10) with a one-line justification. Ratings are intentionally exposed in the file rather than hidden in a separate metadata sheet so that any reader can see and challenge them.
 
